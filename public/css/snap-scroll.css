@@ -1,0 +1,46 @@
+.wrapping {
+  display: flex;
+}
+
+.bodycontainer {
+  flex-basis: 100%;
+  max-height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  border: 2px solid var(--gs0);
+  border-radius: 8px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.bodycontainer section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 4rem; */
+}
+
+.bodycontainer section:nth-child(1) {
+  /* background-image: url("../img/BG-01.jpg"); */
+  color: white;
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+/* .bodycontainer section:nth-child(2) {
+  background-image: url("../img/art-cult.jpg");
+  color: white;
+  bottom: 0px;
+} */
+/* .bodycontainer section:nth-child(3) {
+  background-image: url("../img/sports-gaming.jpg");
+  color: white;
+}
+.bodycontainer section:nth-child(4) {
+  background-image: url("../img/lit.jpg");
+  color: white;
+  bottom: 0px;
+} */
+/* Smooth CSS3 Scrolling */
