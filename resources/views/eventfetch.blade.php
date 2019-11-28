@@ -392,3 +392,5 @@
     </div><!--end portfoliomain-->
     <!--end container-->
 </section>
+@include('elements.footerwidget')
+@include('elements.footer')

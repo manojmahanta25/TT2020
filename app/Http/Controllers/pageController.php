@@ -46,4 +46,24 @@ class pageController extends Controller
                 abort(404);
         }
     }
+
+    public function registration()
+    {
+        $page = 'registration';
+        $page_title = 'All Events of Talent Tantra 2020';
+        $mtitle = 'All Events of Talent Tantra 2020';
+        $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('registration', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
+    }
+
+    public function sponsor()
+    {
+        $page = 'sponsor';
+        $page_title = 'Sponsor of Talent Tantra 2020';
+        $mtitle = 'Sponsor of Talent Tantra 2020';
+        $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('sponsor', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
+    }
 }

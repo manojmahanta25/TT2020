@@ -14,3 +14,5 @@
 Route::get('/', 'pageController@home');
 Route::get('/event', 'pageController@event');
 Route::get('/event/{id}', 'pageController@eventFetch');
+Route::get('/register', 'pageController@registration');
+Route::get('/sponsor', 'pageController@sponsor');
