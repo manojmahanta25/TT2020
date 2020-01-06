@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ticket extends Model
+class Ticket extends Model
 {
     protected $primaryKey = 'custid';
     protected $fillable =[

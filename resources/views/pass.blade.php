@@ -23,7 +23,7 @@
              <img src="{{ URL::asset('images/webp/safarnama.webp') }}" alt="" class="ppimg"/>
             <div class="pptxt">Three Day Combo Pass</div>
             <div class="tckbut">
-                <a href="{{Route('tt.ticket',['ptype' => 'combo'])}}" alt="">
+                <a href="{{Route('tt.ticket').'/combo '}}" alt="">
               <ul>
                 <li>
                   BUY NOW

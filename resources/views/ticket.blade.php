@@ -5,15 +5,15 @@
         <div class="heading" style="padding-top:50px;">
             <span>Ticket Form</span>
         </div>
-        <?php 
-        if(isset($_GET['ptype']))
+        @php 
+        if(isset($ptype))
         {
-            $ptype = $_GET['ptype'];
+            $ptype=htmlspecialchars($ptype);
         }
         else {
             $ptype = 'none';
          } 
-         ?>
+         @endphp
         @if(count($errors) > 0)
         <div class="alert alert-danger">
             <ul>

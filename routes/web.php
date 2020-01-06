@@ -41,6 +41,7 @@ Route::group(['middleware'=>'web'], function(){
     Route::post('/register', ['as'=>'tt.registerdb','uses'=>'registrationController@store']);
 });
 Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
+Route::get('/buytickets/:ptype',['as' => 'tt.ticketId', 'uses' => 'ticketController@show']);
 Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
 
 

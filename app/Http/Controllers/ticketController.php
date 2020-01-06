@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use App\ticket;
+use App\Ticket;
 use DB;
 
 class ticketController extends Controller
@@ -68,6 +68,7 @@ class ticketController extends Controller
         $gender = $request->input('gender');
         $email = $request->input('email');
         $mobile = $request->input('mobile');
+        $request->flush();
 
         return $this->tckPreview($rid, $pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile);
     }
@@ -76,7 +77,7 @@ class ticketController extends Controller
     {
         //$numbers_pass =$numbers_pass;
         //echo $numbers_pass.'<br/>';
-        $price="";
+        $price=null;
         switch ($pass_type) {
             case 'single':
                 $price=300 * $numbers_pass;
@@ -86,10 +87,24 @@ class ticketController extends Controller
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-                break;
+                
+        }
+        if($price == null || $price < 300)
+        {
+            Redirect::back()->withErrors(['msg', 'Invalid Pass']);
         }
         //echo $price;
         //echo $rid;
+        Ticket::create(['custid'=>$rid,
+            'name'=>$name,
+            'mobile'=>$mobile,
+            'email'=>$email,
+            'pass_type'=>$pass_type,
+            'numbers_pass'=>$numbers_pass,
+            'select_day'=>$select_day,
+            'payable_total'=>$price
+        ]);
+
         $page = 'tck';
         $page_title = 'Preview of Talent Tantra Tickets Online';
         $mtitle = 'Preview of Talent Tantra Tickets Online';
@@ -115,9 +130,14 @@ class ticketController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($ptype)
     {
-        //
+        $page = 'ticket';
+        $page_title = 'Buy Talent Tantra Tickets Online';
+        $mtitle = 'Buy Talent Tantra Tickets Online';
+        $description = 'Online tickets, Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'online ticket, pass, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('ticket', compact('page', 'page_title', 'mtitle', 'description', 'keywords','ptype'));
     }
 
     /**
