@@ -87,7 +87,7 @@ class ticketController extends Controller
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-                
+
         }
         if($price == null || $price < 300)
         {
@@ -110,7 +110,7 @@ class ticketController extends Controller
         $mtitle = 'Preview of Talent Tantra Tickets Online';
         $description = 'Preview Online tickets, Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
         $keywords = 'online ticket, pass, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
-        
+
 
         $body='price is '.$price;
 
@@ -132,6 +132,14 @@ class ticketController extends Controller
      */
     public function show($ptype)
     {
+        switch ($ptype) {
+            case 'single':
+            case 'combo':
+                break;
+            default:
+                return redirect(route('tt.ticket'));
+
+        }
         $page = 'ticket';
         $page_title = 'Buy Talent Tantra Tickets Online';
         $mtitle = 'Buy Talent Tantra Tickets Online';
@@ -176,8 +184,8 @@ class ticketController extends Controller
 
     public function getID()
     {
-        A: $string = substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, 8); 
-        $id= strtoupper($string);                 
+        A: $string = substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, 8);
+        $id= strtoupper($string);
         if (DB::table('tickets')->where('custid', '=', $id)->exists()) {
             goto A;
         }

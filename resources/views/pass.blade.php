@@ -8,7 +8,7 @@
              <img src="{{ URL::asset('images/webp/safarnama.webp')}}" alt="" class="ppimg"/>
             <div class="pptxt">One Day Single Pass</div>
             <div class="tckbut">
-                <a href="{{Route('tt.ticket',['ptype' => 'single'])}}" alt="">
+                <a href="{{Route('tt.ticket').'/single'}}" alt="">
               <ul>
                 <li>
                   BUY NOW
@@ -50,7 +50,7 @@
                 <li>In case of cancellation of the shows due to any unforseen circumstances beyond the control of the organizers, the extent of the refurnd will be based on the situation at hand and the management's decision will be final and binding will be final and binding on all.</li>
             </ul>
     </div>
-    
+
 </section>
 @include('elements.footerwidget')
 @include('elements.footer')
