@@ -161,7 +161,56 @@ p {
 	font-size: 18px;
 }
 
+label{
+	font-weight: 600;
+}
+.loader {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  margin: auto;
+}
+.loader .image {
+  width: 120px;
+  height: auto;
+  font-size: 40px;
+  text-align: center;
+  transform-origin: bottom center;
+  animation: 3s rotate infinite;
+  opacity: 0;
+    margin-top: -50px;
+}
+.loader span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
 
+@keyframes rotate{
+  0% {
+    transform: rotate(90deg);
+  }
+  10% {
+    opacity: 0;
+  }
+  35% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  65% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
 /* ========================================================================*/
 
 /*   03. NAVIGATION
@@ -169,6 +218,9 @@ p {
 
 .global {
 	position: relative;
+}
+.hide{
+	display: none;
 }
 
 .global,
@@ -340,6 +392,7 @@ p {
 	width: 100%;
 	display: block;
 }
+
 
 .pusher::after {
 	position: absolute;
@@ -766,7 +819,7 @@ section:after {
 /*========================================================================*/
 
 .portfoliomain {
-	
+	font-family: 'Playfair Display';
 }
 
 .portfolio {
@@ -778,6 +831,7 @@ section:after {
 	padding-bottom: 80px;
 	position: relative;
 }
+
 
 .portfolio .heading {
 	border-bottom: 1px dashed #444;
@@ -852,12 +906,11 @@ section:after {
 }
 
 .project-grid>li h3 {
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	line-height: 50px;
 	position: absolute;
-	color:black;
+	color:white;
 	bottom: 0px;
     text-align: center;
 }
@@ -995,22 +1048,24 @@ section:after {
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/game.svg) center center no-repeat , rgba(48,185,229,0.8);
 	background-size: 50%; 
 }
 
-.project-work .project.two,
+.project-work .project.two{
+ background-color: rgba(194,73,82);
+}
 .project-grid>li:nth-child(2) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/music.svg) center center no-repeat , rgba(194,73,82,0.8);
 	background-size: 50%; 
 }
 
 .project-work .project.three {
-	background: #996699;
+	background: rgba(156,205,95);
 }
 
 .project-grid>li:nth-child(3) {
@@ -1018,22 +1073,24 @@ section:after {
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/libary.svg) center center no-repeat , rgba(156,205,95,0.8);
 	background-size: 50%; 
 }
 
-.project-work .project.four,
+.project-work .project.four{
+	background: rgba(48,185,229);
+}
 .project-grid>li:nth-child(4) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/photographic.svg) center center no-repeat , rgba(48,185,229,0.8);
 	background-size: 50%; 
 }
 
 .project-work .project.five {
-	background: #e2674a;
+	background: rgba(240,187,96);
 }
 
 .project-grid>li:nth-child(5) {
@@ -1041,22 +1098,25 @@ section:after {
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/bussiness.svg) center center no-repeat , rgba(240,187,96,0.8);
 	background-size: 50%; 
 }
 
-.project-work .project.six,
+.project-work .project.six{
+	background: rgba(236,106,61);	
+}
+
 .project-grid>li:nth-child(6) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
-	background-size: 50%; 
+	background: url(../images/events/dance.svg) center center no-repeat , rgba(236,106,61,0.8);
+	background-size: 70%; 
 }
 
 .project-work .project.seven {
-	background: #99cc99;
+	background: rgba(192,53,65);
 }
 
 .project-grid>li:nth-child(7) {
@@ -1064,22 +1124,24 @@ section:after {
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
-	background-size: 50%; 
+	background: url(../images/events/fasion.svg) center center no-repeat , rgba(192,53,65,0.8);
+	background-size: 45%; 
 }
 
-.project-work .project.eight,
+.project-work .project.eight{
+	background: rgba(244,209,47);
+}
 .project-grid>li:nth-child(8) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/science.svg) center center no-repeat , rgba(244,209,47,0.8);
 	background-size: 50%; 
 }
 
 .project-work .project.nine {
-	background: #cc6699;
+	background: rgba(80,191,135);
 }
 
 .project-grid>li:nth-child(9) {
@@ -1087,37 +1149,45 @@ section:after {
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/sports.svg) center center no-repeat , rgba(80,191,135,0.8);
 	background-size: 50%; 
 }
 
-.project-work .project.ten,
+.project-work .project.ten
+{
+	background: rgba(240,187,96);
+}
 .project-grid>li:nth-child(10) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
-	background-size: 50%; 
+	background: url(../images/events/drama.svg) center center no-repeat , rgba(240,187,96,0.8);
+	background-size: 80%; 
 }
 
-.project-work .project.eleven,
+.project-work .project.eleven{
+	background: rgba(244,209,47);
+}
 .project-grid>li:nth-child(11) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/informal.svg) center center no-repeat , rgba(244,209,47,0.8);
 	background-size: 50%; 
 }
 
-.project-work .project.eleven,
+.project-work .project.twelve
+{
+	background: rgba(156,205,95);
+}
 .project-grid>li:nth-child(12) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
 	border-style: solid;
 	border-image-outset: 1;
-	background: url(../images/events/drama.svg) center center no-repeat , rgba(251,176,64,0.8);
+	background: url(../images/events/workshop.svg) center center no-repeat , rgba(156,205,95,0.8);
 	background-size: 50%; 
 }
 
@@ -1125,7 +1195,7 @@ section:after {
 	.project-grid li,
 	.project-grid li.project-span-2,
 	.project-grid li.project-span-4 {
-		width: 100%;
+		width: 90%;
 		text-align: left;
 	}
 	.project-grid li[class^="icon-"]:before,
@@ -1139,7 +1209,13 @@ section:after {
 		text-align: center;
 	}
 }
-
+.porttext{
+	color:white;
+	border-image: url(../images/events/stamp-border.png) 8 round; 
+	border-width: 8px;
+	border-style: solid; 
+	border-image-outset: 1;
+}
 
 /*========================================================================*/
 /*   10. TEAM
@@ -1653,50 +1729,6 @@ hr {
 	background: rgba(255, 255, 255, 0.3);
 }
 
-
-/*========================================================================*/
-/*   13. RESONSIVE FIXES
-/*========================================================================*/
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.ch-grid {
-		text-align: center;
-	}
-	.ch-grid>li {
-		display: inline-block;
-		float: none;
-	}
-	#hometicker h2 {
-		font-size: 124px;
-	}
-}
-
-@media (max-width: 768px) {
-	.ch-grid {
-		text-align: center;
-	}
-	.ch-grid>li {
-		display: inline-block;
-		float: none;
-	}
-	.menu {
-		width: 200px;
-	}
-	.effect.open .pusher {
-		-webkit-transform: translate3d(200px, 0, 0);
-		transform: translate3d(200px, 0, 0);
-	}
-	#hometicker h2 {
-		font-size: 70px;
-	}
-	#contact-area {
-		padding: 0;
-	}
-	.heading h2 {
-		line-height: 80px;
-	}
-}
-
 .inhome {
 	background: url(../images/png/bghome.png) center center no-repeat, url(../images/png/bg_gra.png) center center no-repeat;
 	background-size: 50%, 110%;
@@ -2032,7 +2064,7 @@ hr {
 
 .abtsince {
 	position: absolute;
-	background: url(../images/png/Patch.png) center center no-repeat;
+	background: url(../images/webp/Patch.webp) center center no-repeat;
 	background-size: cover;
 	font-size: 12px;
 	padding-left: 12px;
@@ -2129,7 +2161,225 @@ hr {
 	margin-top: 90px;
 }
 
+
+.artist{
+    height: 100vh !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url(../images/artist/bg.webp)center center no-repeat !important;
+    background-size:cover;
+    padding: 15px 25px !important;
+}
+
+#myDiv{
+	text-align: center;
+	position: absolute;
+	right: 0px;
+	top:10%;
+}
+
+#mySpan{
+	writing-mode: vertical-lr; 
+	transform: rotate(180deg);
+	font-size:4.6em;
+	font-weight: 800;
+    font-family: Playfair Display;
+}
+
+.art1{
+	position: absolute; 
+	width:20%; 
+	left:10%; 
+	top:30%;
+}
+.art2{
+	position: absolute; 
+	width: 20%; 
+	left:35%;  
+	top:5px;
+}
+.art3{
+	position: absolute; 
+	width: 20%; 
+	left:35%; 
+	bottom:5px;
+}
+.art4{
+	position: absolute; 
+	width:20%; 
+	right:20%; 
+	top:30%;
+}
+.artp{
+	position: absolute; 
+	bottom: 1px; 
+	right: 25px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.tckbut ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    position: absolute;
+    left:25%;
+}
+
+.tckbut ul li {
+    --c: #e6492c;
+    color: #ffffff;
+    font-size: 16px;
+    border: 0.3em solid #ffffff;
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.tckbut ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.tckbut ul li:hover {
+    color: black;
+    background: var(--c);
+}
+
+.tckbut ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.tckbut ul li span:nth-child(1) {
+    --n: 1;
+}
+
+.tckbut ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.tckbut ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.tckbut ul li span:nth-child(4) {
+    --n: 4;
+}
+
+.passpg {
+	padding:80px 20px !important; 
+	overflow-x: hidden; 
+	overflow-y: hidden; 
+	background: url(../images/webp/ticket_bg.webp)center center no-repeat !important; 
+	background-size:cover !important;
+}
+
+.tcbg1{
+	border-image: url(../images/events/stamp-border.png) 8 round; 
+	border-width: 8px; 
+	border-style: solid;
+	border-image-outset: 1; 
+	background: rgba(0, 128, 214,0.8); 
+	height:60vh;
+	margin-bottom: 45px;
+}
+
+.tcbg2{
+	border-image: url(../images/events/stamp-border.png) 8 round; 
+	border-width: 8px; 
+	border-style: solid;
+	border-image-outset: 1; 
+	background: rgba(0, 128, 214,0.8); 
+	height:60vh;
+	margin-right: 50px;
+	margin-bottom: 45px;
+}
+
+.tttxt{
+	color:white;
+	font-weight: 800;
+	font-family: 'Playfair Display';
+	font-size:2.2em; 
+	text-transform: uppercase;
+}
+
+.pptxt{
+	color:black;
+	margin-top:10px;
+	font-weight: 800;
+	font-family: 'Playfair Display';
+	font-size:2em; 
+	text-transform: uppercase;color:white;
+}
+
+.ppimg{
+	width: 70%; 
+	margin-left: 30px;
+	margin-top:20px;
+}
+
+/*========================================================================*/
+/*   13. RESONSIVE FIXES
+/*========================================================================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.ch-grid {
+		text-align: center;
+	}
+	.ch-grid>li {
+		display: inline-block;
+		float: none;
+	}
+	#hometicker h2 {
+		font-size: 124px;
+	}
+}
+
 @media (max-width: 768px) {
+	.ch-grid {
+		text-align: center;
+	}
+	.ch-grid>li {
+		display: inline-block;
+		float: none;
+	}
+	.menu {
+		width: 200px;
+	}
+	.effect.open .pusher {
+		-webkit-transform: translate3d(200px, 0, 0);
+		transform: translate3d(200px, 0, 0);
+	}
+	#hometicker h2 {
+		font-size: 70px;
+	}
+	#contact-area {
+		padding: 0;
+	}
+	.heading h2 {
+		line-height: 80px;
+	}
+
 	.fixed-bg {
 		display: block;
 	}
@@ -2263,6 +2513,59 @@ hr {
 	#home {
 		padding: 0px;
 	}
+
+	#mySpan{
+		writing-mode: vertical-lr; 
+		transform: rotate(180deg);
+		font-size:4.2em;
+		font-weight: 800;
+	    font-family: Playfair Display;
+	}
+
+	.art1{
+		position: absolute; 
+		width:30%; 
+		left:8%; 
+		top:30%;
+	}
+	.art2{
+		position: absolute; 
+		width: 30%; 
+		left:31%;  
+		top:10px;
+	}
+	.art3{
+		position: absolute; 
+		width: 30%; 
+		left:31%; 
+		bottom:5px;
+	}
+	.art4{
+		position: absolute; 
+		width:30%; 
+		right:15%; 
+		top:30%;
+	}
+	.artp{
+		font-size: 9px;
+	    font-weight: 800;
+	    right: 7%;
+	    bottom: 0;
+	}
+	.tckbut ul {
+	    left:33%;
+	}
+	.tcbg1{
+		height:73vh;
+		margin-bottom:50px;
+	}
+	.tcbg2{
+		height:73vh;
+		margin-bottom:10px;
+		margin-right: auto;
+
+	}
+}
 }
 
 @media (max-width: 425px) {
@@ -2356,8 +2659,53 @@ hr {
 	.ftmrt {
 		margin-top: 0px;
 	}
+	
+	#mySpan{
+		writing-mode: vertical-lr; 
+		transform: rotate(180deg);
+		font-size:4.2em;
+		font-weight: 800;
+	    font-family: Playfair Display;
+	}
+
+	.art1{
+		position: absolute; 
+		width: 35%;
+	    left: 1%;
+	    top: 38%;
+	}
+	.art2{
+		position: absolute; 
+		width: 35%;
+	    left: 25%;
+	    top: 15%;
+	}
+	.art3{
+		position: absolute; 
+		width: 35%; 
+		left: 25%;
+    	bottom: 10%;
+	}
+	.art4{
+		position: absolute; 
+		width:35%; 
+		right:15%; 
+		top:35%;
+	}
+	.artp{
+		font-size: 9px;
+	    font-weight: 800;
+	    right: 18%;
+	    bottom: 0;
+	}
+	
 }
 
+@media(max-width: 425px){
+	.tckbut ul {
+	    left:17%;
+	}
+}
 @media (max-width: 393px) {
 	.in_acco {
 		bottom: 10%;
@@ -2398,4 +2746,486 @@ hr {
 		top: 170px;
 		left: 40%;
 	}
+
+}
+
+
+@media(max-width: 375px){
+
+	.art3{
+    	bottom: 18%;
+	}
+	.tckbut ul {
+	    left:14%;
+	}
+}
+
+
+@media(max-width: 320px){
+
+	.tcbg1{
+		height:79vh;
+	}
+	.tcbg2{
+		height:79vh;
+		margin-right: auto;
+	}
+	.tckbut ul {
+	    left:2%;
+	}
+}
+
+.face:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*  07  - Schedules
+----------------------------------------------*/
+.schedules{}
+.schedules .section-header{
+    margin-bottom: 40px;
+}
+.schedules .schedule-tabs{
+    text-align: center;
+}
+.schedules .nav-tabs{
+	background: rgba(255,253,253,0.8);
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.schedules .nav-tabs li{
+    margin: 4px;
+}
+.tab-content > .active{
+	background: rgba(255,253,253,0.8);
+	padding: 15px;
+}
+.schedules .nav-tabs li a{
+    border: 1px solid #09afd5;
+    border-radius: 0;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff9822;
+    padding: 6px 30px;
+}
+.schedules .nav-tabs li:last-child a{
+    /*border-right: 1px solid #f0f0f0;*/
+}
+.schedules .nav-tabs li:last-child a:hover, .schedules .nav-tabs li:last-child a:focus{
+    border-right: 1px solid #65ac4c;
+}
+.schedules .nav-tabs li:last-child.active a{
+    border-right: 1px solid #ff9822;
+}
+.schedules .nav-tabs li a span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+    display: block;
+}
+.schedules .nav-tabs li a:hover, .schedules .nav-tabs li a:focus{
+    border: 1px solid #65ac4c;
+    border-right: none;
+    background-color: #65ac4c;
+    color: #fff;
+    margin: 0;
+}
+.schedules .nav-tabs li.active a{
+    border: 1px solid #ff9822;
+    border-right: none;
+    background-color: #ff9822;
+    color: #fff;
+    margin: 0;
+}
+.schedules .nav-tabs li a:hover span, .schedules .nav-tabs li a:focus span, .schedules .nav-tabs li.active a span{
+    color: #fff;
+}
+.schedules .nav-tabs h4{
+    font-size: 24px;
+    color: #ff9822;
+}
+.schedules .nav-tabs p{
+    font-size: 16px;
+    color: #696969;
+    margin: 0px;
+}
+.schedules .tab-content .schedule-table{
+    margin-bottom: 50px;
+    font-family: 'Playfair Display';
+}
+.schedules .tab-content table{
+    border: 10px solid #fafafa;
+    border-top: none;
+    min-width: 1140px;
+    overflow-X: auto;
+}
+.schedules .tab-content table .time{
+    width: 23%;
+}
+.schedules .tab-content table .session{
+    width: 40%;
+}
+.schedules .tab-content table .speaker{
+    width: 22%;
+}
+.schedules .tab-content table .venue{
+    width: 15%;
+}
+.schedules .tab-content table th{
+    border: none;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #65ac4c;
+    padding: 27px 30px;
+}
+.schedules .tab-content table tbody tr:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .12);
+}
+.schedules .tab-content table td{
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    line-height: 1;
+    color: #696969;
+    padding: 27px 30px;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+.schedules .tab-content table td:hover{
+    color: #ff9822;
+}
+.schedules .tab-content table td:first-child{
+    border-left: 1px solid #f0f0f0;
+}
+.schedules .tab-content table td:last-child{
+    border-right: 1px solid #f0f0f0;
+}
+.schedules .tab-content table td span{
+    margin-right: 8px;
+}
+.schedules .tab-content .schedule-button{
+    background-color: #65ac4c;
+    padding: 14px 37px;
+}
+.schedules .tab-content .schedule-button:hover{
+    background-color: #ff9822;
+}
+.schedules-two{
+    background-image: url(../../images/backgrounds/bg-schedules.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+.schedules-two .section-header{
+    margin-bottom: 60px;
+}
+.schedules-two .section-header h3, .schedules-two .section-header p{
+    color: #fff;
+}
+.schedules-two .nav-tabs{
+    width: 19%;
+    float: left;
+    border: none !important;
+}
+.schedules-two .nav-tabs li{
+    margin-bottom: 10px;
+}
+.schedules-two .nav-tabs li a{
+    border: none;
+    background-color: #fff;
+    width: 200px;
+    padding: 6px 15px;
+    position: relative;
+}
+.schedules-two .nav-tabs li a:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    height: 15px;
+    width: 15px;
+    background-color: #ff9822;
+    opacity: 0;
+}
+.schedules-two .nav-tabs li a:hover:before, .schedules-two .nav-tabs li.active a:before{
+    right: -7px;
+    opacity: 1;
+    -webkit-transition: .25s;
+    transition: .25s;
+    transition-delay: .1s;
+}
+.schedules-two .nav-tabs li a:hover, .schedules-two .nav-tabs li a:focus, .schedules-two .nav-tabs li.active a{
+    border: none;
+}
+.schedules-two .nav-tabs li a:hover, .schedules-two .nav-tabs li a:focus{
+    background-color: #ff9822;
+}
+.schedules-two .nav-tabs li:last-child a:hover, .schedules-two .nav-tabs li:last-child a:focus{
+    border: none;
+}
+.schedules-two .tab-content{
+    width: 81%;
+    float: left;
+}
+.schedules-two .tab-content .schedule-table, .schedules-two .tab-content table{
+    margin: 0px;
+}
+.schedules-two .tab-content table{
+    border: none;
+    min-width: 920px;
+}
+.schedules-two .tab-content table tbody tr{
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+.schedules-two .tab-content table tbody tr:hover {
+    box-shadow: none;
+    background-color: #ff9822;
+}
+.schedules-two .tab-content table tbody tr:hover td{
+    color: #fff;
+}
+.schedules-two .tab-content table .session {
+    width: 44%;
+}
+.schedules-two .tab-content table td:first-child {
+    border-left: 1px solid #252525;
+}
+.schedules-two .tab-content table td{
+    border-bottom: 1px solid #252525;
+    padding: 27px 15px;
+}
+.schedules-two .tab-content table td:last-child {
+    border-right: 1px solid #252525;
+}
+.schedules-two .tab-content table td span{
+    margin-right: 5px;
+}
+.schedules-three{
+    background-color: #1b2431;
+}
+.schedules-three .section-header h3{
+    color: #fff;
+}
+.schedules-three .section-header p{
+    color: #aeaeae;
+}
+.schedules-three .nav-tabs{
+    border: none;
+}
+.schedules-three .nav-tabs li a{
+    border: 1px solid #313d4f;
+    border-right: none;
+    position: relative;
+    color: #fff;
+}
+.schedules-three .nav-tabs li a span{
+    color: #fff;
+}
+.schedules-three .nav-tabs li a:before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    height: 16px;
+    width: 16px;
+    background-color: #ff9822;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 0;
+}
+.schedules-three .nav-tabs li.active a:before{
+    opacity: 1;
+    bottom: -8px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.schedules-three .nav-tabs li:last-child a{
+    border-right: 1px solid #313d4f;
+}
+.schedules-three .tab-content table{
+    border: none;
+}
+.schedules-three .tab-content .schedule-table{
+    margin: 0px;
+}
+.schedules-three .tab-content table th{
+    background-color: #313d4f;
+}
+.schedules-three .tab-content table td{
+    border-bottom: 1px solid #313d4f;
+}
+.schedules-three .tab-content table td:hover{
+    color: #aeaeae;
+}
+.schedules-three .tab-content table td:first-child{
+    border-left: 1px solid #313d4f;
+    position: relative;
+}
+.schedules-three .tab-content table td:first-child:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #ff9822;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.schedules-three .tab-content table tr:hover td{
+    color: #fff;
+}
+.schedules-three .tab-content table tr:hover td:first-child:before{
+    opacity: 1;
+}
+.schedules-three .tab-content table td:last-child{
+    border-right: 1px solid #313d4f;
+}
+.schedules-three .tab-content table tbody tr{
+    position: relative;
+}
+.schedules-three .tab-content table tbody tr:hover{
+    background-color: #313d4f;
+    border-left: 4px solid #ff9822;
+}
+.schedules-three .tab-content table tbody tr:before{
+    position: absolute;
+}
+.schedules .tab-content table td{
+    color: #696969;
+}
+.schedules-two .tab-content table td{
+    color: #aeaeae;
+}
+.schedules-three .tab-content table td{
+    color: #aeaeae;
+}
+.schedules-five .nav-tabs li a{
+    color: #92278f;
+}
+.schedules-five .nav-tabs li a:hover, .schedules-five .nav-tabs li a:focus, .schedules-five .nav-tabs li.active a{
+    background-color: #92278f;
+    border: 1px solid #92278f;
+    border-right: none;
+}
+.schedules-five .nav-tabs li:last-child a:hover, .schedules-five .nav-tabs li:last-child a:focus, .schedules-five .nav-tabs li:last-child.active a{
+    border-right: 1px solid #92278f;
+}
+.schedules-five .tab-content table th{
+    //background-color: #92278f;
+}
+.schedules-five .tab-content table td:hover{
+    color: #696969;
+}
+.schedules-five .tab-content .schedule-button{
+    background-color: #92278f;
+}
+.schedules-six .nav-tabs li a{
+    color: #e84b3a;
+}
+.schedules-six .nav-tabs li a:hover, .schedules-six .nav-tabs li a:focus, .schedules-six .nav-tabs li.active a{
+    background-color: #e84b3a;
+    border: 1px solid #e84b3a;
+    border-right: none;
+}
+.schedules-six .nav-tabs li:last-child a:hover, .schedules-six .nav-tabs li:last-child a:focus, .schedules-six .nav-tabs li:last-child.active a{
+    border-right: 1px solid #e84b3a;
+}
+.schedules-six .tab-content table th{
+    background-color: #f5b429;
+}
+.schedules-six .tab-content table td:hover{
+    color: #e84b3a;
+}
+.schedules-six .tab-content table td:nth-child(1) span{
+    color: #e84b3a;
+}
+.schedules-six .tab-content table td:nth-child(2) span{
+    color: #fc7f0c;
+}
+.schedules-six .tab-content table td:nth-child(3) span{
+    color: #f5b429;
+}
+.schedules-six .tab-content table td:nth-child(4) span{
+    color: #d50dad;
+}
+.schedules-six .tab-content .schedule-button{
+    background-color: #e84b3a;
+}
+.schedules-seven{
+    background-color: #fafafa;
+}
+.schedules-seven .section-header h3{
+    color: #e84b3a;
+}
+.schedules-seven .nav-tabs li a{
+    color: #e84b3a;
+}
+.schedules-seven .nav-tabs li a:hover, .schedules-seven .nav-tabs li a:focus, .schedules-seven .nav-tabs li.active a{
+    background-color: #e84b3a;
+    border: 1px solid #e84b3a;
+    border-right: none;
+}
+.schedules-seven .nav-tabs li:last-child a:hover, .schedules-seven .nav-tabs li:last-child a:focus, .schedules-seven .nav-tabs li:last-child.active a{
+    border-right: 1px solid #e84b3a;
+}
+.schedules-seven .tab-content table th{
+    background-color: #f0f0f0;
+    color: #e84b3a;
+}
+.schedules-seven .tab-content table{
+    border: 10px solid #f0f0f0;
+}
+.schedules-seven .tab-content table td:hover{
+    color: #e84b3a;
+}
+.schedules-seven .tab-content table td:nth-child(1) span{
+    color: #e84b3a;
+}
+.schedules-seven .tab-content table td:nth-child(2) span{
+    color: #fc7f0c;
+}
+.schedules-seven .tab-content table td:nth-child(3) span{
+    color: #f5b429;
+}
+.schedules-seven .tab-content table td:nth-child(4) span{
+    color: #d50dad;
+}
+.schedules-seven .tab-content .schedule-button{
+    background-color: #e84b3a;
+}
+.speaker-statement{
+	margin-top: 10px;
 }

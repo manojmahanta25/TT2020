@@ -5363,7 +5363,7 @@ body.modal-open,
   display: none !important;
 }
 .show {
-  display: block !important;
+  display: block;
 }
 .invisible {
   visibility: hidden;

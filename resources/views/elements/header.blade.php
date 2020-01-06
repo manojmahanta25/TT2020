@@ -48,10 +48,63 @@
     -->
 
     <link rel="stylesheet" href="{{ URL::asset('css/snap-scroll.css') }}" type="text/css">
+    <script type="text/javascript">
+            
+ $(document).ready(function() {
+  var counter = 0;
+
+  // Start the changing images
+  setInterval(function() {
+    if(counter == 4) { 
+      counter = 0; 
+    }
+
+    changeImage(counter);
+    counter++;
+  }, 3000);
+
+  // Set the percentage off
+  loading();
+});
+
+function changeImage(counter) {
+  var images = [
+    '<img src="{{ URL::asset("/images/loader/1.webp")}}" style="width: 100%;">',
+    '<img src="{{ URL::asset("/images/loader/2.webp")}}" style="width: 100%;">',
+    '<img src="{{ URL::asset("/images/loader/3.webp")}}" style="width: 100%;">',
+    '<img src="{{ URL::asset("/images/loader/4.webp")}}" style="width: 100%;">',
+    '<img src="{{ URL::asset("/images/loader/5.webp")}}" style="width: 100%;">'
+  ];
+
+  $(".loader .image").html(""+ images[counter] +"");
+}
+
+function loading(){
+  var num = 0;
+
+  for(i=0; i<=100; i++) {
+    setTimeout(function() { 
+      $('.loader span').html(num+'%');
+
+      if(num == 100) {
+        loading();
+      }
+      num++;
+    },i*120);
+  };
+
+}
+    </script>
 </head>
 
 <body>
-<div id="global" class="global">
+<div class="loader">
+  <div class="image">
+    <img src="{{ URL::asset('images/loader/5.webp') }}" style="width: 100%;">
+  </div>
+  <span></span>
+</div>
+<div id="global" class="global hide" >
     @include('elements.menu')
     @if($page == 'home')
         <div class="wrapping">

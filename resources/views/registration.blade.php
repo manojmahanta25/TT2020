@@ -3,16 +3,26 @@
     <div class="container">
 
         <div class="heading" style="padding-top:50px;">
-            {{--            <h2>Event</h2>--}}
+            {{--<h2>Competition</h2>--}}
             <span>Registration</span>
-        </div>
+        </div class="">
+        @if(count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <!--end heading-->
         <div class="portfoliomain">
-            {!! Form::open(['url' => 'foo/bar']) !!}
+            <div class="col-sm-offset-2 col-sm-8" style="background: rgba(255,253,253,0.8);padding: 15px;">
+            {!! Form::open(['route' => 'tt.registerdb']) !!}
             <div class="form-group row">
-                {{Form::label('events','Events',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('event_name','Competition',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::select('event',[
+                    {{Form::select('event_name',[
                         'mokshmantra'=>'Moksh Mantra',
                         'singphonic'=>'Sing Phonic',
                         'Destroix'=>['csgo'=> 'Counter Strike Global Offensive','ml'=>'Mobile Legend', 'cod'=>'Call Of Duty Mobile','pubg'=>'PUBG Mobile','nfsmw'=>'Need For Speed Most Wanted','fifa'=>'FIFA'],
@@ -24,21 +34,21 @@
                 </div>
             </div>
             <div class="form-group row">
-                {{Form::label('members','Total Members',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('total_member','Total Members',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::selectRange('members',4,8, ['class'=>'form-control ', 'placeholder'=>'Enter Team Name'])}}
+                    {{Form::selectRange('total_member',1,8, ['class'=>'form-control ', 'placeholder'=>'Enter Team Name'])}}
                 </div>
             </div>
             <div class="form-group row">
-                {{Form::label('teamname','Team Name',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('team_name','Team Name',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::text('teamname','', ['class'=>'form-control ', 'placeholder'=>'Enter Team Name'])}}
+                    {{Form::text('team_name','', ['class'=>'form-control ', 'placeholder'=>'Enter Team Name'])}}
                 </div>
             </div>
             <div class="form-group row">
-                {{Form::label('teamleader','Team Leader',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('team_leader','Team Leader',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::text('teamleader','', ['class'=>'form-control ', 'placeholder'=>'Enter Leader Name'])}}
+                    {{Form::text('team_leader','', ['class'=>'form-control ', 'placeholder'=>'Enter Leader Name'])}}
                 </div>
             </div>
             <div class="form-group row">
@@ -50,7 +60,7 @@
             <div class="form-group row">
                 {{Form::label('phone','Phone',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::email('tel','', ['class'=>'form-control', 'placeholder'=>'Enter Phone','required'])}}
+                    {{Form::tel('phone','', ['class'=>'form-control', 'placeholder'=>'Enter Phone','required'])}}
                 </div>
             </div>
             <div class="form-group row">
@@ -60,9 +70,9 @@
                 </div>
             </div>
             <div class="form-group row">
-                {{Form::label('pin','Pin Code',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('pincode','Pin Code',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::text('pin','', ['class'=>'form-control', 'placeholder'=>'Enter Pin Code','required'])}}
+                    {{Form::text('pincode','', ['class'=>'form-control', 'placeholder'=>'Enter Pin Code','required'])}}
                 </div>
             </div>
             <div class="form-group row">
@@ -72,21 +82,23 @@
                 </div>
             </div>
             <div class="form-group row">
-                {{Form::label('college','College/Institute Name',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('institute_name','College/Institute Name',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::text('college','', ['class'=>'form-control', 'placeholder'=>'Enter College/Institute Name','required'])}}
+                    {{Form::text('institute_name','', ['class'=>'form-control', 'placeholder'=>'Enter College/Institute Name','required'])}}
                 </div>
             </div>
             <div class="form-group row">
-                {{Form::label('Accoma','Required Accomodations',['class'=>'col-sm-2 control-label'])}}
+                {{Form::label('accommodations','Required Accomodations',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::radio('acco','yes')}} {{Form::label('acco','yes')}}
-                    {{Form::radio('acco','no',true)}} {{Form::label('acco','no')}}
+                    {{Form::radio('accommodations','1')}} {{Form::label('acco','yes')}}
+                    {{Form::radio('accommodations','0',true)}} {{Form::label('acco','no')}}
                 </div>
             </div>
-        {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+                @csrf
+        {{Form::submit('Submit', ['name'=>'sbtn','class'=>'btn btn-primary'])}}
         {!! Form::close() !!}
         <!--end project-grid-->
+    </div>
         </div>
         <!--end portfoliomain-->
     </div>

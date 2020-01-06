@@ -1,16 +1,16 @@
 @include('elements.header')
 <section id="home" class="main fixed-bg inhome " style="overflow-x: hidden; overflow-y: hidden;">
-    <a href="comingsoon" alt=""><img src="{{ URL::asset('images/png/tickets.png') }}" alt="" class="in_ticket" /></a>
-    <a href="comingsoon" alt=""><img src="{{ URL::asset('images/png/register.png') }}" alt="" class="in_register" /></a>
-    <a href="comingsoon" alt=""><img src="{{ URL::asset('images/png/accomodation.png') }}" alt="" class="in_acco" /></a>
+    <a href="{{route('tt.pass')}}" alt=""><img src="{{ URL::asset('images/webp/tickets.webp') }}" alt="" class="in_ticket" /></a>
+    <a href="{{route('tt.register')}}" alt=""><img src="{{ URL::asset('images/webp/register.webp') }}" alt="" class="in_register" /></a>
+    <a href="{{route('tt.accommodation')}}" alt=""><img src="{{ URL::asset('images/webp/accomodation.webp') }}" alt="" class="in_acco" /></a>
 
-    <a href="comingsoon" alt=""><img src="{{ URL::asset('images/png/pronites.png') }}" alt="" class="in_pronite" /></a>
-    <a href="comingsoon" alt=""><img src="{{ URL::asset('images/png/contact.png') }}" alt="" class="in_contact" /></a>
+    <a href="{{route('tt.pronites')}}" alt=""><img src="{{ URL::asset('images/webp/pronites.webp') }}" alt="" class="in_pronite" /></a>
+    <a href="{{route('tt.contact')}}" alt=""><img src="{{ URL::asset('images/webp/contact.webp') }}" alt="" class="in_contact" /></a>
 
-    <a href="comingsoon" alt=""><img src="{{ URL::asset('images/png/reachus.png') }}" alt="" class="in_reach" /></a>
-    <a href="{{ URL ('event') }}" alt=""><img src="{{ URL::asset('images/png/competition.png') }}" alt="" class="in_competition" /></a>
+    <a href="https://www.google.com/maps/dir/CURRENT+LOCATION/Kaziranga+University,+Koraikhowa,+NH-37,+Jorhat,+Assam+785006/@26.7241995,94.0406657,13z" target="_blank" alt=""><img src="{{ URL::asset('images/webp/reachus.webp') }}" alt="" class="in_reach" /></a>
+    <a href="{{route('tt.event')}}" alt=""><img src="{{ URL::asset('images/webp/competition.webp') }}" alt="" class="in_competition" /></a>
     <div class="in_hotairballon">
-        <img src="{{ URL::asset('images/png/hotairballon.png') }}" alt="" class="hotballon" />
+        <img src="{{ URL::asset('images/webp/hotairballon.webp') }}" alt="" class="hotballon" />
     </div>
 
     <!--<img src="./images/png/plane.png" alt="" class="in_plane"/>
@@ -52,8 +52,8 @@
 
         <div class="row">
             <div class="col-md-2" class="abtpt50">
-                <img src="{{ URL::asset('images/png/Baloon.png') }}" alt="" class="abtsmele" />
-                <img src="{{ URL::asset('images/png/safarnama.png') }}" alt="" class="abtsmele" />
+                <img src="{{ URL::asset('images/webp/Baloon.webp') }}" alt="" class="abtsmele" />
+                <img src="{{ URL::asset('images/webp/safarnama.webp') }}" alt="" class="abtsmele" />
             </div>
             <div class="col-md-10 about-ss">/n./
                 <br/>Safar, Urdu for Travel; Nama, a story of it. A strong desire to travel and wander the world, one adventure at a time.
@@ -61,7 +61,7 @@
         </div>
 
         <div class="col-md-offset-4 col-md-9">
-            <img src="{{ URL::asset('images/png/Monuments.png') }}" alt="" class="abtsmele abtmonument">
+            <img src="{{ URL::asset('images/webp/Monuments.webp') }}" alt="" class="abtsmele abtmonument">
         </div>
 
     </div>
