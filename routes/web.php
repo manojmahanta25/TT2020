@@ -35,14 +35,16 @@ Route::get('/termsofuse', ['as'=>'tt.termsofuse','uses'=>'pageController@tou']);
 Route::get('/thankyou', ['as'=>'tt.thankyou','uses'=>'pageController@thankYou']);
 
 Route::get('/privacypolicy', ['as'=>'tt.privacypolicy','uses'=>'pageController@privacypolicy']);
+Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
+Route::get('/buytickets/{ptype}',['as' => 'tt.ticketId', 'uses' => 'ticketController@show']);
 
 Route::group(['middleware'=>'web'], function(){
 //    Route::resource('post','registrationController');
     Route::post('/register', ['as'=>'tt.registerdb','uses'=>'registrationController@store']);
+    Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
 });
-Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
-Route::get('/buytickets/{ptype}',['as' => 'tt.ticketId', 'uses' => 'ticketController@show']);
-Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
+
+
 
 
 /*
