@@ -28,8 +28,8 @@
                         'Destroix'=>['csgo'=> 'Counter Strike Global Offensive','ml'=>'Mobile Legend', 'cod'=>'Call Of Duty Mobile','pubg'=>'PUBG Mobile','nfsmw'=>'Need For Speed Most Wanted','fifa'=>'FIFA'],
                         'Burn It On'=>['biosolo'=>'Solo','biogroup'=>'Group','adaptune'=>'Adaptune'],
                          'Sports'=>['armwrestling'=>'Arm Wrestling', 'cricket'=>'Cricket', 'football'=>'Football','basketball'=>'Basketball','badminton'=>'Badminton','Lawn Tennis'=>['lawntennissingle'=>'Single','lawntennisdouble'=>'Mix or Double']],
-                    ],
-                    ['class'=>'form-control']
+                    ], null,
+                    ['placeholder' => 'Pick a Competition...']
                     )}}
                 </div>
             </div>
