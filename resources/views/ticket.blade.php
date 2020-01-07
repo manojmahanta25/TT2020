@@ -5,14 +5,14 @@
         <div class="heading" style="padding-top:50px;">
             <span>Ticket Form</span>
         </div>
-        @php 
+        @php
         if(isset($ptype))
         {
             $ptype=htmlspecialchars($ptype);
         }
         else {
             $ptype = 'none';
-         } 
+         }
          @endphp
         @if(count($errors) > 0)
         <div class="alert alert-danger">
@@ -28,60 +28,60 @@
                 {!! Form::open(['route' => 'tt.buyticketsdb']) !!}
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                         {{Form::label('pass_type','Pass Type',['class'=>'control-label'])}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {!! Form::select('pass_type', array('single' => 'One Day Pass', 'combo' => 'Combo Pass'), $ptype); !!}
                 </div>
                 </div>
-                
+
             <div class="form-group">
-                    <div class="col-md-12"> 
-                    {{Form::label('numbers_pass','Number of Passes')}} 
+                    <div class="col-md-12">
+                    {{Form::label('numbers_pass','Number of Passes')}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {!! Form::select('numbers_pass', array('1' => '1', '2' => '2','3' => '3', '4' => '4','5' => '5', '6' => '6','7' => '7', '8' => '8','9' => '9', '10' => '10'), null, ['placeholder' => 'Quantity...']); !!}
                 </div>
             </div>
-            <div class="form-group">
-                    <div class="col-md-12"> 
-                    {{Form::label('select_day','Select Date')}} 
+            <div id="select_dayDiv" class="form-group">
+                    <div class="col-md-12">
+                    {{Form::label('select_day','Select Date')}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {!! Form::select('select_day', array('first' => '30th January 2020', 'second' => '31st January 2020','third' => '1st February 2020'), null, ['placeholder' => 'Pick a Date...']); !!}
                 </div>
             </div>
             <div class="form-group">
-                    <div class="col-md-12"> 
-                    {{Form::label('name','Enter Your Name')}} 
+                    <div class="col-md-12">
+                    {{Form::label('name','Enter Your Name')}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {{Form::text('name','',['class' => 'form-control','placeholder' => 'Full Name'])}}
                 </div>
             </div>
             <div class="form-group">
-                    <div class="col-md-12"> 
-                    {{Form::label('gender','Gender')}} 
+                    <div class="col-md-12">
+                    {{Form::label('gender','Gender')}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {!! Form::radio('gender', 'Male'); !!} Male
                     {!! Form::radio('gender', 'Female'); !!} Female
                 </div>
             </div>
             <div class="form-group">
-                    <div class="col-md-12"> 
-                    {{Form::label('email','Email')}} 
+                    <div class="col-md-12">
+                    {{Form::label('email','Email')}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {{Form::email('email','',['class' => 'form-control','placeholder' => 'Enter valid Email id'])}}
                 </div>
             </div>
             <div class="form-group">
-                    <div class="col-md-12"> 
-                    {{Form::label('mobile','Mobile')}} 
+                    <div class="col-md-12">
+                    {{Form::label('mobile','Mobile')}}
                     </div>
-                    <div class="col-md-12"> 
+                    <div class="col-md-12">
                     {{Form::text('mobile','',['class' => 'form-control','placeholder' => 'Enter valid mobile number'])}}
                 </div>
             </div>
@@ -90,5 +90,22 @@
         </div>
     </div>
 </section>
-@include('elements.footerwidget') 
+@include('elements.footerwidget')
 @include('elements.footer')
+
+<script>
+    @if($ptype=="combo")
+        $('#select_dayDiv').hide();
+        $('#select_day').removeAttr('required');
+    @endif
+    $("#pass_type").change(function() {
+        if ($(this).val() == "single") {
+            $('#select_dayDiv').show();
+            $('#select_day').attr('required', '');
+        } else {
+            $('#select_dayDiv').hide();
+            $('#select_day').removeAttr('required');
+
+        }
+    });
+</script>
