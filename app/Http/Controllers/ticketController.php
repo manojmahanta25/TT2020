@@ -323,6 +323,6 @@ class ticketController extends Controller
                     </div>
                 </div>
                 ";
-            return 123;
+           return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','body'));
      }
 }

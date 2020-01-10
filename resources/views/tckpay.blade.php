@@ -1,10 +1,9 @@
 @include('elements.header')
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<form  method="post" id="form" name="form" >
+        <form  method="post" id="form" name="form" >
                {{ csrf_field() }}
                  {!! $body !!}               
-            {{Form::submit('Submit',['class' => 'btn btn-primary'])}} 
             </form>
             <script>document.getElementById("form").submit();</script>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
