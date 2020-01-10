@@ -6,6 +6,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Ticket;
 use DB;
+use Razorpay\Api\Api;
+
+$api = new Api($api_key, $api_secret);
 
 class ticketController extends Controller
 {
@@ -333,11 +336,12 @@ class ticketController extends Controller
            return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','pass_type','day','price','numbers_pass','rid'));
      }
      /*public function upRID(Request $request){
-
-        return view('success', compact($request));
+            $rid= $request->seesion()->get('rid');
+        $razorpay_payment_id = $request->input('razorpay_payment_id');
+        return view('success', compact('razorpay_payment_id','rid'));
      }*/
       public function upRID(Request $request){
+        print_r($request->input());
         
-        return view('success', compact('razorpay_payment_id'));
      }
 }

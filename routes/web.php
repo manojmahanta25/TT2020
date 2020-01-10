@@ -54,6 +54,7 @@ Route::group(['middleware'=>'web'], function(){
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Database Test Without Model
