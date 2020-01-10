@@ -60,7 +60,6 @@ class ticketController extends Controller
             'email' => 'required|email',
             'mobile' => 'required|regex:/^\d{10}$/'
         ],$messages);
-        $rid = $this->getID();
         $pass_type = $request->input('pass_type');
         $numbers_pass = $request->input('numbers_pass');
         $select_day = $request->input('select_day');
@@ -70,58 +69,7 @@ class ticketController extends Controller
         $mobile = $request->input('mobile');
         $request->flush();
 
-        return $this->tckPreview($rid, $pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile);
-    }
-
-    public function tckPreview($rid, $pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile)
-    {
-        //$numbers_pass =$numbers_pass;
-        //echo $numbers_pass.'<br/>';
-        $price=null;
-        switch ($pass_type) {
-            case 'single':
-                $price=300 * $numbers_pass;
-                break;
-            case 'combo':
-                $price=800 * $numbers_pass;
-                break;
-            default:
-                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-
-        }
-        if($price == null || $price < 300)
-        {
-            Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-        }
-        //echo $price;
-        //echo $rid;
-        Ticket::create(['custid'=>$rid,
-            'name'=>$name,
-            'mobile'=>$mobile,
-            'email'=>$email,
-            'pass_type'=>$pass_type,
-            'numbers_pass'=>$numbers_pass,
-            'select_day'=>$select_day,
-            'payable_total'=>$price
-        ]);
-
-        $page = 'tck';
-        $page_title = 'Preview of Talent Tantra Tickets Online';
-        $mtitle = 'Preview of Talent Tantra Tickets Online';
-        $description = 'Preview Online tickets, Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
-        $keywords = 'online ticket, pass, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
-
-
-        $body='price is '.$price;
-
-        $body="<div class='form-group'>
-                    <div class='col-md-12'>
-                        <b>Pass Type : $pass_type</b>
-                    </div>
-                </div>";
-
-
-        return view('tck', compact('page', 'page_title', 'mtitle', 'description', 'keywords','body'));
+        return $this->tckPreview($pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile);
     }
 
     /**
@@ -192,4 +140,189 @@ class ticketController extends Controller
         return $id;
     }
 
+    public function tckPreview($pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile)
+    {
+        //$numbers_pass =$numbers_pass;
+        //echo $numbers_pass.'<br/>';
+
+        $price=null;
+        switch ($pass_type) {
+            case 'single':
+                $price=300 * $numbers_pass;
+                break;
+            case 'combo':
+                $price=800 * $numbers_pass;
+                break;
+            default:
+                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
+
+        }
+        if($price == null || $price < 300)
+        {
+            Redirect::back()->withErrors(['msg', 'Invalid Pass']);
+        }
+        $day="";
+            switch ($select_day) {
+            case 'first':
+                 $day="30th January 2020";
+                break;
+            case 'second':
+                $day="31st January 2020";
+                break;
+            case 'third':
+                $day="1st February 2020";
+                break;
+            default:
+                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
+            }
+        //echo $price;
+        //echo $rid;
+        /*Ticket::create(['custid'=>$rid,
+            'name'=>$name,
+            'mobile'=>$mobile,
+            'email'=>$email,
+            'pass_type'=>$pass_type,
+            'numbers_pass'=>$numbers_pass,
+            'select_day'=>$select_day,
+            'payable_total'=>$price
+        ]);*/
+
+        $page = 'tck';
+        $page_title = 'Preview of Talent Tantra Tickets Online';
+        $mtitle = 'Preview of Talent Tantra Tickets Online';
+        $description = 'Preview Online tickets, Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'online ticket, pass, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+
+
+        //$body='price is '.$price;
+
+        $body="<div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Pass Type : $pass_type</b>
+                        <input Type='hidden' name='pass_type' value='$pass_type'/>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Quantity : $numbers_pass</b>
+                        <input Type='hidden' name='numbers_pass' value='$numbers_pass'/>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Selected Day : $day</b>
+                        <input Type='hidden' name='select_day' value='$select_day'/>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Name : $name</b>
+                        <input Type='hidden' name='name' value='$name'/>
+                    </div>
+                </div>                
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Gender : $gender</b>
+                        <input Type='hidden' name='gender' value='$gender'/>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Email : $email</b>
+                        <input Type='hidden' name='email' value='$email'/>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Mobile : $mobile</b>
+                        <input Type='hidden' name='mobile' value='$mobile'/>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div class='col-md-12'>
+                        <b>Pass Type : $price</b>
+                    </div>
+                </div>
+                ";
+
+
+        return view('tck', compact('page', 'page_title', 'mtitle', 'description', 'keywords','body'));
+    }
+
+    public function payForm(Request $request){
+        $rid = $this->getID();
+        $pass_type = $request->input('pass_type');
+        $numbers_pass = $request->input('numbers_pass');
+        $select_day = $request->input('select_day');
+        $name = $request->input('name');
+        $gender = $request->input('gender');
+        $email = $request->input('email');
+        $mobile = $request->input('mobile');
+        $price=null;
+        switch ($pass_type) {
+            case 'single':
+                $price=300 * $numbers_pass;
+                break;
+            case 'combo':
+                $price=800 * $numbers_pass;
+                break;
+            default:
+                Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
+        }
+        if($price == null || $price < 300)
+        {
+            Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
+        }
+
+        $page = 'tck';
+        $page_title = 'Preview of Talent Tantra Tickets Online';
+        $mtitle = 'Preview of Talent Tantra Tickets Online';
+        $description = 'Preview Online tickets, Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'online ticket, pass, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+
+        $day="";
+            switch ($select_day) {
+            case 'first':
+                 $day="30th January 2020";
+                break;
+            case 'second':
+                $day="31st January 2020";
+                break;
+            case 'third':
+                $day="1st February 2020";
+                break;
+            default:
+                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
+            }
+        //$body='price is '.$price;
+        Ticket::create(['custid'=>$rid,
+            'name'=>$name,
+            'mobile'=>$mobile,
+            'email'=>$email,
+            'pass_type'=>$pass_type,
+            'numbers_pass'=>$numbers_pass,
+            'select_day'=>$select_day,
+            'payable_total'=>$price
+        ]);
+
+        $body="<div class='form-group'>
+                    <div class='col-md-12'>
+                        <input Type='hidden' name='rid' value='$rid' id='rid'/>
+
+                        <input Type='hidden' name='pass_type' value='$pass_type' id='pass_type'/>
+                    
+                        <input Type='hidden' name='numbers_pass' value='$numbers_pass' id='numbers_pass'/>
+                    
+                        <input Type='hidden' name='select_day' value='$select_day' id='select_day'/>
+                        <input Type='hidden' name='day' value='$day' id='day'/>
+                        <input Type='hidden' name='name' value='$name' id='name'/>
+                   
+                        <input Type='hidden' name='mobile' value='$mobile' id='mobile'/>
+                        <input Type='hidden' name='email' value='$email' id='email'/>
+                        <input Type='hidden' name='price' value='$price' id='price'/>
+                    </div>
+                </div>
+                ";
+            return 123;
+     }
 }

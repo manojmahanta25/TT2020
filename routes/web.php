@@ -42,6 +42,7 @@ Route::group(['middleware'=>'web'], function(){
 //    Route::resource('post','registrationController');
     Route::post('/register', ['as'=>'tt.registerdb','uses'=>'registrationController@store']);
     Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
+    Route::post('/buytickets', ['as'=>'tt.buyticketspy','uses'=> 'ticketController@payForm']);
 });
 
 
