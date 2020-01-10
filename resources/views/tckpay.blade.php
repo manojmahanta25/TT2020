@@ -28,7 +28,7 @@
     <!-- Note that the amount is in paise = 50 INR -->    
    <?php 
       $price= $price * 100;
-      $description= $pass_type." Pass for of ".$numbers_pass." ".$day;
+      $description= $numbers_pass." ".$pass_type." Pass for ".$day;
    ?>
     <script
         src="https://checkout.razorpay.com/v1/checkout.js"

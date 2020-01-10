@@ -16,11 +16,11 @@
         </div>
         @endif
          <div class="portfoliomain">
-            <div class="col-md-offset-2 col-md-6" style="background: rgba(255,253,253,0.8);padding: 15px;">
+            <div class="col-md-offset-2 col-md-6" style="background: rgba(255,253,253,0.8);padding: 15px; text-align: center;">
             {!! Form::open(['route' => 'tt.buyticketspy']) !!}
                {{ csrf_field() }}
                  {!! $body !!}               
-            {{Form::submit('Submit',['class' => 'btn btn-primary'])}} 
+            {{Form::submit('Pay Now',['class' => 'btn btn-primary'])}} 
             {!! Form::close() !!}
             </div>
     </div>

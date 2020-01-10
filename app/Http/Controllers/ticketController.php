@@ -165,16 +165,16 @@ class ticketController extends Controller
         $day="";
             switch ($select_day) {
             case 'first':
-                 $day="30th January 2020";
+                 $day="31st January 2020";
                 break;
             case 'second':
-                $day="31st January 2020";
-                break;
-            case 'third':
                 $day="1st February 2020";
                 break;
+            case 'third':
+                $day="2nd February 2020";
+                break;
             case 'all':
-                $day="30th January, 31st January and 1st February 2020";
+                $day="31st January, 1st February and 2nd February 2020";
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);
@@ -202,7 +202,7 @@ class ticketController extends Controller
 
         $body="<div class='form-group'>
                     <div class='col-md-12'>
-                        <b>Pass Type : $pass_type</b>
+                        <b>Pass Type : $pass_type day pass</b>
                         <input Type='hidden' name='pass_type' value='$pass_type'/>
                     </div>
                 </div>
@@ -244,7 +244,7 @@ class ticketController extends Controller
                 </div>
                 <div class='form-group'>
                     <div class='col-md-12'>
-                        <b>Pass Type : $price</b>
+                        <b>Total Amount : $price</b>
                     </div>
                 </div>
                 ";
@@ -286,17 +286,17 @@ class ticketController extends Controller
 
         $day="";
             switch ($select_day) {
-            case 'first':
-                 $day="30th January 2020";
+           case 'first':
+                 $day="31st January 2020";
                 break;
             case 'second':
-                $day="31st January 2020";
+                $day="1st February 2020";
                 break;
             case 'third':
-                $day="1st February 2020";
-                break;            
+                $day="2nd February 2020";
+                break;
             case 'all':
-                $day="30th January, 31st January and 1st February 2020";
+                $day="31st January, 1st February and 2nd February 2020";
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);

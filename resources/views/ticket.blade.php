@@ -49,7 +49,7 @@
                     {{Form::label('select_day','Select Date')}}
                     </div>
                     <div class="col-md-12">
-                    {!! Form::select('select_day', array('first' => '30th January 2020', 'second' => '31st January 2020','third' => '1st February 2020','all' => 'All Days'), null, ['placeholder' => 'Pick a Date...']); !!}
+                    {!! Form::select('select_day', array('first' => '31st January 2020', 'second' => '1st February 2020','third' => '2nd February 2020'), null, ['placeholder' => 'Pick a Date...']); !!}
                 </div>
             </div>
             <div class="form-group">
@@ -97,17 +97,27 @@
     @if($ptype=="combo")
             // and now set the option we want selected
         $("#select_day option[value=all]").attr('selected', 'selected'); 
-         $("#select_day").prop('disabled', 'disabled');
+        $("#select_day").append('<option value="all">All Days</option>');
+        $("#select_day option[value='first']").remove();
+        $("#select_day option[value='second']").remove();
+        $("#select_day option[value='third']").remove();
 
     @endif
     $("#pass_type").change(function() {
         if ($(this).val() == "single") {
             $('#select_day').attr('required', '');
+            $("#select_day").append('<option value="first">31st January 2020</option>');
+            $("#select_day").append('<option value="second">1st February 2020</option>');
+            $("#select_day").append('<option value="third">2nd February 2020</option>');
+            $("#select_day option[value='all']").remove();
             $("#select_day").removeAttr("disabled");
         } else {
-            // and now set the option we want selected
-        $("#select_day option[value=all]").attr('selected', 'selected'); 
-        $("#select_day").prop('disabled', 'disabled');
+            // and now set the option we want selected 
+        $("#select_day").append('<option value="all">All Days</option>');
+        $("#select_day option[value=all]").attr('selected', 'selected');
+        $("#select_day option[value='first']").remove();
+        $("#select_day option[value='second']").remove();
+        $("#select_day option[value='third']").remove();
 
         }
     });
