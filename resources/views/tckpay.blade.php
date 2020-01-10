@@ -24,12 +24,18 @@
         padding: 10px;
       }
     </style>
-  <form action="charge.php" id="form" method="POST">
-    <!-- Note that the amount is in paise = 50 INR -->    
-   <?php 
+    
+  <form action="{{Route('tt.ticketpaid')}}" id="form" method="POST">
+  <!-- Note that the amount is in paise = 50 INR -->  
+  {{ csrf_field() }}  
+ @php
+      $rkey =  md5("TT21".$rid);
+      session(['rid' => $rid]);
+      session(['rkey' => $rkey]);
+
       $price= $price * 100;
       $description= $numbers_pass." ".$pass_type." Pass for ".$day;
-   ?>
+   @endphp
     <script
         src="https://checkout.razorpay.com/v1/checkout.js"
         data-key="rzp_test_bRKLvySpamOQsX"

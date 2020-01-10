@@ -330,6 +330,14 @@ class ticketController extends Controller
                     </div>
                 </div>
                 ";
-           return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','pass_type','day','price','numbers_pass'));
+           return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','pass_type','day','price','numbers_pass','rid'));
+     }
+     /*public function upRID(Request $request){
+
+        return view('success', compact($request));
+     }*/
+      public function upRID(Request $request){
+        
+        return view('success', compact('razorpay_payment_id'));
      }
 }
