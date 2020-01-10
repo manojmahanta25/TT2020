@@ -49,7 +49,7 @@
                     {{Form::label('select_day','Select Date')}}
                     </div>
                     <div class="col-md-12">
-                    {!! Form::select('select_day', array('first' => '30th January 2020', 'second' => '31st January 2020','third' => '1st February 2020'), null, ['placeholder' => 'Pick a Date...']); !!}
+                    {!! Form::select('select_day', array('first' => '30th January 2020', 'second' => '31st January 2020','third' => '1st February 2020','all' => 'All Days'), null, ['placeholder' => 'Pick a Date...']); !!}
                 </div>
             </div>
             <div class="form-group">
@@ -95,17 +95,19 @@
 
 <script>
     @if($ptype=="combo")
-        $('#select_dayDiv').hide();
-        $('#select_day').removeAttr('required');
+            // and now set the option we want selected
+        $("#select_day option[value=all]").attr('selected', 'selected'); 
+         $("#select_day").prop('disabled', 'disabled');
+
     @endif
     $("#pass_type").change(function() {
         if ($(this).val() == "single") {
-            $('#select_dayDiv').show();
             $('#select_day').attr('required', '');
+            $("#select_day").removeAttr("disabled");
         } else {
-            $('#select_dayDiv').hide();
-            $('#select_day').value('all');
-            $('#select_day').removeAttr('required');
+            // and now set the option we want selected
+        $("#select_day option[value=all]").attr('selected', 'selected'); 
+        $("#select_day").prop('disabled', 'disabled');
 
         }
     });
