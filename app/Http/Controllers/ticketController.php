@@ -152,6 +152,7 @@ class ticketController extends Controller
                 break;
             case 'combo':
                 $price=800 * $numbers_pass;
+
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);
@@ -171,6 +172,9 @@ class ticketController extends Controller
                 break;
             case 'third':
                 $day="1st February 2020";
+                break;
+            case 'all':
+                $day="30th January, 31st January and 1st February 2020";
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);
@@ -290,6 +294,9 @@ class ticketController extends Controller
                 break;
             case 'third':
                 $day="1st February 2020";
+                break;            
+            case 'all':
+                $day="30th January, 31st January and 1st February 2020";
                 break;
             default:
                 Redirect::back()->withErrors(['msg', 'Invalid Pass']);
@@ -323,6 +330,6 @@ class ticketController extends Controller
                     </div>
                 </div>
                 ";
-           return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','body'));
+           return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','pass_type','day','price','numbers_pass'));
      }
 }

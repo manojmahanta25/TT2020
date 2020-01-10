@@ -104,6 +104,7 @@
             $('#select_day').attr('required', '');
         } else {
             $('#select_dayDiv').hide();
+            $('#select_day').value('all');
             $('#select_day').removeAttr('required');
 
         }

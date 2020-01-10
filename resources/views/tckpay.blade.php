@@ -1,69 +1,53 @@
-@include('elements.header')
-<meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <form  method="post" id="form" name="form" >
-               {{ csrf_field() }}
-                 {!! $body !!}               
-            </form>
-            <script>document.getElementById("form").submit();</script>
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-      <script>
-
-         var SITEURL = '{{URL::to('')}}';
-         $.ajaxSetup({
-           headers: {
-               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-           }
-         }); 
-         $('form').on('submit', function(e){
-
-          var rid = $(this).id("rid");
-          var pass_type = $(this).id("pass_type");
-          var numbers_pass = $(this).id("numbers_pass");
-           var select_day =  $(this).id("select_day");
-           var mobile =  $(this).id("mobile");
-           var name =  $(this).id("name");
-           var email =  $(this).id("email");
-           var totalAmount = $(this).id("price");
-
-           var options = {
-           "key": "rzp_test_bRKLvySpamOQsX",
-           "amount": totalAmount, // 2000 paise = INR 20
-           "name": name,
-           "description": "Payment of ".,
-           "image": "http://talenttantra.com/images/tt_250.png",
-           "handler": function (response){
-                 $.ajax({
-                   url: SITEURL + 'paysuccess',
-                   type: 'post',
-                   dataType: 'json',
-                   data: {
-                    razorpay_payment_id: response.rid , 
-                     totalAmount : totalAmount ,pass_type : pass_type,numbers_pass:numbers_pass
-                   }, 
-                   success: function (msg) {
-          
-                       window.location.href = SITEURL + 'razor-thank-you';
-                   }
-               });
-             
-           },
-          "prefill": {
-               "contact": mobile,
-               "email":   email,
-               "name":   name,
-               
-           },
-           "theme": {
-               "color": "#528FF0"
-           }
-         };
-         var rzp1 = new Razorpay(options);
-         rzp1.open();
-         e.preventDefault();
-         });
-         /*document.getElementsClass('buy_plan1').onclick = function(e){
-           rzp1.open();
-           e.preventDefault();
-         }*/
-      </script>
+<html>
+  <head>
+    <title> RazorPay Integration in PHP - phpexpertise.com </title>
+    <meta name="viewport" content="width=device-width">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+      
+    <style>
+      .razorpay-payment-button {
+        color: #ffffff !important;
+        background-color: #7266ba;
+        border-color: #7266ba;
+        font-size: 14px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .razorpay-payment-button {
+        color: #ffffff !important;
+        background-color: #7266ba;
+        border-color: #7266ba;
+        font-size: 14px;
+        padding: 10px;
+      }
+    </style>
+  <form action="charge.php" id="form" method="POST">
+    <!-- Note that the amount is in paise = 50 INR -->    
+   <?php 
+      $price= $price * 100;
+      $description= $pass_type." Pass for of ".$numbers_pass." ".$day;
+   ?>
+    <script
+        src="https://checkout.razorpay.com/v1/checkout.js"
+        data-key="rzp_test_bRKLvySpamOQsX"
+        data-amount="<?php echo $price; ?>"
+        data-buttontext="Pay with Razorpay"
+        data-name="Talent Tantra 2020"
+        data-description="<?php echo $description; ?>"
+        data-image="http://talenttantra.com/images/tt_250.png"
+        data-prefill.name="Enter Your Card Name"
+        data-prefill.email="Enter Name"
+        data-theme.color="#F37254"
+    ></script>
+    <input type="hidden" value="Hidden Element" name="hidden">
+    </form>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#form").submit();
+      });
+    </script>
+</body>
+</html>
