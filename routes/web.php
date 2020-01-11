@@ -38,14 +38,15 @@ Route::get('/privacypolicy', ['as'=>'tt.privacypolicy','uses'=>'pageController@p
 Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
 Route::get('/buytickets/{ptype}',['as' => 'tt.ticketId', 'uses' => 'ticketController@show']);
 
+
 Route::group(['middleware'=>'web'], function(){
 //    Route::resource('post','registrationController');
     Route::post('/register', ['as'=>'tt.registerdb','uses'=>'registrationController@store']);
 
     Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
 
-	Route::post('/payonline', ['as'=>'tt.buyticketspy','uses'=> 'ticketController@payForm']);
 
+	Route::post('/payonline', ['as'=>'tt.buyticketspy','uses'=> 'ticketController@payForm']);
 	Route::post('/success', ['as' => 'tt.ticketpaid', 'uses' => 'ticketController@upRID']);
 });
 

@@ -27,34 +27,31 @@
     
   <form action="{{Route('tt.ticketpaid')}}" id="form" method="POST">
   <!-- Note that the amount is in paise = 50 INR -->  
-  {{ csrf_field() }}  
- @php
-      $price= $price * 100;
-      $description= $numbers_pass." ".$pass_type." Pass for ".$day;
-      $ordid="TT_".$rid;
-     
-@endphp
-    <script
-        src="https://checkout.razorpay.com/v1/checkout.js"
-        data-key="rzp_test_bRKLvySpamOQsX"
-        data-amount="<?php echo $price; ?>"
-        data-currency="INR"
-        data-payment_capture="1"
-        data-order-id="<?php echo $order; ?>"
-        data-buttontext="Pay with Razorpay"
-        data-name="Talent Tantra 2020"
-        data-description="<?php echo $description; ?>"
-        data-image="http://talenttantra.com/images/tt_250.png"
-        data-prefill.name="Enter Your Card Name"
-        data-prefill.email="Enter Your Email"
-        data-theme.color="#F37254"
-    ></script>
-    <input type="hidden" value="<?php echo $rid; ?>" name="rid">
-    </form>
-    <script type="text/javascript">
-      jQuery(document).ready(function($) {
-        $("#form").submit();
-      });
-    </script>
+  {{ csrf_field() }} 
+  @php
+    $displayCurrency= env('RAZORMONEY_SYM');
+  @endphp 
+        <form action="/success" method="POST">
+          <script
+            src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="<?php echo $data['key']?>"
+            data-amount="<?php echo $data['amount']?>"
+            data-currency="INR"
+            data-name="<?php echo $data['name']?>"
+            data-image="<?php echo $data['image']?>"
+            data-description="<?php echo $data['description']?>"
+            data-prefill.name="<?php echo $data['prefill']['name']?>"
+            data-prefill.email="<?php echo $data['prefill']['email']?>"
+            data-prefill.contact="<?php echo $data['prefill']['contact']?>"
+            data-notes.shopping_order_id="3456"
+            data-order_id="<?php echo $data['order_id']?>"
+            <?php if ($displayCurrency !== 'INR') { ?> data-display_amount="<?php echo $data['display_amount']?>" <?php } ?>
+            <?php if ($displayCurrency !== 'INR') { ?> data-display_currency="<?php echo $data['display_currency']?>" <?php } ?>
+          >
+          </script>
+          <!-- Any extra fields to be submitted with the form but not sent to Razorpay -->
+          <input type="hidden" name="shopping_order_id" value="3456">
+        </form>
+   
 </body>
 </html>

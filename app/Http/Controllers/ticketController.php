@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 use App\Ticket;
 use DB;
 use Razorpay\Api\Api;
-
-$api = new Api($api_key, $api_secret);
+use Razorpay\Api\Errors\SignatureVerificationError;
+use Redirect;
 
 class ticketController extends Controller
-{
+{   
+    
     /**
      * Display a listing of the resource.
      *
@@ -142,46 +143,19 @@ class ticketController extends Controller
         }
         return $id;
     }
-
+    
     public function tckPreview($pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile)
     {
         //$numbers_pass =$numbers_pass;
         //echo $numbers_pass.'<br/>';
 
-        $price=null;
-        switch ($pass_type) {
-            case 'single':
-                $price=300 * $numbers_pass;
-                break;
-            case 'combo':
-                $price=800 * $numbers_pass;
-
-                break;
-            default:
-                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-
-        }
+        $price= $this->getPrice($pass_type,$numbers_pass);
         if($price == null || $price < 300)
         {
             Redirect::back()->withErrors(['msg', 'Invalid Pass']);
         }
-        $day="";
-            switch ($select_day) {
-            case 'first':
-                 $day="31st January 2020";
-                break;
-            case 'second':
-                $day="1st February 2020";
-                break;
-            case 'third':
-                $day="2nd February 2020";
-                break;
-            case 'all':
-                $day="31st January, 1st February and 2nd February 2020";
-                break;
-            default:
-                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-            }
+        $day=$this->getSDay($select_day);
+            
         //echo $price;
         //echo $rid;
         /*Ticket::create(['custid'=>$rid,
@@ -257,6 +231,8 @@ class ticketController extends Controller
     }
 
     public function payForm(Request $request){
+        $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
+
         $rid = $this->getID();
         $pass_type = $request->input('pass_type');
         $numbers_pass = $request->input('numbers_pass');
@@ -265,47 +241,19 @@ class ticketController extends Controller
         $gender = $request->input('gender');
         $email = $request->input('email');
         $mobile = $request->input('mobile');
-        $price=null;
-        switch ($pass_type) {
-            case 'single':
-                $price=300 * $numbers_pass;
-                break;
-            case 'combo':
-                $price=800 * $numbers_pass;
-                break;
-            default:
-                Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
-        }
+        //return $numbers_pass;
+        
+        $price=$this->getPrice($pass_type, $numbers_pass);
+        
         if($price == null || $price < 300)
         {
             Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
         }
 
-        $page = 'tck';
-        $page_title = 'Preview of Talent Tantra Tickets Online';
-        $mtitle = 'Preview of Talent Tantra Tickets Online';
-        $description = 'Preview Online tickets, Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
-        $keywords = 'online ticket, pass, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
-
-        $day="";
-            switch ($select_day) {
-           case 'first':
-                 $day="31st January 2020";
-                break;
-            case 'second':
-                $day="1st February 2020";
-                break;
-            case 'third':
-                $day="2nd February 2020";
-                break;
-            case 'all':
-                $day="31st January, 1st February and 2nd February 2020";
-                break;
-            default:
-                Redirect::back()->withErrors(['msg', 'Invalid Pass']);
-            }
+        $day=$this->getSDay($select_day);
+            
         //$body='price is '.$price;
-        Ticket::create(['custid'=>$rid,
+        /*Ticket::create(['custid'=>$rid,
             'name'=>$name,
             'mobile'=>$mobile,
             'email'=>$email,
@@ -313,35 +261,135 @@ class ticketController extends Controller
             'numbers_pass'=>$numbers_pass,
             'select_day'=>$select_day,
             'payable_total'=>$price
-        ]);
+        ]);*/
+       
+        $orderData = ['receipt'=> $rid,'amount'=>  $price*100,'currency'=> 'INR','payment_capture'=> 1];
+        
+        $razorpayOrder = $api->order->create($orderData);
+        $razorpayOrderId = $razorpayOrder['id'];
 
-        $body="<div class='form-group'>
-                    <div class='col-md-12'>
-                        <input Type='hidden' name='rid' value='$rid' id='rid'/>
+        $_SESSION['razorpay_order_id'] = $razorpayOrderId;
 
-                        <input Type='hidden' name='pass_type' value='$pass_type' id='pass_type'/>
-                    
-                        <input Type='hidden' name='numbers_pass' value='$numbers_pass' id='numbers_pass'/>
-                    
-                        <input Type='hidden' name='select_day' value='$select_day' id='select_day'/>
-                        <input Type='hidden' name='day' value='$day' id='day'/>
-                        <input Type='hidden' name='name' value='$name' id='name'/>
-                   
-                        <input Type='hidden' name='mobile' value='$mobile' id='mobile'/>
-                        <input Type='hidden' name='email' value='$email' id='email'/>
-                        <input Type='hidden' name='price' value='$price' id='price'/>
-                    </div>
-                </div>
-                ";
-           return view('tckpay', compact('page', 'page_title', 'mtitle', 'description', 'keywords','pass_type','day','price','numbers_pass','rid'));
+        $displayAmount = $amount = $orderData['amount'];
+        //return $razorpayOrderId;
+        $displayCurrency= env('RAZORMONEY_SYM');
+        if ($displayCurrency !== 'INR')
+        {
+            $url = "https://api.fixer.io/latest?symbols=$displayCurrency&base=INR";
+            $exchange = json_decode(file_get_contents($url), true);
+
+            $displayAmount = $exchange['rates'][$displayCurrency] * $amount / 100;
+        }
+
+        $data = [
+            'key'               => env('RAZORPAY_KEY'),
+            'amount'            => $price,
+            'name'              => $name,
+            'description'       => $numbers_pass.' '.$pass_type.' Pass for '.$day,
+            'image'             => "https://s29.postimg.org/r6dj1g85z/daft_punk.jpg",
+            'prefill'           => [
+            'name'              => $name,
+            'email'             => $email,
+            'contact'           => $mobile,
+            ],
+            "theme"             => [
+            "color"             => "#F37254"
+            ],
+    "notes"             => [
+    "address"           => "KUTT",
+    "merchant_order_id" => $rid,
+    ],
+            "order_id"          => $razorpayOrderId,
+        ];
+
+        if ($displayCurrency !== 'INR')
+        {
+            $data['display_currency']  = $displayCurrency;
+            $data['display_amount']    = $displayAmount;
+        }
+
+        $json = json_encode($data);
+        
+        return view('tckpay', compact('data','rid'));
      }
      /*public function upRID(Request $request){
             $rid= $request->seesion()->get('rid');
         $razorpay_payment_id = $request->input('razorpay_payment_id');
         return view('success', compact('razorpay_payment_id','rid'));
      }*/
-      public function upRID(Request $request){
-        print_r($request->input());
+      public function upRID(){
         
+        $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
+
+        $success = true;
+
+        $error = "Payment Failed";
+
+        if (empty($_POST['razorpay_payment_id']) === false)
+        {
+
+            try
+            {
+                // Please note that the razorpay order ID must
+                // come from a trusted source (session here, but
+                // could be database or something else)
+                $attributes = array(
+                    'razorpay_order_id' => $_SESSION['razorpay_order_id'],
+                    'razorpay_payment_id' => $_POST['razorpay_payment_id'],
+                    'razorpay_signature' => $_POST['razorpay_signature']
+                );
+
+                $api->utility->verifyPaymentSignature($attributes);
+            }
+            catch(SignatureVerificationError $e)
+            {
+                $success = false;
+                $error = 'Razorpay Error : ' . $e->getMessage();
+            }
+        }
+
+        if ($success === true)
+        {
+            $html = "<p>Your payment was successful</p>
+                     <p>Payment ID: {$_POST['razorpay_payment_id']}</p>";
+        }
+        else
+        {
+            $html = "<p>Your payment failed</p>
+                     <p>{$error}</p>";
+        }
+
+        echo $html;
      }
+     public function getPrice($pass_type, $numbers_pass){
+        
+        switch ($pass_type) {
+            case 'single':
+                return 300 * $numbers_pass;
+                break;
+            case 'combo':
+                return 800 * $numbers_pass;
+                break;
+            default:
+                Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Amount']);
+        }
+    }
+    public function getSDay($select_day){
+        switch ($select_day) {
+           case 'first':
+                return "31st January 2020";
+                break;
+            case 'second':
+                return  "1st February 2020";
+                break;
+            case 'third':
+                return  "2nd February 2020";
+                break;
+            case 'all':
+                return  "31st January, 1st February and 2nd February 2020";
+                break;
+            default:
+                 Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Day']);
+            }
+    }
 }
