@@ -317,7 +317,7 @@ class ticketController extends Controller
 
         $json = json_encode($data);
         
-        return view('tckpay', compact('data','rid'));*/
+        return view('tckpay', compact('data','rid'));
      }
      /*public function upRID(Request $request){
             $rid= $request->seesion()->get('rid');
@@ -402,7 +402,7 @@ class ticketController extends Controller
         $rid = session()->get('rid');
         $razor_orderid=session()->get('razor_orderid');
         //print_r($rid);
-        //print_r($razor_orderid);
+        print_r($razor_orderid);
         //return view('success', compact('rid','razor_orderid'));
 
      }
@@ -440,7 +440,7 @@ class ticketController extends Controller
 
       public function html_email($rid) {
 
-       $data = DB::table('tickets')->where('custid', 'TF90DYLC')->take(2)->get();
+       $data = DB::table('tickets')->where('custid', $rid)->take(2)->get();
       
         foreach ($data as $key) {
              $custid = $key->custid;
@@ -476,14 +476,13 @@ class ticketController extends Controller
       //$data= $data->toArray();
      // echo $custid.'<br/>';
        //var_dump($Mdata);
-      echo "<br/>";
-      echo "<br/>";
+      
      //print_r($Mdata);
 
       Mail::send('mail', $Mdata, function($message) {
-         $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
+         $message->to($email, $name)->subject
             ('Talenttantra Online Ticket receipt');
-         $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
+         $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
       });
       echo "HTML Email Sent. Check your inbox.";
 
