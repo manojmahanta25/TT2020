@@ -31,7 +31,7 @@
   @php
     $displayCurrency= env('RAZORMONEY_SYM');
   @endphp 
-        <form action="/success" method="POST">
+        <form action="/success" method="POST" id="form">
           <script
             src="https://checkout.razorpay.com/v1/checkout.js"
             data-key="<?php echo $data['key']?>"
@@ -43,15 +43,21 @@
             data-prefill.name="<?php echo $data['prefill']['name']?>"
             data-prefill.email="<?php echo $data['prefill']['email']?>"
             data-prefill.contact="<?php echo $data['prefill']['contact']?>"
-            data-notes.shopping_order_id="3456"
+            data-notes.shopping_order_id="<?php echo $rid?>"
             data-order_id="<?php echo $data['order_id']?>"
             <?php if ($displayCurrency !== 'INR') { ?> data-display_amount="<?php echo $data['display_amount']?>" <?php } ?>
             <?php if ($displayCurrency !== 'INR') { ?> data-display_currency="<?php echo $data['display_currency']?>" <?php } ?>
           >
           </script>
           <!-- Any extra fields to be submitted with the form but not sent to Razorpay -->
-          <input type="hidden" name="shopping_order_id" value="3456">
+          <input type="hidden" name="rid" value="<?php echo $rid?>">
         </form>
+
+        <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#form").submit();
+      });
+    </script>
    
 </body>
 </html>

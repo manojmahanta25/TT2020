@@ -22,6 +22,9 @@ class CreateTicketsTable extends Migration
             $table->string('numbers_pass');
             $table->string('select_day');
             $table->string('payable_total');
+            $table->string('razor_payid')->default('0');            
+            $table->string('razor_orderid')->default('0');
+            $table->string('razorpay_signature')->default('0');
             $table->string('payment_status')->default('0');
             $table->string('instatus')->default('0');           
             $table->string('indates')->default('0');

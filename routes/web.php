@@ -45,9 +45,13 @@ Route::group(['middleware'=>'web'], function(){
 
     Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
 
-
 	Route::post('/payonline', ['as'=>'tt.buyticketspy','uses'=> 'ticketController@payForm']);
-	Route::post('/success', ['as' => 'tt.ticketpaid', 'uses' => 'ticketController@upRID']);
+
+	Route::post('/paymentverification', ['as' => 'tt.ticketpaid', 'uses' => 'ticketController@upRID']);
+
+	Route::get('/success', ['as' => 'tt.ticketsuccess', 'uses' => 'ticketController@paySuccess']);
+	
+	Route::get('/sendhtmlemail',['as' => 'tt.ticketmail', 'uses' => 'MailController@html_email']);
 });
 
 

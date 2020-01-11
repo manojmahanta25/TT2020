@@ -9,6 +9,7 @@ use DB;
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
 use Redirect;
+use Mail;
 
 class ticketController extends Controller
 {   
@@ -231,6 +232,7 @@ class ticketController extends Controller
     }
 
     public function payForm(Request $request){
+
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
         $rid = $this->getID();
@@ -253,7 +255,7 @@ class ticketController extends Controller
         $day=$this->getSDay($select_day);
             
         //$body='price is '.$price;
-        /*Ticket::create(['custid'=>$rid,
+        Ticket::create(['custid'=>$rid,
             'name'=>$name,
             'mobile'=>$mobile,
             'email'=>$email,
@@ -261,14 +263,14 @@ class ticketController extends Controller
             'numbers_pass'=>$numbers_pass,
             'select_day'=>$select_day,
             'payable_total'=>$price
-        ]);*/
+        ]);
        
         $orderData = ['receipt'=> $rid,'amount'=>  $price*100,'currency'=> 'INR','payment_capture'=> 1];
         
         $razorpayOrder = $api->order->create($orderData);
         $razorpayOrderId = $razorpayOrder['id'];
 
-        $_SESSION['razorpay_order_id'] = $razorpayOrderId;
+        session(['razorpay_order_id' => $razorpayOrderId]);
 
         $displayAmount = $amount = $orderData['amount'];
         //return $razorpayOrderId;
@@ -317,7 +319,8 @@ class ticketController extends Controller
         $razorpay_payment_id = $request->input('razorpay_payment_id');
         return view('success', compact('razorpay_payment_id','rid'));
      }*/
-      public function upRID(){
+
+      public function upRID(Request $request){
         
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
@@ -325,7 +328,7 @@ class ticketController extends Controller
 
         $error = "Payment Failed";
 
-        if (empty($_POST['razorpay_payment_id']) === false)
+        if (empty($request->input('razorpay_payment_id')) === false)
         {
 
             try
@@ -334,9 +337,9 @@ class ticketController extends Controller
                 // come from a trusted source (session here, but
                 // could be database or something else)
                 $attributes = array(
-                    'razorpay_order_id' => $_SESSION['razorpay_order_id'],
-                    'razorpay_payment_id' => $_POST['razorpay_payment_id'],
-                    'razorpay_signature' => $_POST['razorpay_signature']
+                    'razorpay_order_id' => session('razorpay_order_id'),
+                    'razorpay_payment_id' => $request->input('razorpay_payment_id'),
+                    'razorpay_signature' => $request->input('razorpay_signature')
                 );
 
                 $api->utility->verifyPaymentSignature($attributes);
@@ -350,16 +353,57 @@ class ticketController extends Controller
 
         if ($success === true)
         {
+            //print_r($request->input());
+            /*$paydata = array('_token' => 'Mz2bkXbhVB0ohnvgV2l2SZnXAyWxKyhqJTu92eXr',
+               'rid' =>  'MA140QDV',
+               'razorpay_payment_id' => 'pay_E32pPucMKi0dkI',
+               'razorpay_order_id' => 'order_E32pJ1AUdCliBh',
+               'razorpay_signature' => '6a31178b4f1ddf8e516c085d7e0fd51bc4029a5806e14ae3c967e7ca6c21f743'
+            );*/
+            //Array ( [_token] => Mz2bkXbhVB0ohnvgV2l2SZnXAyWxKyhqJTu92eXr [rid] => MA140QDV [razorpay_payment_id] => pay_E32pPucMKi0dkI [razorpay_order_id] => order_E32pJ1AUdCliBh [razorpay_signature] => 6a31178b4f1ddf8e516c085d7e0fd51bc4029a5806e14ae3c967e7ca6c21f743 )
+            $paydata =$request->all();
+            $rid = $request->input('rid');
+            $razorpay_payment_id = $request->input('razorpay_payment_id');
+            $razorpay_order_id = $request->input('razorpay_order_id');
+            $razorpay_signature = $request->input('razorpay_signature');
+            $token=  $request->input('_token');
             $html = "<p>Your payment was successful</p>
-                     <p>Payment ID: {$_POST['razorpay_payment_id']}</p>";
+                     <p>Payment ID: {$request->input('razorpay_payment_id')}</p>";
+            
+            //Update code       
+            Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id,'razorpay_signature'=>$razorpay_signature,'remember_token'=>$token,'payment_status'=>'1']);
+            
+            //mailing
+
+            $data = array('name'=>"Neel Kamal");
+              Mail::send('mail', $data, function($message) {
+                 $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
+                    ('Laravel HTML Testing Mail');
+                 $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
+              });
+              echo "HTML Email Sent. Check your inbox.";
+              
+            //redirect
+            return redirect(route('tt.ticketsuccess'))->with(['rid' => $rid, 'razor_orderid' => $razorpay_order_id]);
         }
         else
         {
             $html = "<p>Your payment failed</p>
                      <p>{$error}</p>";
+            //Update code       
+            //Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id],'razorpay_signature'=>$razorpay_signature],'remember_token'=>$token],'payment_status'=>'1');
         }
 
         echo $html;
+
+     }
+     public function paySuccess(){
+        //$paydata=$paydata;
+        $rid = session()->get('rid');
+        $razor_orderid=session()->get('razor_orderid');
+        //print_r($rid);
+        //print_r($razor_orderid);
+        //return view('success', compact('rid','razor_orderid'));
      }
      public function getPrice($pass_type, $numbers_pass){
         
@@ -392,4 +436,15 @@ class ticketController extends Controller
                  Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Day']);
             }
     }
+
+    public function html_email() {
+      $data = array('name'=>"Neel Kamal");
+      Mail::send('mail', $data, function($message) {
+         $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
+            ('Laravel HTML Testing Mail');
+         $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
+      });
+      echo "HTML Email Sent. Check your inbox.";
+
+   }
 }
