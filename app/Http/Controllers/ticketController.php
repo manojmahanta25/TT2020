@@ -375,14 +375,9 @@ class ticketController extends Controller
             
             //mailing
 
-            $data = array('name'=>"Neel Kamal");
-              Mail::send('mail', $data, function($message) {
-                 $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
-                    ('Laravel HTML Testing Mail');
-                 $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
-              });
-              echo "HTML Email Sent. Check your inbox.";
-              
+            $result = DB::table('tickets')->where('custid', $rid)->get();
+            //return $result;
+
             //redirect
             return redirect(route('tt.ticketsuccess'))->with(['rid' => $rid, 'razor_orderid' => $razorpay_order_id]);
         }
@@ -437,14 +432,14 @@ class ticketController extends Controller
             }
     }
 
-    public function html_email() {
+    public function html_email($rid) {
+        $rid=
       $data = array('name'=>"Neel Kamal");
-      Mail::send('mail', $data, function($message) {
-         $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
-            ('Laravel HTML Testing Mail');
-         $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
-      });
-      echo "HTML Email Sent. Check your inbox.";
-
+              Mail::send('mail', $data, function($message) {
+                 $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
+                    ('Talenttantra Online Ticket receipt');
+                 $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
+              });
+              echo "HTML Email Sent. Check your inbox.";
    }
 }
