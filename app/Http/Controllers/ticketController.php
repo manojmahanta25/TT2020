@@ -236,6 +236,11 @@ class ticketController extends Controller
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
         $rid = $this->getID();
+        //echo 'test';
+
+        //echo ' Razorpay '.env('RAZORPAY_KEY');
+        
+        
         $pass_type = $request->input('pass_type');
         $numbers_pass = $request->input('numbers_pass');
         $select_day = $request->input('select_day');
@@ -312,7 +317,7 @@ class ticketController extends Controller
 
         $json = json_encode($data);
         
-        return view('tckpay', compact('data','rid'));
+        return view('tckpay', compact('data','rid'));*/
      }
      /*public function upRID(Request $request){
             $rid= $request->seesion()->get('rid');
@@ -360,7 +365,7 @@ class ticketController extends Controller
                'razorpay_order_id' => 'order_E32pJ1AUdCliBh',
                'razorpay_signature' => '6a31178b4f1ddf8e516c085d7e0fd51bc4029a5806e14ae3c967e7ca6c21f743'
             );*/
-            //Array ( [_token] => Mz2bkXbhVB0ohnvgV2l2SZnXAyWxKyhqJTu92eXr [rid] => MA140QDV [razorpay_payment_id] => pay_E32pPucMKi0dkI [razorpay_order_id] => order_E32pJ1AUdCliBh [razorpay_signature] => 6a31178b4f1ddf8e516c085d7e0fd51bc4029a5806e14ae3c967e7ca6c21f743 )
+            //Returned Array ( [_token] => Mz2bkXbhVB0ohnvgV2l2SZnXAyWxKyhqJTu92eXr [rid] => MA140QDV [razorpay_payment_id] => pay_E32pPucMKi0dkI [razorpay_order_id] => order_E32pJ1AUdCliBh [razorpay_signature] => 6a31178b4f1ddf8e516c085d7e0fd51bc4029a5806e14ae3c967e7ca6c21f743 )
             $paydata =$request->all();
             $rid = $request->input('rid');
             $razorpay_payment_id = $request->input('razorpay_payment_id');
@@ -374,8 +379,8 @@ class ticketController extends Controller
             Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id,'razorpay_signature'=>$razorpay_signature,'remember_token'=>$token,'payment_status'=>'1']);
             
             //mailing
+            $msgMail = $this->html_email($rid);
 
-            $result = DB::table('tickets')->where('custid', $rid)->get();
             //return $result;
 
             //redirect
@@ -399,6 +404,7 @@ class ticketController extends Controller
         //print_r($rid);
         //print_r($razor_orderid);
         //return view('success', compact('rid','razor_orderid'));
+
      }
      public function getPrice($pass_type, $numbers_pass){
         
@@ -432,14 +438,55 @@ class ticketController extends Controller
             }
     }
 
-    public function html_email($rid) {
-        $rid=
-      $data = array('name'=>"Neel Kamal");
-              Mail::send('mail', $data, function($message) {
-                 $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
-                    ('Talenttantra Online Ticket receipt');
-                 $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
-              });
-              echo "HTML Email Sent. Check your inbox.";
+      public function html_email($rid) {
+
+       $data = DB::table('tickets')->where('custid', 'TF90DYLC')->take(2)->get();
+      
+        foreach ($data as $key) {
+             $custid = $key->custid;
+             $name = $key->name;
+            $mobile = $key->mobile;
+            $email = $key->email;
+            $pass_type = $key->pass_type;       
+            $numbers_pass = $key->numbers_pass;
+            $select_day = $key->select_day;
+            $payable_total = $key->payable_total;
+            $razor_payid = $key->razor_payid;
+            $razor_orderid = $key->razor_orderid;
+            $payment_status = $key->payment_status;     
+            $updated_at = $key->updated_at;
+        }
+        // echo $custid = $data->custid;
+        $select_day=$this->getSDay($select_day);
+
+      $Mdata = [
+        'custid'=>$custid,
+        'name'=>$name,
+        'mobile'=>$mobile,
+        'email'=>$email,
+        'pass_type'=>$pass_type,
+        'numbers_pass'=>$numbers_pass,
+        'select_day'=>$select_day,
+        'payable_total'=>$payable_total,
+        'razor_payid'=>$razor_payid,
+        'razor_orderid'=>$razor_orderid,
+        'payment_status'=>$payment_status
+       ];
+      
+      //$data= $data->toArray();
+     // echo $custid.'<br/>';
+       //var_dump($Mdata);
+      echo "<br/>";
+      echo "<br/>";
+     //print_r($Mdata);
+
+      Mail::send('mail', $Mdata, function($message) {
+         $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
+            ('Talenttantra Online Ticket receipt');
+         $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
+      });
+      echo "HTML Email Sent. Check your inbox.";
+
    }
+
 }
