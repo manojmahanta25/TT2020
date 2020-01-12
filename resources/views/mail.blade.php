@@ -73,5 +73,5 @@
 								</tr>
                             </tbody>
                         </table></body></html><br/>
-					In case for any information please contact us @ <b>8486034362 | 6000903183</b> or Email us at <b>talenttantra@kazirangauniversity.in</b><br/><br/>
+					In case for any information please contact us @ <b>8486034362</b> or Email us at <b>talenttantra@kazirangauniversity.in</b><br/><br/>
 					Thank you and best regards,<br/><br/>Team TalentTantra<br/><br/>

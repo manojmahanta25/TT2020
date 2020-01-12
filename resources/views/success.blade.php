@@ -1,6 +1,8 @@
 <html>
 <head>
 	<title>Ticket of Talent Tantra 2020 | Safarnama | Kaziranga University</title>
+	<meta name="robots" content="noindex">
+	
 	<link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
     <script src="{{ URL::asset('js/bootstrap.js') }}"></script>
@@ -62,7 +64,7 @@
         <tr>
             <td colspan="3"><strong>Terms &amp; Conditions:</strong>
                 <br />
-                   <br/> In case for any information please contact us @ <strong>8486034362 | 6000903183</strong> or Email us at <strong>talenttantra@kazirangauniversity.in</strong>
+                   <br/> In case for any information please contact us @ <strong>8486034362</strong> or Email us at <strong>talenttantra@kazirangauniversity.in</strong>
 				    <br/>
 				    <br/> Thank you and best regards,
 				    <br/>
