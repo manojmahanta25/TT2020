@@ -42,14 +42,24 @@
                 </ul>
             </td>
         </tr>
+        <tr>
+            <td colspan="3"><strong>Terms &amp; Conditions:</strong>
+                <br />
+                   <br/> In case for any information please contact us @ <strong>8486034362 | 6000903183</strong> or Email us at <strong>talenttantra@kazirangauniversity.in</strong>
+				    <br/>
+				    <br/> Thank you and best regards,
+				    <br/>
+				    <br/>Team TalentTantra
+				    <br/>
+               </td>
+           </tr>
+           <tr>
+           	<td style="float: left">
+           		<button style="margin:2px;" onclick="window.print()">Print</button>
+           		<button style="margin:2px;" onclick="window.location.href = 'http://talenttantra.com';">Return Home</button>
+           	</td>
+           	<td></td>
+           	<td style="float: right"></td>
+           </tr>
     </tbody>
 </table>
-<p>
-    <br/> In case for any information please contact us @ <strong>8486034362 | 6000903183</strong> or Email us at <strong>talenttantra@kazirangauniversity.in</strong>
-    <br/>
-    <br/> Thank you and best regards,
-    <br/>
-    <br/>Team TalentTantra
-    <br/>
-    <button onclick="window.print()">Print</button>
-</p>
