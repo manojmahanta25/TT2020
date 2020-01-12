@@ -44,7 +44,7 @@
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: Whole campus</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
+                                                <li>Starting Time: </li>
                                                 <li>Date: 2<sup>nd</sup> February, 2020</li>
                                             </ul>
                                         </div><br/>

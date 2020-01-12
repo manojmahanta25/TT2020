@@ -16,27 +16,18 @@
                         <li>Solo</li>
                         <li>Group</li>
                     </ul><br/>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: 16 - 26 years</li>
-                        <li>Participants should show their Institute ID proofs in original during registration</li>
-                        <li>Synthesizer(s)/Keyboard(s), if used, shall be used only in piano tone and no layering or splitting will be allowed.</li>
-                        <li>Playing of any pre-recorded track in the background will lead to direct disqualification.</li>
-                        <li>No restrictions on language and genre will be imposed.</li>
-                        <li>Use of abusive words will lead to direct disqualification.</li>
-                        <li>Decision of the judges will be final under any circumstances</li>
-                    </ul><br/>
-
+                    <br/>
+<br/><br/><br/><br/>
                 </div>
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
-                <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/game.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;">
+                <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/music.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;">
                 </div>
             </div>
 
         </div>
-        <div class="col-md-12" style="margin-top: 80px; float: left;">
+        <div class="col-md-12" style=" float: left;">
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
@@ -51,6 +42,17 @@
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
                                         <h4 style="text-align: justify;color: lightcoral">Solo</h4>
+                                        <p style="text-align: justify;font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
+                                            <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                                <li><strong>Age Limit </strong>: 16 - 26 years</li>
+                                                <li>Participants should show their Institute ID proofs in original during registration</li>
+                                                <li>Synthesizer(s)/Keyboard(s), if used, shall be used only in piano tone and no layering or splitting will be allowed.</li>
+                                                <li>Playing of any pre-recorded track in the background will lead to direct disqualification.</li>
+                                                <li>No restrictions on language and genre will be imposed.</li>
+                                                <li>Use of abusive words will lead to direct disqualification.</li>
+                                                <li>Decision of the judges will be final under any circumstances</li>
+                                            </ul>
+                                        
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
                                             <li>Sound check : 2 mins.</li>
@@ -88,6 +90,16 @@
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
                                         <h4 style="text-align: justify;color: lightcoral">Group</h4>
+                                        <p style="text-align: justify;font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
+                                            <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                                <li><strong>Age Limit </strong>: 16 - 26 years</li>
+                                                <li>Participants should show their Institute ID proofs in original during registration</li>
+                                                <li>Synthesizer(s)/Keyboard(s), if used, shall be used only in piano tone and no layering or splitting will be allowed.</li>
+                                                <li>Playing of any pre-recorded track in the background will lead to direct disqualification.</li>
+                                                <li>No restrictions on language and genre will be imposed.</li>
+                                                <li>Use of abusive words will lead to direct disqualification.</li>
+                                                <li>Decision of the judges will be final under any circumstances</li>
+                                            </ul>
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
                                             <li>Sound check : 3 mins.</li>

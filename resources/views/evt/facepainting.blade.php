@@ -47,8 +47,8 @@
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: Will be given at the time of the event</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Starting Time: </li>
+                                                <li>Date: </li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
