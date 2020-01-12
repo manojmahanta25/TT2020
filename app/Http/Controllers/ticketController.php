@@ -297,7 +297,7 @@ class ticketController extends Controller
             'amount'            => $price,
             'name'              => $name,
             'description'       => $numbers_pass.' '.$pass_type.' Pass for '.$day,
-            'image'             => "https://s29.postimg.org/r6dj1g85z/daft_punk.jpg",
+            'image'             => "http://talenttantra.com/images/tt_250.png",
             'prefill'           => [
             'name'              => $name,
             'email'             => $email,

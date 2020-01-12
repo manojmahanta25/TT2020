@@ -16,12 +16,9 @@
                         <li>No Age Limit, No Gender restricted.</li>
                         <li>Participants should show their valid ID proofs in original during registration</li>
                     </ul>
-                    <!--<ul class="speaker-address">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>DhrubaJyoti Baruah: +918974720551 (Call or Whatsapp)</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Girish Kumar: +919577173374 (Call or Whatsapp)</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>
-                    </ul>-->
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </div>
 
@@ -35,12 +32,9 @@
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">Poster Making</a></li>
-                        </ul>
+                        
                         <!-- Tab panes -->
-                        <div class="tab-content">
+                        <div class="tab-content" style="margin-top: 20px;">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
@@ -63,10 +57,10 @@
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p>
-                                            <form action="registration.php" method="GET" style="float:left;">
+                                            <!-- <form action="registration.php" method="GET" style="float:left;">
                                                 <input type="hidden" name="event" value="poster-making">
                                                 <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
+                                            </form> -->
                                         </div>
                                     </div>
                                 </div>

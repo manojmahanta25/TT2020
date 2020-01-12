@@ -2874,6 +2874,9 @@ hr {
     color: #696969;
     margin: 0px;
 }
+.schedules .tab-content{
+	display: inline-block;
+}
 .schedules .tab-content .schedule-table{
     margin-bottom: 50px;
     font-family: 'Playfair Display';

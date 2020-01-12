@@ -11,26 +11,24 @@
                 <div class="speaker-content">
                     <span><h3>A Fashion Show</h3></span>
                     <p>When endorsing your outfit being audacious that it speaks out your persona, and you go forth with all those shimmers and gleam that manifests your charisma, then you are mannequins in real life. That’s what a runway is to models and models are for a runway. Winter Runway is a walkway for those fashion victims who would love to slavish with their dressed up to the nines look. So to everyone out there who adores being stylish and classy, you need to put in tune soon because the aura to feel the winter drawers on, tracks to a spectacular sequel here at Winter Runway.</p>
+                    <br/>
+                    <br/>
                 </div>
             </div>
             <div class="col-md-5 col-sm-12 col-xs-12">
-                <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/fasion.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;"></div>
+                <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/fasion.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;">
+                </div>
             </div>
         </div>
         <div class="col-md-12" style="margin-top: 80px;">
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">Winter Runway</a></li>
-                        </ul>
-                    </div>
                         <!-- Tab panes -->
-                    <div class="tab-content">
+                    <div class="tab-content" style="margin-top: 20px;">
                         <div role="tabpanel" class="tab-pane active" id="event-one">
                             <div class="schedule-table table-responsive">
-                                <div class="speaker-statement" aria-hidden="true">
+                                <div class="speaker-statement" style="text-align: justify;">
                                     <h5 style="text-align: justify;">Event Schedule:</h5>
                                         <ul style="text-align: justify; list-style:none;">
                                             <li>Audition Date : 27 th  Jan, 2020</li>
@@ -44,20 +42,20 @@
                     
                                         <br/><h5 style="text-align: justify;">Dress Code:</h5>
                                         <p>For Girls:</p>
-                                        <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                        <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                                             <li>Blue Denim Jeans and White Tank Top</li>
                                             <li>Stilettos /Pencil Heels (which should come up to a height of minimum 5 feet 6 inches)</li>
                                             <li>Light/ Basic Make up</li>
                                             <li>Hair Style: Which highlights your smartness, Wittiness &amp; Confidence</li>
                                         </ul>
                                         <p>For Boys:</p>
-                                        <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                        <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                                             <li>Blue Denim Jeans and White Tee</li>
                                             <li>Boots for boys</li>
                                             <li>Light/ Basic Make up</li>
                                             <li>Hair Style: Which highlights your smartness, Wittiness &amp; Confidence</li>
                                         </ul><br/>
-                                        <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
+                                        <p style="text-align: justify;font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                                         <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                                             <li><strong>Age Limit </strong>: 16 - 26 years</li>
                                             <li>Participants should show their Institute ID proofs in original during registration.</li>
@@ -101,34 +99,30 @@
                                                 applicant.</li>
                                             <li>Only persons of good health, sound mind and having no medical history of any mental
                                                 illness and having good moral character can participate made herein.</li>
-                                            <li>For Mr. and Miss Popular sub contest - Using auto liker or cheat bots will disqualify the
-                                                participation.</li>
+                                            <li>For Mr. and Miss Popular sub contest - Using auto liker or cheat bots will disqualify the participation.</li>
                                         </ul>
-                                        <div class="speaker-statement">
-                                            <form action="registration.php" method="GET" style="float:left;">
+                                                                     
+                                </div>
+
+                                <ul class="speaker-address" style="margin-top: 20px; text-align: justify;">
+                                    <li><strong>Event Coordinator:</strong></li>
+                                    <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Partha Pratim Nath : +91 9101713959</li>
+                                    <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Rainy Mahanta : +91 8761941230</li>
+                                </ul>
+                                <div class="speaker-statement">
+                                            <!-- <form action="registration.php" method="GET" style="float:left;">
                                                 <input type="hidden" name="event" value="winter-runway">
                                                 <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
-                                        </div>                                    
-                                </div>                                      
+                                            </form> -->
+                                        </div>                             
                             </div>
                         </div>
                             <!-- schedule-table -->
                     </div>
                 </div>
+                </div>
                 <!-- container -->
             </section>
-            <div class="col-md-12" style="margin-top: 80px; float: left;">
-                <section class="schedules">
-                    <div class="container">
-                        <ul class="speaker-address" style="text-align: center;">
-                            <li><strong>Event Coordinator:</strong></li>
-                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Partha Pratim Nath : +91 9101713959</li>
-                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Rainy Mahanta : +91 8761941230</li>
-                        </ul>
-                    </div>
-                </section>        
-            </div>
                 <!-- container -->            
         </div>
     </div>

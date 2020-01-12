@@ -10,24 +10,13 @@
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
                     <p style="text-align: justify;">The term collage comes from the French word coller, or “to glue” and was coined by cubist artists Braque and Picasso during 1910, to mark the beginning of an art revolution as they experimented working with various mediums to create avant-garde assemblages. This art form has gained popularity worldwide, and we invite all the art enthusiasts to be a part of this competition.</p>
-                    <!--<p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li>Collage Making time – 1 hour</li>
-                        <li>Paper, Magazines, Glue, Sketch pens, Pen colours etc.is expected to be brought by the participants.</li>
-                        <li>Use of Scissor is not allowed.</li>
-                        <li>Theme for the collage – Shall be given on-spot</li>
-                        <li>The team should consist of minimum 2 and maximum 3 members.</li>
-                        <li>Extra points shall be avoided for neatness, punctuality, and an apt display of the theme</li>
-                        <li>Participants are expected to submit a 1-page write up about their artwork, what it stands for and the elements used in the design.</li>
-                        <li>Disqualification- On exceeding time, deviating from the theme or unsatisfactory explanation to judges</li>
-                    </ul>-->
-                    <div style="margin-top:60px;margin-bottom:50px;"></div>
-                    <!--<ul class="speaker-address">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>DhrubaJyoti Baruah: +918974720551 (Call or Whatsapp)</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Girish Kumar: +919577173374 (Call or Whatsapp)</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>
-                    </ul>-->
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </div>
 
@@ -41,12 +30,8 @@
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">Collage Making</a></li>
-                        </ul>
                         <!-- Tab panes -->
-                        <div class="tab-content">
+                        <div class="tab-content" style="margin-top: 20px;">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
@@ -73,10 +58,10 @@
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p>
-                                            <form action="registration.php" method="GET" style="float:left;">
+                                            <!-- <form action="registration.php" method="GET" style="float:left;">
                                                 <input type="hidden" name="event" value="collage-making">
                                                 <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
+                                            </form> -->
                                         </div>
                                     </div>
                                 </div>
