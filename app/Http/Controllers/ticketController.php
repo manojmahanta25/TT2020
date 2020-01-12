@@ -437,12 +437,6 @@ class ticketController extends Controller
             }
     }
 
-    // public function tryses()
-    // {
-    //     $rid ='BAARKJ5G';
-    //     //return redirect(route('tt.ticketmail',compact($rid)));
-    //     return redirect(route('tt.ticketmail'))->with(['rid' => $rid]);
-    // }
 
       public function html_email() {
         try

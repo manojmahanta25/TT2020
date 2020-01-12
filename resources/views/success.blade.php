@@ -1,13 +1,30 @@
+<html>
+<head>
+	<title>Ticket of Talent Tantra 2020 | Safarnama | Kaziranga University</title>
+	<link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+    <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
+    <script src="{{ URL::asset('js/bootstrap.js') }}"></script>
+
+    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" />
+</head>
+<body>
+<div class="row">
+	<div class="container">
 <table style="width: 100%; margin: 5px;">
     <tbody>
         <tr>
             <td>
                 <h2 style="text-align: center;">Talent Tantra 2020 | Safarnama | Kaziranga University</h2>
             </td>
-            <td colspan="2" style="font-size: 25px; font-weight: bold;">
-            	<img style="width:120px;float: left;" src="http://talenttantra.com/images/tt_250.png" alt="logo" />
+            <td style="font-size: 25px; font-weight: bold;">
+            	<img style="width:120px;" src="http://talenttantra.com/images/tt_250.png" alt="logo" />
             </td>
         </tr>
+    </tbody>
+</table>
+<table style="width: 100%; margin: 5px;">
+    <tbody>
         <tr>
             <td><strong>Payment ID : </strong> <strong>{{ $razor_payid }}</strong></td>
             <td><strong>Pass ID : </strong> <strong>{{ $custid }}</strong></td>
@@ -63,3 +80,7 @@
            </tr>
     </tbody>
 </table>
+</div>
+</div>
+</body>
+</html>
