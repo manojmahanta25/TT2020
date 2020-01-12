@@ -443,6 +443,7 @@ class ticketController extends Controller
         {
 
             $rid = session()->get('rid');
+            session()->forget('rid');
         }
         catch (Exception $e)
         {
@@ -450,6 +451,9 @@ class ticketController extends Controller
         }
 
         //$rid='BAARKJ5G';
+
+        if($rid!= NULL || $rid!="")
+        {
        $data = DB::table('tickets')->where('custid', $rid)->get();
       
         foreach ($data as $key) {
@@ -466,9 +470,9 @@ class ticketController extends Controller
             $payment_status = $key->payment_status;     
             $updated_at = $key->updated_at;
         }
-        // echo $custid = $data->custid;
-        $select_day=$this->getSDay($select_day);
-
+        
+            $select_day=$this->getSDay($select_day);
+        
         $Mdata = [
             'custid'=>$custid,
             'name'=>$name,
@@ -489,6 +493,11 @@ class ticketController extends Controller
             $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
       });
         return view('success')->with($Mdata);
+
+       }
+        else{
+             return redirect(route('tt.ticket'));
+        }
     
    }
 
