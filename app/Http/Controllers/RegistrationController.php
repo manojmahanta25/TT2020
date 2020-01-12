@@ -72,6 +72,7 @@ class registrationController extends Controller
         ];
         Registration::create($body);
         $request->flush();
+
         return redirect(route('tt.thankyou'))->with('open','yes');
     }
 

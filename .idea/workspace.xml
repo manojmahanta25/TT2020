@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
+    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="updated with events">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ParentEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ParentEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_15_182742_create_registrations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_15_182742_create_registrations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_15_205526_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_15_205526_create_events_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +157,7 @@
       <workItem from="1578320243640" duration="1238000" />
       <workItem from="1578418900406" duration="3530000" />
       <workItem from="1578752707818" duration="1604000" />
-      <workItem from="1578821000704" duration="21538000" />
+      <workItem from="1578821000704" duration="21885000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -209,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578421233693</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated with events">
+      <created>1578846356251</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578846356251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +231,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="update" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="updated with events" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated with events" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="60" key="CommitChangelistDialog2" timestamp="1578321495757">
