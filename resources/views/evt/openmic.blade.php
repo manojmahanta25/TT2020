@@ -30,7 +30,7 @@
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
-                                    <div class="speaker-statement" aria-hidden="true">
+                                    <div class="speaker-statement">
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
                                             <li>No language barriers, choose a language of love &amp; English, Hindi and Assamese</li>
