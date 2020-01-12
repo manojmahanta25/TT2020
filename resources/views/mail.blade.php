@@ -12,8 +12,11 @@
                             		style="float: left; margin-right: 25px;width:70%;"/>
                             	</td>
 							</tr>
+						</tbody>
+					</table>
+					<table style="width:100%;margin:25px;">
+                            <tbody>
                                 <tr>
-
                                     <td><strong>Payment ID : </strong>
                                       <b>{{ $razor_payid }}</b>
                                     </td>
