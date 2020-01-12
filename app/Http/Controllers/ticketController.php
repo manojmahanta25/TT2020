@@ -233,7 +233,10 @@ class ticketController extends Controller
     }
 
     public function payForm(Request $request){
+        try
+            {
 
+           
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
         $rid = $this->getID();
@@ -319,6 +322,12 @@ class ticketController extends Controller
         $json = json_encode($data);
         
         return view('tckpay', compact('data','rid'));
+
+        }
+        catch (Exception $e)
+        {
+            return redirect(route('tt.ticket')->withErrors(['msg', 'Something went wrong....']));
+        }
      }
 
       public function upRID(Request $request){
@@ -436,8 +445,16 @@ class ticketController extends Controller
     // }
 
       public function html_email() {
+        try
+        {
 
-       $rid = session()->get('rid');
+            $rid = session()->get('rid');
+        }
+        catch (Exception $e)
+        {
+            return redirect(route('tt.ticket'));
+        }
+
         //$rid='BAARKJ5G';
        $data = DB::table('tickets')->where('custid', $rid)->get();
       
