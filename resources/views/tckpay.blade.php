@@ -31,7 +31,7 @@
   @php
     $displayCurrency= env('RAZORMONEY_SYM');
   @endphp 
-        <form action="/success" method="POST" id="form">
+        <form action="/paymentverification" method="POST" id="form">
           <script
             src="https://checkout.razorpay.com/v1/checkout.js"
             data-key="<?php echo $data['key']?>"

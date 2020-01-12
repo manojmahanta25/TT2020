@@ -4,9 +4,13 @@
 					Thank you for showing interest in Talent Tantra 2020.<br/>
 					<html><body><table style="width:100%;margin:25px;">
                             <tbody>
-                            <tr><td style="font-size: 25px;font-weight: bold;" colspan="3">
-                            <img src="http://talenttantra.com/images/tt_250.png" alt="logo" style="float: left; margin-right: 25px;"/>Talent Tantra 2020 | Safarnama | Kaziranga University</td>
-                            <br/><br/>
+                            <tr>
+                            	<td style="font-size: 25px;font-weight: bold;">
+                        		<h3>Talent Tantra 2020 | Safarnama | Kaziranga University</h3></td>
+                            	<td colspan="2">
+                            		<img src="http://talenttantra.com/images/tt_250.png" alt="logo" 
+                            		style="float: left; margin-right: 25px;width:70%;"/>
+                            	</td>
 							</tr>
                                 <tr>
 
@@ -66,5 +70,5 @@
 								</tr>
                             </tbody>
                         </table></body></html><br/>
-					In case for any information please contact us @ <b>8486034362 | 6000903183</b> or email us at <b>talenttantra@kazirangauniversity.in</b><br/><br/>
+					In case for any information please contact us @ <b>8486034362 | 6000903183</b> or Email us at <b>talenttantra@kazirangauniversity.in</b><br/><br/>
 					Thank you and best regards,<br/><br/>Team TalentTantra<br/><br/>

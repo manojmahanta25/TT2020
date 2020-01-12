@@ -13,7 +13,7 @@ class MailController extends Controller {
 
    public function html_email() {
 
-   	   $data = DB::table('tickets')->where('custid', 'TF90DYLC')->take(2)->get();
+   	   $data = DB::table('tickets')->where('custid', 'DNEOT7LY')->get();
       
      	foreach ($data as $key) {
      		 $custid = $key->custid;
@@ -51,10 +51,10 @@ class MailController extends Controller {
    	   //var_dump($Mdata);
    	  echo "<br/>";
    	  echo "<br/>";
-   	 //print_r($Mdata);
+   	 print_r($Mdata);
 
       Mail::send('mail', $Mdata, function($message) {
-         $message->to('neelkamal@kazirangauniversity.in', 'Talenttantra')->subject
+         $message->to($email, $name)->subject
             ('Talenttantra Online Ticket receipt');
          $message->from('noreply@talenttantra.com','Talenttantra Online Ticket');
       });

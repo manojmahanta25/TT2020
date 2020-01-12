@@ -319,11 +319,6 @@ class ticketController extends Controller
         
         return view('tckpay', compact('data','rid'));
      }
-     /*public function upRID(Request $request){
-            $rid= $request->seesion()->get('rid');
-        $razorpay_payment_id = $request->input('razorpay_payment_id');
-        return view('success', compact('razorpay_payment_id','rid'));
-     }*/
 
       public function upRID(Request $request){
         
@@ -379,33 +374,27 @@ class ticketController extends Controller
             Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id,'razorpay_signature'=>$razorpay_signature,'remember_token'=>$token,'payment_status'=>'1']);
             
             //mailing
-            $msgMail = $this->html_email($rid);
+            return redirect(route('tt.ticketmail'))->with(['rid' => $rid]);
 
+            //$msgMail = $this->html_email($rid);
+
+            //return view('success')->with($Mdata);
             //return $result;
 
             //redirect
-            return redirect(route('tt.ticketsuccess'))->with(['rid' => $rid, 'razor_orderid' => $razorpay_order_id]);
+            //return redirect(route('tt.ticketsuccess'))->with(['rid' => $rid, 'razor_orderid' => $razorpay_order_id]);
         }
         else
         {
-            $html = "<p>Your payment failed</p>
-                     <p>{$error}</p>";
+            $html = "<p>Your payment failed</p><p>{$error}</p>";
+            echo $html;
             //Update code       
             //Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id],'razorpay_signature'=>$razorpay_signature],'remember_token'=>$token],'payment_status'=>'1');
         }
-
-        echo $html;
-
-     }
-     public function paySuccess(){
-        //$paydata=$paydata;
-        $rid = session()->get('rid');
-        $razor_orderid=session()->get('razor_orderid');
-        //print_r($rid);
-        print_r($razor_orderid);
-        //return view('success', compact('rid','razor_orderid'));
+        echo $html;        
 
      }
+
      public function getPrice($pass_type, $numbers_pass){
         
         switch ($pass_type) {
@@ -438,10 +427,68 @@ class ticketController extends Controller
             }
     }
 
-      public function html_email($rid) {
+    // public function tryses()
+    // {
+    //     $rid ='BAARKJ5G';
+    //     //return redirect(route('tt.ticketmail',compact($rid)));
+    //     return redirect(route('tt.ticketmail'))->with(['rid' => $rid]);
+    // }
 
-       $data = DB::table('tickets')->where('custid', $rid)->take(2)->get();
+      public function html_email() {
+
+       $rid = session()->get('rid');
+
+       $data = DB::table('tickets')->where('custid', $rid)->get();
       
+        foreach ($data as $key) {
+            $custid = $key->custid;
+            $name = $key->name;
+            $mobile = $key->mobile;
+            $email = $key->email;
+            $pass_type = $key->pass_type;       
+            $numbers_pass = $key->numbers_pass;
+            $select_day = $key->select_day;
+            $payable_total = $key->payable_total;
+            $razor_payid = $key->razor_payid;
+            $razor_orderid = $key->razor_orderid;
+            $payment_status = $key->payment_status;     
+            $updated_at = $key->updated_at;
+        }
+        // echo $custid = $data->custid;
+        $select_day=$this->getSDay($select_day);
+
+        $Mdata = [
+            'custid'=>$custid,
+            'name'=>$name,
+            'mobile'=>$mobile,
+            'email'=>$email,
+            'pass_type'=>$pass_type,
+            'numbers_pass'=>$numbers_pass,
+            'select_day'=>$select_day,
+            'payable_total'=>$payable_total,
+            'razor_payid'=>$razor_payid,
+            'razor_orderid'=>$razor_orderid,
+            'payment_status'=>$payment_status
+       ];
+      
+        //$data= $data->toArray();
+        //echo $custid.'<br/>';
+        //var_dump($Mdata);
+      
+        //print_r($Mdata);
+
+        Mail::send('mail', $Mdata, function($message) use ($email,$name){
+            $message->to($email, $name)->subject
+                ('Talenttantra Online Ticket receipt');
+            $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
+      });
+    return view('success')->with($Mdata);
+   }
+
+   public function mailSuccess($rid)
+   {
+     $data = DB::table('tickets')->where('custid', $rid)->get();
+        //$email="";
         foreach ($data as $key) {
              $custid = $key->custid;
              $name = $key->name;
@@ -459,8 +506,7 @@ class ticketController extends Controller
         // echo $custid = $data->custid;
         $select_day=$this->getSDay($select_day);
 
-      $Mdata = [
-        'custid'=>$custid,
+      $Mdata =  array('custid'=>$custid,
         'name'=>$name,
         'mobile'=>$mobile,
         'email'=>$email,
@@ -470,22 +516,22 @@ class ticketController extends Controller
         'payable_total'=>$payable_total,
         'razor_payid'=>$razor_payid,
         'razor_orderid'=>$razor_orderid,
-        'payment_status'=>$payment_status
-       ];
+        'payment_status'=>$payment_status);
       
       //$data= $data->toArray();
-     // echo $custid.'<br/>';
+     // echo $data->email'<br/>';
        //var_dump($Mdata);
       
      //print_r($Mdata);
-
-      Mail::send('mail', $Mdata, function($message) {
-         $message->to($email, $name)->subject
-            ('Talenttantra Online Ticket receipt');
-         $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
-      });
-      echo "HTML Email Sent. Check your inbox.";
-
+     //echo $email;
+     //echo "<br>";
+     //echo $name;
+      //  Mail::send('mail', $Mdata, function($message) use ($email,$name) {
+      //    $message->to($email, $name)->subject
+      //       ('Talenttantra Online Ticket receipt');
+      //    $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
+      // });
+     //return view('success')->with($Mdata);
    }
 
 }

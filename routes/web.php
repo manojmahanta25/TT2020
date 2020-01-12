@@ -38,6 +38,7 @@ Route::get('/privacypolicy', ['as'=>'tt.privacypolicy','uses'=>'pageController@p
 Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
 Route::get('/buytickets/{ptype}',['as' => 'tt.ticketId', 'uses' => 'ticketController@show']);
 
+Route::get('/success/{rid}', ['as' => 'tt.ticketsucc', 'uses' => 'ticketController@mailSuccess']);
 
 Route::group(['middleware'=>'web'], function(){
 //    Route::resource('post','registrationController');
@@ -49,9 +50,9 @@ Route::group(['middleware'=>'web'], function(){
 
 	Route::post('/paymentverification', ['as' => 'tt.ticketpaid', 'uses' => 'ticketController@upRID']);
 
-	Route::get('/success', ['as' => 'tt.ticketsuccess', 'uses' => 'ticketController@paySuccess']);
-	
-	Route::get('/sendhtmlemail',['as' => 'tt.ticketmail', 'uses' => 'MailController@html_email']);
+	Route::get('/success',['as' => 'tt.ticketmail', 'uses' => 'ticketController@html_email']);
+
+	//Route::get('/successs',['as' => 'tt.ticketmail', 'uses' => 'MailController@html_email']);
 });
 
 

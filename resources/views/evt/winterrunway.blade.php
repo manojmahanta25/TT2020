@@ -9,115 +9,128 @@
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
-                    <span><h3>xxxxxxxx</h3></span>
-                    <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                    <p><strong>Format:</strong></p>
-                    <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li>1</li>
-                        <li>2</li>
-                    </ul><br/>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul><br/>
-                    
+                    <span><h3>A Fashion Show</h3></span>
+                    <p>When endorsing your outfit being audacious that it speaks out your persona, and you go forth with all those shimmers and gleam that manifests your charisma, then you are mannequins in real life. That’s what a runway is to models and models are for a runway. Winter Runway is a walkway for those fashion victims who would love to slavish with their dressed up to the nines look. So to everyone out there who adores being stylish and classy, you need to put in tune soon because the aura to feel the winter drawers on, tracks to a spectacular sequel here at Winter Runway.</p>
                 </div>
             </div>
-
             <div class="col-md-5 col-sm-12 col-xs-12">
-                <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/fasion.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;">
-                </div>
+                <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/fasion.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;"></div>
             </div>
-
         </div>
-        <div class="col-md-12" style="margin-top: 80px; float: left;">
+        <div class="col-md-12" style="margin-top: 80px;">
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">1</a></li>
-                            <li role="presentation"><a href="#event-two" aria-controls="event-two" role="tab" data-toggle="tab">2</a></li>
+                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">Winter Runway</a></li>
                         </ul>
+                    </div>
                         <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="event-one">
-                                <div class="schedule-table table-responsive">
-                                    <div class="speaker-statement" aria-hidden="true">
-                                        <h4 style="text-align: justify;color: lightcoral">1</h4>
-                                        <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="event-one">
+                            <div class="schedule-table table-responsive">
+                                <div class="speaker-statement" aria-hidden="true">
+                                    <h5 style="text-align: justify;">Event Schedule:</h5>
+                                        <ul style="text-align: justify; list-style:none;">
+                                            <li>Audition Date : 27 th  Jan, 2020</li>
+                                            <li>Time : 10 A.M. Onwards</li>
+                                            <li>Venue : SET Seminar Hall</li>
+                                            <li>Grooming Date : 28 th  Jan -30 th  Jan &amp; 31 st Jan</li>
+                                            <li>Grooming Fees : <strong>Rs. 1200/- only</strong></li>
+                                            <li>Accommodation Fees: <strong>Rs. 100/- only per day</strong></li>
+                                            <li>Finale Date : <strong>1 st Feb, 2019</strong></li>
+                                        </ul>
+                    
+                                        <br/><h5 style="text-align: justify;">Dress Code:</h5>
+                                        <p>For Girls:</p>
+                                        <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                            <li>Blue Denim Jeans and White Tank Top</li>
+                                            <li>Stilettos /Pencil Heels (which should come up to a height of minimum 5 feet 6 inches)</li>
+                                            <li>Light/ Basic Make up</li>
+                                            <li>Hair Style: Which highlights your smartness, Wittiness &amp; Confidence</li>
+                                        </ul>
+                                        <p>For Boys:</p>
+                                        <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                            <li>Blue Denim Jeans and White Tee</li>
+                                            <li>Boots for boys</li>
+                                            <li>Light/ Basic Make up</li>
+                                            <li>Hair Style: Which highlights your smartness, Wittiness &amp; Confidence</li>
+                                        </ul><br/>
+                                        <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
+                                        <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                            <li><strong>Age Limit </strong>: 16 - 26 years</li>
+                                            <li>Participants should show their Institute ID proofs in original during registration.</li>
+                                        </ul>
+                                        <br/><h5 style="text-align: justify;">ELIGIBILITY CRITERIA:</h5>
+                                        <ul style="text-align: justify; list-style:none;">
+                                            <li>Age: Between 16-26 Years</li>
+                                            <li>Height: 5 feet 2 Inches (without heels) for girls</li>
+                                            <li>Height: 5 feet 5 inches for boys</li>
+                                            <li>Unmarried</li>
+                                            <li>Outgoing Personality &amp; Good Ethics</li>
+                                        </ul>
+                                        <br/><h5 style="text-align: justify;">RULES AND REGULATIONS:</h5>
+                                        <ul style="text-align: justify; list-style:none;">
+                                            <li>Eliminations will take place after each round.</li>
+                                            <li>Dresses will be provided for 2 Rounds.</li>
+                                            <li>Makeup will be provided by a group of professionals</li>
+                                            <li>Dress for the Ethnic round is to be brought by the participants.</li>
+                                        </ul>
+                                        <br/><h5 style="text-align: justify;">TERMS AND CONDITIONS:</h5>
+                                        <ul style="text-align: justify; list-style:none;">
+                                            <li>The applicant must be willing to abide by the rules which can be changed from time to
+                                                time by the organizers.</li>
+                                            <li>The applicant should not be under any commercial contract with any modeling agency
+                                                at the time of appearing for the auditions.</li>
+                                            <li>The applicant, once shortlisted cannot be a part of any other commercial contact or
+                                                pageant.</li>
+                                            <li>The applicant will have to participate in a disciplined and diligent manner throughout as
+                                                per the given schedule.</li>
+                                            <li>The organizers are not responsible if the sponsors do not make good the prizes
+                                                promised by them.</li>
+                                            <li>The organizers are not responsible for any loss or physical injury that occurs to the
+                                                applicant on account of their participation in the event.</li>
+                                            <li>The organizers are not responsible for any loss of valuables (jewellery, mobile phones,
+                                                wrist watches or any kind of wearable) of the applicant on account of their participation
+                                                in the event.</li>
+                                            <li>Incorrect information will resolve in disqualification, whether discovered prior to, during
+                                                or after participation.</li>
+                                            <li>The decision of the judges is final in all cases.</li>
+                                            <li>In the event of any dispute, the organizers’ decisions are final and binding on the
+                                                applicant.</li>
+                                            <li>Only persons of good health, sound mind and having no medical history of any mental
+                                                illness and having good moral character can participate made herein.</li>
+                                            <li>For Mr. and Miss Popular sub contest - Using auto liker or cheat bots will disqualify the
+                                                participation.</li>
+                                        </ul>
                                         <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                                            </ul>
-                                        </div><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
                                             <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-solo">
+                                                <input type="hidden" name="event" value="winter-runway">
                                                 <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
                                             </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- schedule-table -->
-                            </div>
-
-                            <div role="tabpanel" class="tab-pane" id="event-two">
-                                <div class="schedule-table table-responsive">
-                                    <div class="speaker-statement" aria-hidden="true">
-                                        <h4 style="text-align: justify;color: lightcoral">2</h4>
-                                        <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxx</li>
-                                                <li>Date : xxxxxxxxxxxxxxxx</li>
-                                            </ul>
-                                        </div><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 1500/Team</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-group">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- schedule-table -->
+                                        </div>                                    
+                                </div>                                      
                             </div>
                         </div>
+                            <!-- schedule-table -->
                     </div>
-                    <ul class="speaker-address" style="text-align: center;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
-                    </ul>
                 </div>
-            </section>        
-        </div>
+                <!-- container -->
+            </section>
+            <div class="col-md-12" style="margin-top: 80px; float: left;">
+                <section class="schedules">
+                    <div class="container">
+                        <ul class="speaker-address" style="text-align: center;">
+                            <li><strong>Event Coordinator:</strong></li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Partha Pratim Nath : +91 9101713959</li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Rainy Mahanta : +91 8761941230</li>
+                        </ul>
+                    </div>
+                </section>        
+            </div>
                 <!-- container -->            
+        </div>
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->

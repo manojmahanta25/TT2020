@@ -5,18 +5,17 @@
             <h2>Poster Making</h2>
         </div>
         <!--end heading-->
-
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
                     <p style="text-align: justify;">"Creativity is nothing but a mind set free." -Torrie T. Asai</p>
                     <p style="text-align: justify;margin-top: 20px;">This competition invites all the creative minds to come together and design a poster revolving around a theme, which shall be given on spot. The poster should convey the theme boldly, beautifully and systematically.</p>
+                    <br/>
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>No Age Limit, No Gender restricted.</strong></li>
+                        <li>No Age Limit, No Gender restricted.</li>
                         <li>Participants should show their valid ID proofs in original during registration</li>
                     </ul>
-                    <div style="margin-top:80px;margin-bottom:80px;"></div>
                     <!--<ul class="speaker-address">
                         <li><strong>Event Coordinator:</strong></li>
                         <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>DhrubaJyoti Baruah: +918974720551 (Call or Whatsapp)</li>
@@ -32,7 +31,7 @@
             </div>
 
         </div>
-        <div class="col-md-12" style="margin-top: 80px;">
+        <div class="col-md-12">
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
@@ -56,17 +55,16 @@
                                         </ol>
                                         <div class="speaker-statement" style="marg">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <br/>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>2<sup>st</sup> February 2020</li>
                                             </ul>
-                                        </div>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <br/>
+                                            
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p>
                                             <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="pubg">
+                                                <input type="hidden" name="event" value="poster-making">
                                                 <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
                                             </form>
                                         </div>

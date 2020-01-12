@@ -101,7 +101,6 @@
         $("#select_day option[value='first']").remove();
         $("#select_day option[value='second']").remove();
         $("#select_day option[value='third']").remove();
-
     @endif
     $("#pass_type").change(function() {
         if ($(this).val() == "single") {
