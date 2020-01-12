@@ -5,20 +5,24 @@
             <h2>Poster Making</h2>
         </div>
         <!--end heading-->
+
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
                     <p style="text-align: justify;">"Creativity is nothing but a mind set free." -Torrie T. Asai</p>
                     <p style="text-align: justify;margin-top: 20px;">This competition invites all the creative minds to come together and design a poster revolving around a theme, which shall be given on spot. The poster should convey the theme boldly, beautifully and systematically.</p>
-                    <br/>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
+                    <br/><p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li>No Age Limit, No Gender restricted.</li>
+                        <li><strong>No Age Limit, No Gender restricted.</strong></li>
                         <li>Participants should show their valid ID proofs in original during registration</li>
                     </ul>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <br/><br/><br/>
+                    <!--<ul class="speaker-address">
+                        <li><strong>Event Coordinator:</strong></li>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>DhrubaJyoti Baruah: +918974720551 (Call or Whatsapp)</li>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Girish Kumar: +919577173374 (Call or Whatsapp)</li>
+                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>
+                    </ul>-->
                 </div>
             </div>
 
@@ -28,13 +32,12 @@
             </div>
 
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12" style="margin-top: 80px; float: left;">
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
-                        
                         <!-- Tab panes -->
-                        <div class="tab-content" style="margin-top: 20px;">
+                        <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
@@ -49,32 +52,32 @@
                                         </ol>
                                         <div class="speaker-statement" style="marg">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
+                                            <br/>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>2<sup>st</sup> February 2020</li>
+                                                <li>2<sup>nd</sup> February 2020</li>
                                             </ul>
-                                        </div><br/>
+                                        </div>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            
+                                            <br/>
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p>
-                                            <!-- <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="poster-making">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form> -->
+{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
+{{--                                                <input type="hidden" name="event" value="pubg">--}}
+{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
+{{--                                            </form>--}}
                                         </div>
                                     </div>
                                 </div>
                                 <!-- schedule-table -->
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <!-- container -->
             </section>
         </div>
-        <!--end project-grid-->
+        <!-- container -->
     </div>
+    <!--end project-grid-->
     <!--end portfoliomain-->
     <!--end container-->
 </section>

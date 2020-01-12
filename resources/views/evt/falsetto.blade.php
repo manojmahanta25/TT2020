@@ -19,14 +19,14 @@
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                         <li><strong>Age Limit </strong>: 16 - 26 years</li>
-                        <li>Participants should show their Institute ID proofs in original during registration</li>                        
+                        <li>Participants should show their Institute ID proofs in original during registration</li>
                         <li>Synthesizer(s)/Keyboard(s), if used, shall be used only in piano tone and no layering or splitting will be allowed.</li>
                         <li>Playing of any pre-recorded track in the background will lead to direct disqualification.</li>
                         <li>No restrictions on language and genre will be imposed.</li>
                         <li>Use of abusive words will lead to direct disqualification.</li>
                         <li>Decision of the judges will be final under any circumstances</li>
                     </ul><br/>
-                    
+
                 </div>
             </div>
 
@@ -64,13 +64,20 @@
                                                 <li>31<sup>st</sup> January 2020</li>
                                             </ul>
                                         </div><br/>
+                                        <div class="speaker-address">
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li><strong>Event Coordinator:</strong></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Akash Pratim Boruah: +918486347218</li>
+                                                {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>--}}
+                                            </ul>
+                                        </div>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-solo">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
+{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
+{{--                                                <input type="hidden" name="event" value="fal-solo">--}}
+{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
+{{--                                            </form>--}}
                                         </div>
                                     </div>
                                 </div>
@@ -94,13 +101,20 @@
                                                 <li>31<sup>st</sup> January 2020</li>
                                             </ul>
                                         </div><br/>
+                                        <div class="speaker-address">
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li><strong>Event Coordinator:</strong></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Akash Pratim Boruah: +918486347218</li>
+                                                {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>--}}
+                                            </ul>
+                                        </div>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 1500/Team</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-group">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
+{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
+{{--                                                <input type="hidden" name="event" value="fal-group">--}}
+{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
+{{--                                            </form>--}}
                                         </div>
                                     </div>
                                 </div>
@@ -108,16 +122,10 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="speaker-address" style="text-align: center;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>DhrubaJyoti Baruah: +918974720551 (Call or Whatsapp)</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Girish Kumar: +919577173374 (Call or Whatsapp)</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>
-                    </ul>
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+                <!-- container -->
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->
