@@ -1,4 +1,12 @@
 @include('elements.header')
+@php
+if(isset($compvalue)){
+$sel=$compvalue;
+}
+else{
+$sel = null;
+}
+@endphp
 <section id="portfolio" class="portfolio">
     <div class="container">
 
@@ -22,21 +30,19 @@
             <div class="form-group row">
                 {{Form::label('event_name','Competition',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
-                    {{Form::select('event_name',[
-                        'mokshmantra'=>'Moksh Mantra',
-                        'singphonic'=>'Sing Phonic',
-                        'Destroix'=>['csgo'=> 'Counter Strike Global Offensive','ml'=>'Mobile Legend', 'cod'=>'Call Of Duty Mobile','pubg'=>'PUBG Mobile','nfsmw'=>'Need For Speed Most Wanted','fifa'=>'FIFA'],
-                        'Burn It On'=>['biosolo'=>'Solo','biogroup'=>'Group','adaptune'=>'Adaptune'],
-                         'Sports'=>['armwrestling'=>'Arm Wrestling', 'cricket'=>'Cricket', 'football'=>'Football','basketball'=>'Basketball','badminton'=>'Badminton','Lawn Tennis'=>['lawntennissingle'=>'Single','lawntennisdouble'=>'Mix or Double']],
-                    ], null,
+                    {{Form::select('event_name',$subevent, $sel,
                     ['placeholder' => 'Pick a Competition...']
                     )}}
                 </div>
             </div>
             <div class="form-group row">
                 {{Form::label('total_member','Total Members',['class'=>'col-sm-2 control-label'])}}
-                <div class="col-sm-6">
-                    {{Form::selectRange('total_member',1,8, ['class'=>'form-control ', 'placeholder'=>'Enter Team Name'])}}
+                <div class="col-sm-2">
+                    {{Form::text('total_member','', ['class'=>'form-control ', 'readonly'])}}
+                </div>
+                {{Form::label('price','Price',['class'=>'col-sm-1 control-label'])}}
+                <div class="col-sm-2">
+                    {{Form::text('price','', ['class'=>'form-control ', 'readonly'])}}
                 </div>
             </div>
             <div class="form-group row">
@@ -97,6 +103,7 @@
                 @csrf
         {{Form::submit('Submit', ['name'=>'sbtn','class'=>'btn btn-primary'])}}
         {!! Form::close() !!}
+
         <!--end project-grid-->
     </div>
         </div>
@@ -105,4 +112,41 @@
     <!--end container-->
 </section>
 @include('elements.footerwidget')
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#event_name").change(function () {
+            // alert(this.value);
+            var urla = '{{ url('/test/') }}/';
+            var furl =urla.concat(this.value);
+            console.log(furl);
+            $.ajax({
+                url: furl,
+                method: 'GET',
+                dataType: 'json',
+                success:function (data) {
+                    console.log(data);
+                    $('#price').val(data.data.cost);
+                    $('#total_member').val(data.data.members);
+                }
+
+            });
+        });
+        @if(isset($compvalue))
+        function updateinfo() {
+            $.ajax({
+                url: '{{ url('/test/').'/'.$compvalue }}',
+                method: 'GET',
+                dataType: 'json',
+                success:function (data) {
+                    $('#price').val(data.data.cost);
+                    $('#total_member').val(data.data.members);
+                }
+
+            });
+
+        }
+        updateinfo();
+        @endif
+    });
+</script>
 @include('elements.footer')

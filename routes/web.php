@@ -22,6 +22,8 @@ Route::get('/',['as'=>'tt.home','uses'=>'pageController@home']);
 Route::get('/competitions', ['as'=>'tt.event','uses'=>'pageController@competitions']);
 Route::get('/competitions/{id}',['as'=>'tt.eventdet','uses'=>'pageController@eventFetch']);
 Route::get('/register', ['as'=>'tt.register','uses'=>'registrationController@index']);
+Route::get('/register/{id}', ['as'=>'tt.registersingle','uses'=>'registrationController@show']);
+
 Route::get('/sponsor', ['as'=>'tt.sponsor','uses'=>'pageController@sponsor']);
 
 Route::get('/contact', ['as'=>'tt.contact','uses'=>'pageController@contact']);
@@ -51,6 +53,7 @@ Route::group(['middleware'=>'web'], function(){
 	Route::post('/paymentverification', ['as' => 'tt.ticketpaid', 'uses' => 'ticketController@upRID']);
 
 	Route::get('/success',['as' => 'tt.ticketmail', 'uses' => 'ticketController@html_email']);
+    Route::get('/test/{id}', ['as'=>'tt.registerfetch','uses'=>'registrationController@showPrice']);
 });
 
 
