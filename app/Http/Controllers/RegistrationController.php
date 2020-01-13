@@ -76,6 +76,7 @@ class registrationController extends Controller
             'total_amount' => $this->e($total)
         ];
         Registration::create($body);
+        $request->session()->regenerateToken();
         $request->flush();
 
         return redirect(route('tt.registermail'))->with(['rid' => $rid]);
