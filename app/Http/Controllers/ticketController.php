@@ -53,7 +53,7 @@ class ticketController extends Controller
         'name.required'=>'Enter your name',
         'gender.required'=>'Select gender',
         'email.required'=>'Email is required and make your the email id is valid',
-        'email.email'=>'Enter valid email id',
+        'email.email'=>'Valid Email ID is required as ticket will be mailed to you',
         'mobile.required'=>'Enter your mobile number and make sure mobile number is valid',
         'mobile.regex'=>'Enter valid mobile number'];
         $this->validate($request,[

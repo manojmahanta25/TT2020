@@ -6,6 +6,7 @@ use App\Event;
 use App\Http\Requests\RegistrationValidate;
 use App\Registration;
 use Illuminate\Http\Request;
+use DB;
 
 class registrationController extends Controller
 {
@@ -55,7 +56,9 @@ class registrationController extends Controller
         else{
             $total = $total;
         }
+        $rid=$this->getRID();
         $body =[
+            'rid'=> $rid,
            'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'event_name' => $request->event_name,
@@ -73,7 +76,7 @@ class registrationController extends Controller
         Registration::create($body);
         $request->flush();
 
-        return redirect(route('tt.thankyou'))->with('open','yes');
+        return redirect(route('tt.ticketmail'))->with(['rid' => $rid]);
     }
 
     /**
@@ -147,4 +150,81 @@ class registrationController extends Controller
         }
         return $subevent;
     }
+    public function getRID()
+    {
+        A: $string = substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, 8);
+        $id= strtoupper('RT'.$string);
+        if (Registration::where('rid',$id)->exists()) {
+            goto A;
+        }
+        else
+        {
+            return $id;
+        }
+    }
+    
+    public function html_email() {
+        try
+        {
+            $rid = session()->get('rid');
+            session()->forget('rid');
+        }
+        catch (Exception $e)
+        {
+            return redirect(route('tt.register'));
+        }
+
+        //$rid='BAARKJ5G';
+
+        if($rid!= NULL || $rid!="")
+        {
+       $data = DB::table('registrations')->where('custid', $rid)->get();
+      
+        foreach ($data as $key) {
+            $custid = $key->custid;
+            $team_name = $key->team_name;
+            $team_leader = $key->team_leader;
+            $event_name = $key->event_name;
+            $total_member = $key->total_member;       
+            $email = $key->email;
+            $phone = $key->phone;
+            $address = $key->address;
+            $pincode = $key->pincode;
+            $district = $key->district;
+            $institute_name = $key->institute_name;     
+            $accommodations = $key->accommodations;
+            $event_price = $key->event_price;
+            $total_amount = $key->total_amount;
+            $amount_paid = $key->amount_paid;
+            $total_amount = $key->total_amount;
+            $updated_at =  $key->updated_at;
+        }
+        
+        $Mdata = [
+            'custid'=>$custid,
+            'name'=>$name,
+            'mobile'=>$mobile,
+            'email'=>$email,
+            'pass_type'=>$pass_type,
+            'numbers_pass'=>$numbers_pass,
+            'select_day'=>$select_day,
+            'payable_total'=>$payable_total,
+            'razor_payid'=>$razor_payid,
+            'razor_orderid'=>$razor_orderid,
+            'payment_status'=>$payment_status
+       ];
+      
+        Mail::send('mail', $Mdata, function($message) use ($email,$name){
+            $message->to($email, $name)->subject
+                ('Talenttantra Online Ticket receipt');
+            $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
+      });
+        return view('success')->with($Mdata);
+
+       }
+        else{
+             return redirect(route('tt.register'));
+        }
+    
+   }
 }

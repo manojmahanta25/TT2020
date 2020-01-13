@@ -34,7 +34,8 @@ Route::get('/pronites', ['as'=>'tt.pronites','uses'=>'pageController@pronites'])
 Route::get('/pass', ['as'=>'tt.pass','uses'=>'pageController@pass']);
 Route::get('/rulesandregulations', ['as'=>'tt.rnr','uses'=>'pageController@rnr']);
 Route::get('/termsofuse', ['as'=>'tt.termsofuse','uses'=>'pageController@tou']);
-Route::get('/thankyou', ['as'=>'tt.thankyou','uses'=>'pageController@thankYou']);
+
+//Route::get('/thankyou', ['as'=>'tt.thankyou','uses'=>'pageController@thankYou']);
 
 Route::get('/privacypolicy', ['as'=>'tt.privacypolicy','uses'=>'pageController@privacypolicy']);
 Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
@@ -53,7 +54,10 @@ Route::group(['middleware'=>'web'], function(){
 	Route::post('/paymentverification', ['as' => 'tt.ticketpaid', 'uses' => 'ticketController@upRID']);
 
 	Route::get('/success',['as' => 'tt.ticketmail', 'uses' => 'ticketController@html_email']);
-    Route::get('/test/{id}', ['as'=>'tt.registerfetch','uses'=>'registrationController@showPrice']);
+
+	Route::get('/thankyou', ['as'=>'tt.registermail','uses'=>'registrationController@html_email']);
+	
+    Route::get('/getevtprc/{id}', ['as'=>'tt.registerfetch','uses'=>'registrationController@showPrice']);
 });
 
 

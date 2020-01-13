@@ -14,8 +14,8 @@
                     <br/><br/><br/><br/><div class="speaker-address">
                         <ul style="text-align: justify; list-style:none;">
                             <li><strong>Event Coordinator:</strong></li>
-                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> +91 96781 96898</li>
-                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> +91 88764 33179</li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Chandan Boruah : +91 96781 96898</li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himangshu Boruah : +91 84040 73290</li>
                             {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}}
                         </ul>
                     </div>
@@ -57,7 +57,7 @@
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> FREE</strong></p><br/>
 {{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
 {{--                                                <input type="hidden" name="event" value="fal-solo">--}}
 {{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}

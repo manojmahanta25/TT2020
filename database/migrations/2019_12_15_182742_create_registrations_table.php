@@ -15,6 +15,7 @@ class CreateRegistrationsTable extends Migration
     {
         Schema::create('registrations', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('rid',10);
             $table->string('team_name');
             $table->string('team_leader');
             $table->string('event_name');

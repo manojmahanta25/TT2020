@@ -99,6 +99,7 @@
                             <div class="project four">
                                 <div class="container">
                                     <div class="col-sm-12 projopen" style="text-align: center;padding-top:15%;">
+                                        <div class="col-sm-12 col-md-offset-1"><h2>Focusia</h2></div>
                                         <div class="col-sm-5"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Online Photo Competition"><h2 class="porttext">Online Photo Competition</h2></a>
                                         </div>
                                         <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="On Spot Campus"><h2 class="porttext">On Spot Campus</h2></a>

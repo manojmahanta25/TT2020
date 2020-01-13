@@ -116,7 +116,7 @@ $sel = null;
     $(document).ready(function() {
         $("#event_name").change(function () {
             // alert(this.value);
-            var urla = '{{ url('/test/') }}/';
+            var urla = '{{ url('/getevtprc/') }}/';
             var furl =urla.concat(this.value);
             console.log(furl);
             $.ajax({
@@ -134,7 +134,7 @@ $sel = null;
         @if(isset($compvalue))
         function updateinfo() {
             $.ajax({
-                url: '{{ url('/test/').'/'.$compvalue }}',
+                url: '{{ url('/getevtprc/').'/'.$compvalue }}',
                 method: 'GET',
                 dataType: 'json',
                 success:function (data) {

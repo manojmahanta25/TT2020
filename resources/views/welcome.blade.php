@@ -13,11 +13,13 @@
         <img src="{{ URL::asset('images/webp/hotairballon.webp') }}" alt="" class="hotballon" />
     </div>
 
-    <!--<img src="./images/png/plane.png" alt="" class="in_plane"/>
+    <!--
+        <img src="./images/png/plane.png" alt="" class="in_plane"/>
         <img src="./images/png/camera.png" alt="" class="in_camera"/>
         <img src="./images/png/hat.png" alt="" class="in_hat"/>
         <img src="./images/png/tent.png" alt="" class="in_tent "/>
-        <img src="./images/png/sandal.png" alt="" class="in_sandal"/>-->
+        <img src="./images/png/sandal.png" alt="" class="in_sandal"/>
+    -->
 
     <div class="maindivL">
         <img src="{{ URL::asset('images/svg/logo.svg') }}" style="width: 30%;">

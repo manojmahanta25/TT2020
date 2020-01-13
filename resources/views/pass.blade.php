@@ -39,7 +39,6 @@
 
             <p>Terms and Conditions</p>
             <ul style="list-style: square; margin-left: 50px;">
-                <li>This pass is valid for <strong>one day</strong>. Each ticket admits <strong>one person only.</strong></li>
                 <li>Entry into the campus is from <strong>9 a.m.</strong> onwards.</li>
                 <li>Entry without passes will not be permitted. Please carry your pass to the venue. The same should be produced upon request at the gate.</li>
                 <li>Organizers reserve the right to perform <strong>security checks</strong> in the members/invitees at the entry point.</li>
