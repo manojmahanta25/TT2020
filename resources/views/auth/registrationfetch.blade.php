@@ -17,6 +17,7 @@
                         <th>Team Name</th>
                         <th>Team Leader</th>
                         <th>Event Name</th>
+                        <th>Main Event</th>
                         <th>Total Member</th>
                         <th>Email</th>
                         <th>Phone</th>

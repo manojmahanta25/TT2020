@@ -48,7 +48,8 @@ class registrationController extends Controller
         if(!isset($request->sbtn)){
             abort(403);
         }
-        $value = Event::select('members','cost','parent_event')->where('event_code', $request->event_name)->firstOrFail();
+        $value = Event::select('members','parent_event','cost')->where('event_code', $request->event_name)->firstOrFail();
+        $pevent = $value->parent_event;
         $total = $value->cost;
         if($request->accommodations == 1)
         {
@@ -63,7 +64,7 @@ class registrationController extends Controller
            'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'event_name' => $request->event_name,
-            'parent_name' => $value->parent_event,
+            'parent_name' => $pevent,
             'total_member' => $value->members,
             'email' => $request->email,
             'phone' => $request->phone,
