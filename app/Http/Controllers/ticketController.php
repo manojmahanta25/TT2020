@@ -153,7 +153,7 @@ class ticketController extends Controller
         $price= $this->getPrice($pass_type,$numbers_pass);
         if($price == null || $price < 300)
         {
-            Redirect::back()->withErrors(['msg', 'Invalid Pass']);
+            return Redirect::back()->withErrors(['msg', 'Invalid Pass']);
         }
         $day=$this->getSDay($select_day);
             
@@ -258,7 +258,7 @@ class ticketController extends Controller
         
         if($price == null || $price < 300)
         {
-            Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
+            return Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
         }
 
         $day=$this->getSDay($select_day);
@@ -415,7 +415,7 @@ class ticketController extends Controller
                 return 800 * $numbers_pass;
                 break;
             default:
-                Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Amount']);
+                return Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Amount']);
         }
     }
     public function getSDay($select_day){
@@ -433,7 +433,7 @@ class ticketController extends Controller
                 return  "31st January, 1st February and 2nd February 2020";
                 break;
             default:
-                 Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Day']);
+                return Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Day']);
             }
     }
 
