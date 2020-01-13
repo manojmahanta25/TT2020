@@ -56,13 +56,15 @@ Route::group(['middleware'=>'web'], function(){
 	Route::get('/success',['as' => 'tt.ticketmail', 'uses' => 'ticketController@html_email']);
 
 	Route::get('/thankyou', ['as'=>'tt.registermail','uses'=>'registrationController@html_email']);
-	
+
     Route::get('/getevtprc/{id}', ['as'=>'tt.registerfetch','uses'=>'registrationController@showPrice']);
 });
+Route::group(['middleware'=>'web'], function() {
+    Route::get('/viewregistration', ['as' => 'tt.registrationview', 'uses' => 'detailsController@index']);
+//    Route::post('/viewregistrationd', ['as' => 'tt.registrationviewd', 'uses' => 'detailsController@showAll']);
+    Route::get('/viewregistrationd', ['as' => 'tt.registrationviewd', 'uses' => 'detailsController@showAll']);
 
-
-
-
+});
 
 
 

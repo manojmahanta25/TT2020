@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/buttons.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/buttons.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.fixedHeader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.keyTable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.responsive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/dataTables.scroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/datatables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/datatables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/fixedHeader.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/pdfmake.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/responsive.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/responsive.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/scroller.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/datatables/vfs_fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/pages/datatables.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/registrationfetch.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegistrationValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/RegistrationValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_15_182742_create_registrations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_15_182742_create_registrations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/elements/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/elements/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/elements/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/elements/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/event.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/event.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +49,16 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="blade" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -113,12 +152,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1UC0FPr1heRZPUNWswBkl7xRLj8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -158,7 +201,9 @@
       <workItem from="1578320243640" duration="1238000" />
       <workItem from="1578418900406" duration="3530000" />
       <workItem from="1578752707818" duration="1604000" />
-      <workItem from="1578821000704" duration="21993000" />
+      <workItem from="1578821000704" duration="22292000" />
+      <workItem from="1578849948340" duration="547000" />
+      <workItem from="1578914551527" duration="8632000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -216,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578846550194</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated with events">
+      <created>1578846656364</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578846656364</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,11 +289,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <MESSAGE value="updated" />
-    <MESSAGE value="updated with events" />
     <MESSAGE value="updated with eventsa" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated with eventsa" />
+    <MESSAGE value="updated with events" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated with events" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="60" key="CommitChangelistDialog2" timestamp="1578321495757">

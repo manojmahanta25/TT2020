@@ -19,6 +19,7 @@ class CreateRegistrationsTable extends Migration
             $table->string('team_name');
             $table->string('team_leader');
             $table->string('event_name');
+            $table->string('parent_name');
             $table->integer('total_member');
             $table->string('email');
             $table->bigInteger('phone');

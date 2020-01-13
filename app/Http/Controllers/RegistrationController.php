@@ -48,7 +48,7 @@ class registrationController extends Controller
         if(!isset($request->sbtn)){
             abort(403);
         }
-        $value = Event::select('members','cost')->where('event_code', $request->event_name)->firstOrFail();
+        $value = Event::select('members','cost','parent_event')->where('event_code', $request->event_name)->firstOrFail();
         $total = $value->cost;
         if($request->accommodations == 1)
         {
@@ -63,6 +63,7 @@ class registrationController extends Controller
            'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'event_name' => $request->event_name,
+            'parent_name' => $value->parent_event,
             'total_member' => $value->members,
             'email' => $request->email,
             'phone' => $request->phone,
@@ -163,7 +164,7 @@ class registrationController extends Controller
             return $id;
         }
     }
-    
+
     public function html_email() {
         try
         {
@@ -185,20 +186,20 @@ class registrationController extends Controller
             $team_name = $key->team_name;
             $team_leader = $key->team_leader;
             $event_name = $key->event_name;
-            $total_member = $key->total_member;       
+            $total_member = $key->total_member;
             $email = $key->email;
             $phone = $key->phone;
             $address = $key->address;
             $pincode = $key->pincode;
             $district = $key->district;
-            $institute_name = $key->institute_name;     
+            $institute_name = $key->institute_name;
             $accommodations = $key->accommodations;
             $event_price = $key->event_price;
             $total_amount = $key->total_amount;
             $payment_status = $key->payment_status;
             $total_amount = $key->total_amount;
         }
-        
+
         $Mdata = [
             'rid'=>$rid,
             'team_name'=>$team_name,
@@ -216,7 +217,7 @@ class registrationController extends Controller
             'total_amount'=>$total_amount,
             'payment_status'=>$payment_status
        ];
-      
+
         Mail::send('rmail', $Mdata, function($message) use ($email,$team_leader){
             $message->to($email, $team_leader)->subject
                 ('Talenttantra Online Registration receipt');
@@ -227,6 +228,6 @@ class registrationController extends Controller
         else{
              return redirect(route('tt.register'));
         }
-    
+
    }
 }

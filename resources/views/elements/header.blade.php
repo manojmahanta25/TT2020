@@ -40,6 +40,11 @@
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
     <script src="{{ URL::asset('js/bootstrap.js') }}"></script>
 
+@if(isset($datables) && $datables == 1)
+    <link href="{{ URL::asset('css/datatables/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ URL::asset('css/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css">
+ @endif
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
@@ -49,14 +54,14 @@
 
     <link rel="stylesheet" href="{{ URL::asset('css/snap-scroll.css') }}" type="text/css">
     <script type="text/javascript">
-            
+
  $(document).ready(function() {
   var counter = 0;
 
   // Start the changing images
   setInterval(function() {
-    if(counter == 4) { 
-      counter = 0; 
+    if(counter == 4) {
+      counter = 0;
     }
 
     changeImage(counter);
@@ -83,7 +88,7 @@ function loading(){
   var num = 0;
 
   for(i=0; i<=100; i++) {
-    setTimeout(function() { 
+    setTimeout(function() {
       $('.loader span').html(num+'%');
 
       if(num == 100) {
