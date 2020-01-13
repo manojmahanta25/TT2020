@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ticket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/registrationfetch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/registrationfetch.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/ticketfetch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/ticketfetch.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/elements/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/elements/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/elements/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/elements/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +179,7 @@
       <workItem from="1578821000704" duration="22292000" />
       <workItem from="1578849948340" duration="547000" />
       <workItem from="1578914551527" duration="11175000" />
-      <workItem from="1578938502097" duration="7152000" />
+      <workItem from="1578938502097" duration="11142000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578943665027</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="updated with authentication with ticket model change IMP!!">
+      <created>1578945777606</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578945777606</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +308,8 @@
     <MESSAGE value="updated with authre" />
     <MESSAGE value="updated with authre1" />
     <MESSAGE value="updated with authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated with authentication" />
+    <MESSAGE value="updated with authentication with ticket model change IMP!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated with authentication with ticket model change IMP!!" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">

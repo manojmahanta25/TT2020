@@ -8,9 +8,9 @@
         </div>
         <!--end heading-->
 
-        <div class="portfoliomain">
+        <div class="container">
             <div class="table-responsive text-center">
-                <table id="regi-buttons" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                <table id="regi-buttons" class="table table-striped table-bordered dt-responsive" style="width:100%">
                     <thead>
                     <tr>
                         <th>ID</th>
@@ -61,13 +61,6 @@
             }
         });
 
-        function updateinfo() {
-            table.ajax.reload();
-        }
-        updateinfo();
-        // setInterval(function(){
-		// table.ajax.reload();
-        // },5000);
     });
 
 </script>

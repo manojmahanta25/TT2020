@@ -45,6 +45,7 @@
     <link href="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ URL::asset('css/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css">
  @endif
+
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="{{ URL::asset('js/html5shiv.js') }}"></script>

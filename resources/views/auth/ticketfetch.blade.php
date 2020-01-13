@@ -8,9 +8,9 @@
         </div>
         <!--end heading-->
 
-        <div class="portfoliomain">
-            <div class="table-responsive text-center">
-                <table id="regi-buttons" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+
+            <div class="table-responsive">
+            <table id="regi-buttons" class="table table-striped table-hover dt-responsive display nowrap" cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th>Ticket ID</th>
@@ -35,19 +35,24 @@
                     </tbody>
                 </table>
             </div>
+
+
             <!--end project-grid-->
-        </div>
+
         <!--end portfoliomain-->
     </div>
     <!--end container-->
 </section>
 <!--end section PORTFOLIO-->
 @include('elements.footerwidget')
+
+@include('elements.footer')
 <script>
 
     $(document).ready(function(){
         var table = $('#regi-buttons').DataTable({
             dom: 'B<"clear">lfrtip',
+            responsive: true,
             buttons: {
                 name: 'primary',
                 buttons: [ 'copy', 'csv', 'print' ]
@@ -58,15 +63,6 @@
                 dataSrc: 'ticket'
             }
         });
-
-        function updateinfo() {
-            table.ajax.reload();
-        }
-        updateinfo();
-        // setInterval(function(){
-        // table.ajax.reload();
-        // },5000);
     });
 
 </script>
-@include('elements.footer')
