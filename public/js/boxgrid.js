@@ -93,6 +93,7 @@ var Boxgrid = (function() {
 				    
 					return false;
 				}
+				
 				$item.data( 'isExpanded', true );
 				// save current item's index
 				current = $item.index();

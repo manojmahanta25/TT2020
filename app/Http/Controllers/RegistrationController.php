@@ -7,6 +7,7 @@ use App\Http\Requests\RegistrationValidate;
 use App\Registration;
 use Illuminate\Http\Request;
 use DB;
+use Mail;
 
 class registrationController extends Controller
 {
@@ -76,7 +77,7 @@ class registrationController extends Controller
         Registration::create($body);
         $request->flush();
 
-        return redirect(route('tt.ticketmail'))->with(['rid' => $rid]);
+        return redirect(route('tt.registermail'))->with(['rid' => $rid]);
     }
 
     /**
@@ -178,10 +179,9 @@ class registrationController extends Controller
 
         if($rid!= NULL || $rid!="")
         {
-       $data = DB::table('registrations')->where('custid', $rid)->get();
-      
+            $data = DB::table('registrations')->where('rid', $rid)->get();
         foreach ($data as $key) {
-            $custid = $key->custid;
+            $rid = $key->rid;
             $team_name = $key->team_name;
             $team_leader = $key->team_leader;
             $event_name = $key->event_name;
@@ -195,32 +195,34 @@ class registrationController extends Controller
             $accommodations = $key->accommodations;
             $event_price = $key->event_price;
             $total_amount = $key->total_amount;
-            $amount_paid = $key->amount_paid;
+            $payment_status = $key->payment_status;
             $total_amount = $key->total_amount;
-            $updated_at =  $key->updated_at;
         }
         
         $Mdata = [
-            'custid'=>$custid,
-            'name'=>$name,
-            'mobile'=>$mobile,
+            'rid'=>$rid,
+            'team_name'=>$team_name,
+            'team_leader'=>$team_leader,
+            'event_name'=>$event_name,
+            'total_member'=>$total_member,
             'email'=>$email,
-            'pass_type'=>$pass_type,
-            'numbers_pass'=>$numbers_pass,
-            'select_day'=>$select_day,
-            'payable_total'=>$payable_total,
-            'razor_payid'=>$razor_payid,
-            'razor_orderid'=>$razor_orderid,
+            'phone'=>$phone,
+            'address'=>$address,
+            'pincode'=>$pincode,
+            'district'=>$district,
+            'institute_name'=>$institute_name,
+            'accommodations'=>$accommodations,
+            'event_price'=>$event_price,
+            'total_amount'=>$total_amount,
             'payment_status'=>$payment_status
        ];
       
-        Mail::send('mail', $Mdata, function($message) use ($email,$name){
-            $message->to($email, $name)->subject
-                ('Talenttantra Online Ticket receipt');
-            $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
+        Mail::send('rmail', $Mdata, function($message) use ($email,$team_leader){
+            $message->to($email, $team_leader)->subject
+                ('Talenttantra Online Registration receipt');
+            $message->from('noreply@talenttantra.com','Talenttantra Online Registration')->cc('talenttantrapayment@gmail.com', 'Talenttantra Registration');
       });
-        return view('success')->with($Mdata);
-
+        return view('thankyou')->with($Mdata);
        }
         else{
              return redirect(route('tt.register'));

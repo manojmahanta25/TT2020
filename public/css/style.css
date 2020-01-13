@@ -1207,6 +1207,7 @@ section:after {
 	}
 	.project-grid li>div {
 		text-align: center;
+		clip: auto !important;
 	}
 }
 .porttext{
