@@ -8,7 +8,7 @@
         </div>
         <!--end heading-->
 
-
+<button id="test">asdasd</button>
             <div class="table-responsive">
             <table id="regi-buttons" class="table table-striped table-hover dt-responsive display nowrap" cellspacing="0" width="100%">
                     <thead>
@@ -50,6 +50,7 @@
 <script>
 
     $(document).ready(function(){
+
         var table = $('#regi-buttons').DataTable({
             dom: 'B<"clear">lfrtip',
             responsive: true,
@@ -62,6 +63,10 @@
                 url:"{{ url('/viewticketd') }}",
                 dataSrc: 'ticket'
             }
+        });
+
+        $("#1").click(function() {
+            alert(this.id); // or alert($(this).attr('id'));
         });
     });
 

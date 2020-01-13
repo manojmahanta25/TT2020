@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Registration;
 use App\Ticket;
 use Illuminate\Http\Request;
@@ -64,7 +65,7 @@ class detailsController extends Controller
             $row[]=$element->payment_status;
             $row[]=($element->instatus !=0)? 'Yes': 'Not Yet';
             $row[]=($element->indates !=0)? $element->indates: 'Not Yet';
-            $row[]=($element->instatus ==0)? '<button type="button" value="'.$element->custid.'" class="btn btn-dark">Check IN</button>': 'Already Check In';
+            $row[]=($element->instatus !=0)? '<button onclick="location.href=\''.route('tt.ticketcheckin',$element->custid).'\' " class="btn btn-primary">Check IN</button>': 'Already Check In';
             $table[]=$row;
         }
         if($request -> ajax()) {
@@ -101,6 +102,12 @@ class detailsController extends Controller
             return response()->json(['registration' => $table, 'status' => 'success']);
         }
         return abort(404);
+    }
+
+    public function passCheckIn($id) {
+        Ticket::where('custid',$id)->where('instatus','0')->firstOrFail();
+        Ticket::where('custid',$id)->update(['instatus'=>'1','indates'=>Carbon::now()->toDateTimeString()]);
+        return redirect(route('tt.ticketview'));
     }
 
     /**

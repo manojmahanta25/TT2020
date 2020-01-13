@@ -59,7 +59,7 @@ Route::post('/logout', [
 //    'uses' => 'Auth\RegisterController@register'
 //]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 
 
@@ -116,6 +116,7 @@ Route::group(['middleware'=>'web'], function() {
     Route::get('/viewregistrationd', ['as' => 'tt.registrationviewd', 'uses' => 'detailsController@showAll']);
     Route::get('/viewticket', ['as' => 'tt.ticketview', 'uses' => 'detailsController@ticketview']);
     Route::get('/viewticketd', ['as' => 'tt.ticketviewd', 'uses' => 'detailsController@ticketALL']);
+    Route::get('/ticketcheckin/{id}', ['as' => 'tt.ticketcheckin', 'uses' => 'detailsController@passCheckIn']);
 
 });
 
@@ -218,7 +219,7 @@ Route::group(['middleware'=>'web'], function() {
 //});
 //Route::get('/update', function (){
 //
-////    Registration::where('id',2)->where('is_admin','0')->update(['title'=>'some','content'=>'somae']);
+//   Registration::where('id',2)->where('is_admin','0')->update(['title'=>'some','content'=>'somae']);
 //    Registration::where('id',2)->update(['team_leader'=>'some','team_name'=>'somae']);
 //    return redirect('/findsingle');
 //});
