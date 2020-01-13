@@ -114,6 +114,8 @@ Route::group(['middleware'=>'web'], function() {
     Route::get('/viewregistration', ['as' => 'tt.registrationview', 'uses' => 'detailsController@index']);
 //    Route::post('/viewregistrationd', ['as' => 'tt.registrationviewd', 'uses' => 'detailsController@showAll']);
     Route::get('/viewregistrationd', ['as' => 'tt.registrationviewd', 'uses' => 'detailsController@showAll']);
+    Route::get('/viewticket', ['as' => 'tt.ticketview', 'uses' => 'detailsController@ticketview']);
+    Route::get('/viewticketd', ['as' => 'tt.ticketviewd', 'uses' => 'detailsController@ticketALL']);
 
 });
 
