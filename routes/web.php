@@ -15,14 +15,65 @@ use App\Event;
 */
 /*
 |--------------------------------------------------------------------------
+| Auth Routes
+|--------------------------------------------------------------------------
+*/
+Route::get('/adalogani', [
+    'as' => 'login',
+    'uses' => 'Auth\LoginController@showLoginForm'
+]);
+Route::post('/adalogani', [
+    'as' => 'loginDb',
+    'uses' => 'Auth\LoginController@login'
+]);
+Route::post('/logout', [
+    'as' => 'logout',
+    'uses' => 'Auth\LoginController@logout'
+]);
+
+// Password Reset Routes...
+//Route::post('/password/email', [
+//    'as' => 'password.email',
+//    'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail'
+//]);
+//Route::get('/password/reset', [
+//    'as' => 'password.request',
+//    'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm'
+//]);
+//Route::post('/password/reset', [
+//    'as' => 'password.update',
+//    'uses' => 'Auth\ResetPasswordController@reset'
+//]);
+//Route::get('/password/reset/{token}', [
+//    'as' => 'password.reset',
+//    'uses' => 'Auth\ResetPasswordController@showResetForm'
+//]);
+//
+//// Registration Routes...
+//Route::get('/register', [
+//    'as' => 'register',
+//    'uses' => 'Auth\RegisterController@showRegistrationForm'
+//]);
+//Route::post('/register', [
+//    'as' => 'registerDb',
+//    'uses' => 'Auth\RegisterController@register'
+//]);
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+/*
+|--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 */
 Route::get('/',['as'=>'tt.home','uses'=>'pageController@home']);
 Route::get('/competitions', ['as'=>'tt.event','uses'=>'pageController@competitions']);
 Route::get('/competitions/{id}',['as'=>'tt.eventdet','uses'=>'pageController@eventFetch']);
-Route::get('/register', ['as'=>'tt.register','uses'=>'registrationController@index']);
-Route::get('/register/{id}', ['as'=>'tt.registersingle','uses'=>'registrationController@show']);
+Route::get('/registration', ['as'=>'tt.register','uses'=>'registrationController@index']);
+Route::get('/registration/{id}', ['as'=>'tt.registersingle','uses'=>'registrationController@show']);
 
 Route::get('/sponsor', ['as'=>'tt.sponsor','uses'=>'pageController@sponsor']);
 
@@ -45,7 +96,7 @@ Route::get('/buytickets/{ptype}',['as' => 'tt.ticketId', 'uses' => 'ticketContro
 
 Route::group(['middleware'=>'web'], function(){
 //    Route::resource('post','registrationController');
-    Route::post('/register', ['as'=>'tt.registerdb','uses'=>'registrationController@store']);
+    Route::post('/registration', ['as'=>'tt.registerdb','uses'=>'registrationController@store']);
 
     Route::post('/buytickets', ['as'=>'tt.buyticketsdb','uses'=> 'ticketController@store']);
 
@@ -200,3 +251,5 @@ Route::group(['middleware'=>'web'], function() {
 //Route::get('/eventfind/{id}', function ($id){
 //    return ParentEvent::find($id)->subEvent;
 //});
+
+

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Registration;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class detailsController extends Controller
 {
@@ -12,8 +13,14 @@ class detailsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
+        $userlogin = (Auth::user())? 1: 0;
         $page = 'home';
         $datables=1;
         $page_title = 'Talent Tantra 2020';
@@ -21,7 +28,7 @@ class detailsController extends Controller
         $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
         $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
 
-        return view('auth.registrationfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'datables'));
+        return view('auth.registrationfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'datables', 'userlogin'));
     }
 
     public function showAll(Request $request)

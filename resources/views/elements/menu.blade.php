@@ -12,5 +12,16 @@
         <li><a href="{{route('tt.comingsoon')}}">Team</a></li>
         <li><a href="{{route('tt.rnr')}}">Rules and Regulations</a></li>
         <li><a href="{{route('tt.contact')}}">Contact</a></li>
+        @if(isset($userlogin) && $userlogin==1 )
+        <li><a href="{{ route('logout') }}"
+           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+        </a></li>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+        @endif
     </ul>
 </nav>
