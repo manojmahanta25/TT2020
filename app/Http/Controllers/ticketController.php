@@ -59,7 +59,7 @@ class ticketController extends Controller
         $this->validate($request,[
             'pass_type' => 'required',
             'numbers_pass' => 'required',
-            'select_day' => 'required',
+            'select_day' => 'nullable',
             'name' => 'required',
             'gender' => 'required',
             'email' => 'required|email',

@@ -26,6 +26,10 @@ class CreateRegistrationsTable extends Migration
             $table->string('district');
             $table->string('institute_name');
             $table->tinyInteger('accommodations')->default('0');
+            $table->string('event_price');
+            $table->string('total_amount')->default('0');
+            $table->integer('amount_paid')->default('0');
+            $table->string('payment_status')->default('paylater');
             $table->timestamps();
             $table->softDeletes();
         });

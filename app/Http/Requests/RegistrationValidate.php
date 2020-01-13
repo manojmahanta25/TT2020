@@ -24,6 +24,7 @@ class RegistrationValidate extends FormRequest
     public function rules()
     {
         return [
+            'event_name'=>'required',
             'team_name'=>'required|max:50',
             'team_leader'=>'required|min:3|max:50',
         ];
