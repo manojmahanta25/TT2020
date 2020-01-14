@@ -30,10 +30,11 @@ class detailsController extends Controller
         $table =[];
         foreach ($view as $element){
             $row = [];
-            $row[]=$element->id;
+            $row[]=$element->rid;
             $row[]=$element->team_name;
             $row[]=$element->team_leader;
             $row[]=$element->event_name;
+            $row[]=$element->parent_name;
             $row[]=$element->total_member;
             $row[]=$element->email;
             $row[]=$element->phone;
