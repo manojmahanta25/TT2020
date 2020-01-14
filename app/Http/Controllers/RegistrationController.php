@@ -50,9 +50,12 @@ class registrationController extends Controller
         }
         $value = Event::select('members','parent_event','cost')->where('event_code', $request->event_name)->firstOrFail();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pevent=$value->parent_event;
 =======
         $pevent = $value->parent_event;
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
         $total = $value->cost;
         if($request->accommodations == 1)
@@ -65,22 +68,23 @@ class registrationController extends Controller
         $rid=$this->getRID();
         $body =[
             'rid'=> $rid,
-           'team_name' => $request->team_name,
-            'team_leader' => $request->team_leader,
-            'event_name' => $request->event_name,
-            'parent_name' => $pevent,
-            'total_member' => $value->members,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'address' => $request->address,
-            'pincode' => $request->pincode,
-            'district' => $request->district,
-            'institute_name' => $request->institute_name,
-            'accommodations' => $request->accommodations,
-            'event_price' => $value->cost,
-            'total_amount' => $total
+           'team_name' => $this->e($request->team_name),
+            'team_leader' => $this->e($request->team_leader),
+            'event_name' => $this->e($request->event_name),
+            'parent_name' =>$this->e($value->parent_event),
+            'total_member' => $this->e($value->members),
+            'email' => $this->e($request->email),
+            'phone' => $this->e($request->phone),
+            'address' => $this->e($request->address),
+            'pincode' => $this->e($request->pincode),
+            'district' => $this->e($request->district),
+            'institute_name' => $this->e($request->institute_name),
+            'accommodations' => $this->e($request->accommodations),
+            'event_price' => $this->e($value->cost),
+            'total_amount' => $this->e($total)
         ];
         Registration::create($body);
+        $request->session()->regenerateToken();
         $request->flush();
 
         return redirect(route('tt.registermail'))->with(['rid' => $rid]);
@@ -239,5 +243,9 @@ class registrationController extends Controller
              return redirect(route('tt.register'));
         }
 
+   }
+   public function e($value)
+   {
+        return htmlspecialchars(strip_tags(trim($value)));
    }
 }

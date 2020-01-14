@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Registration;
+use App\Ticket;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class detailsController extends Controller
 {
@@ -12,8 +15,14 @@ class detailsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
+        $userlogin = (Auth::check())? 1: 0;
         $page = 'home';
         $datables=1;
         $page_title = 'Talent Tantra 2020';
@@ -21,9 +30,49 @@ class detailsController extends Controller
         $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
         $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
 
-        return view('auth.registrationfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'datables'));
+        return view('auth.registrationfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'datables', 'userlogin'));
     }
 
+    public function ticketview()
+    {
+        $userlogin = (Auth::check())? 1: 0;
+        $page = 'home';
+        $datables=1;
+        $page_title = 'Talent Tantra 2020';
+        $mtitle = 'Talent Tantra 2020';
+        $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+
+        return view('auth.ticketfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'datables', 'userlogin'));
+    }
+    public function ticketAll(Request $request)
+    {
+        $ticketget=Ticket::all();
+        $table =[];
+        foreach ($ticketget as $element){
+            $row = [];
+            $row[]=$element->custid;
+            $row[]=$element->name;
+            $row[]=$element->mobile;
+            $row[]=$element->email;
+            $row[]=$element->pass_type;
+            $row[]=$element->numbers_pass;
+            $row[]=$element->select_day;
+            $row[]=$element->payable_total;
+            $row[]=$element->razor_payid;
+            $row[]=$element->razor_orderid;
+            $row[]=$element->razorpay_signature;
+            $row[]=$element->payment_status;
+            $row[]=($element->instatus !=0)? 'Yes': 'Not Yet';
+            $row[]=($element->indates !=0)? $element->indates: 'Not Yet';
+            $row[]=($element->instatus !=0)? '<button onclick="location.href=\''.route('tt.ticketcheckin',$element->custid).'\' " class="btn btn-primary">Check IN</button>': 'Already Check In';
+            $table[]=$row;
+        }
+        if($request -> ajax()) {
+            return response()->json(['ticket' => $table, 'status' => 'success']);
+        }
+        return $ticketget;
+    }
     public function showAll(Request $request)
     {
         $view=Registration::all();
@@ -53,6 +102,12 @@ class detailsController extends Controller
             return response()->json(['registration' => $table, 'status' => 'success']);
         }
         return abort(404);
+    }
+
+    public function passCheckIn($id) {
+        Ticket::where('custid',$id)->where('instatus','0')->firstOrFail();
+        Ticket::where('custid',$id)->update(['instatus'=>'1','indates'=>Carbon::now()->toDateTimeString()]);
+        return redirect(route('tt.ticketview'));
     }
 
     /**

@@ -12,8 +12,8 @@ use Redirect;
 use Mail;
 
 class ticketController extends Controller
-{   
-    
+{
+
     /**
      * Display a listing of the resource.
      *
@@ -72,6 +72,7 @@ class ticketController extends Controller
         $gender = $request->input('gender');
         $email = $request->input('email');
         $mobile = $request->input('mobile');
+        $request->session()->regenerateToken();
         $request->flush();
 
         return $this->tckPreview($pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile);
@@ -144,7 +145,7 @@ class ticketController extends Controller
         }
         return $id;
     }
-    
+
     public function tckPreview($pass_type,$numbers_pass,$select_day,$name,$gender,$email,$mobile)
     {
         //$numbers_pass =$numbers_pass;
@@ -156,7 +157,7 @@ class ticketController extends Controller
             return Redirect::back()->withErrors(['msg', 'Invalid Pass']);
         }
         $day=$this->getSDay($select_day);
-            
+
         //echo $price;
         //echo $rid;
         /*Ticket::create(['custid'=>$rid,
@@ -236,15 +237,15 @@ class ticketController extends Controller
         try
             {
 
-           
+
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
         $rid = $this->getID();
         //echo 'test';
 
         //echo ' Razorpay '.env('RAZORPAY_KEY');
-        
-        
+
+
         $pass_type = $request->input('pass_type');
         $numbers_pass = $request->input('numbers_pass');
         $select_day = $request->input('select_day');
@@ -253,16 +254,16 @@ class ticketController extends Controller
         $email = $request->input('email');
         $mobile = $request->input('mobile');
         //return $numbers_pass;
-        
+
         $price=$this->getPrice($pass_type, $numbers_pass);
-        
+
         if($price == null || $price < 300)
         {
             return Redirect::route('tt.ticket')->withErrors(['msg', 'Invalid Pass']);
         }
 
         $day=$this->getSDay($select_day);
-            
+
         //$body='price is '.$price;
         Ticket::create(['custid'=>$rid,
             'name'=>$name,
@@ -273,9 +274,9 @@ class ticketController extends Controller
             'select_day'=>$select_day,
             'payable_total'=>$price
         ]);
-       
+
         $orderData = ['receipt'=> $rid,'amount'=>  $price*100,'currency'=> 'INR','payment_capture'=> 1];
-        
+
         $razorpayOrder = $api->order->create($orderData);
         $razorpayOrderId = $razorpayOrder['id'];
 
@@ -320,7 +321,7 @@ class ticketController extends Controller
         }
 
         $json = json_encode($data);
-        
+
         return view('tckpay', compact('data','rid'));
 
         }
@@ -331,7 +332,7 @@ class ticketController extends Controller
      }
 
       public function upRID(Request $request){
-        
+
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
         $success = true;
@@ -379,10 +380,10 @@ class ticketController extends Controller
             $token=  $request->input('_token');
             $html = "<p>Your payment was successful</p>
                      <p>Payment ID: {$request->input('razorpay_payment_id')}</p>";
-            
-            //Update code       
+
+            //Update code
             Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id,'razorpay_signature'=>$razorpay_signature,'remember_token'=>$token,'payment_status'=>'1']);
-            
+
             //mailing
             return redirect(route('tt.ticketmail'))->with(['rid' => $rid]);
 
@@ -398,15 +399,15 @@ class ticketController extends Controller
         {
             $html = "<p>Your payment failed</p><p>{$error}</p>";
             echo $html;
-            //Update code       
+            //Update code
             //Ticket::where('custid',$rid)->update(['razor_payid'=>$razorpay_payment_id,'razor_orderid'=>$razorpay_order_id],'razorpay_signature'=>$razorpay_signature],'remember_token'=>$token],'payment_status'=>'1');
         }
-        echo $html;        
+        echo $html;
 
      }
 
      public function getPrice($pass_type, $numbers_pass){
-        
+
         switch ($pass_type) {
             case 'single':
                 return 300 * $numbers_pass;
@@ -455,24 +456,24 @@ class ticketController extends Controller
         if($rid!= NULL || $rid!="")
         {
        $data = DB::table('tickets')->where('custid', $rid)->get();
-      
+
         foreach ($data as $key) {
             $custid = $key->custid;
             $name = $key->name;
             $mobile = $key->mobile;
             $email = $key->email;
-            $pass_type = $key->pass_type;       
+            $pass_type = $key->pass_type;
             $numbers_pass = $key->numbers_pass;
             $select_day = $key->select_day;
             $payable_total = $key->payable_total;
             $razor_payid = $key->razor_payid;
             $razor_orderid = $key->razor_orderid;
-            $payment_status = $key->payment_status;     
+            $payment_status = $key->payment_status;
             $updated_at = $key->updated_at;
         }
-        
+
             $select_day=$this->getSDay($select_day);
-        
+
         $Mdata = [
             'custid'=>$custid,
             'name'=>$name,
@@ -486,7 +487,7 @@ class ticketController extends Controller
             'razor_orderid'=>$razor_orderid,
             'payment_status'=>$payment_status
        ];
-      
+
         Mail::send('mail', $Mdata, function($message) use ($email,$name){
             $message->to($email, $name)->subject
                 ('Talenttantra Online Ticket receipt');
@@ -498,7 +499,7 @@ class ticketController extends Controller
         else{
              return redirect(route('tt.ticket'));
         }
-    
+
    }
 
 }
