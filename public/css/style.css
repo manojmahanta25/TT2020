@@ -1346,6 +1346,47 @@ section:after {
 		width: 90%;
 		text-align: left;
 	}
+
+	.competitions>.new {
+		width: 90%;
+	    text-align: left;
+	}
+	.competitions>.new:nth-child(1){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(2){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(3){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(4){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(5){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(6){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(7){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(8){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(9){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(10){
+		background-size: 35%; 
+	}	
+	.competitions>.new:nth-child(11){
+		background-size: 35%; 
+	}
+	.competitions>.new:nth-child(12){
+		background-size: 35%; 
+	}
 	.project-grid li[class^="icon-"]:before,
 	.project-grid li[class*=" icon-"]:before {
 		font-size: 6em;

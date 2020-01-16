@@ -57,10 +57,9 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-                                            {{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
-                                            {{--                                                <input type="hidden" name="event" value="fal-solo">--}}
-                                            {{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
-                                            {{--                                            </form>--}}
+                                        </div>
+                                        <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','basketball')}}" alt="">Register</a>
                                         </div>
                                     </div>
                                 </div>

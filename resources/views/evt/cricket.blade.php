@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','cricket')}}" alt="">REGISTER</a>
-                                        </div>  
+                                    </div>  
                                 </div>
                                 <!-- schedule-table -->
                             </div>

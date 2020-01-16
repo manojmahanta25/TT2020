@@ -36,7 +36,7 @@
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        
+
                                         <ol style="text-align: justify;list-style-type: decimal;margin-left: 50px;margin-top: 10px;">
                                             <li>Collage Making time &ndash; 1 hour</li>
                                             <li>Paper, Magazines, Glue, Sketch pens, Pen colours etc. is expected to be brought by the participants.</li>
@@ -56,9 +56,12 @@
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            
+
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p>
-                                                                                        <a href="{{route('tt.registersingle','collagemaking')}}" alt="">submit</a>
+                                        </div>
+
+                                        <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','collagemaking')}}" alt="">REGISTER</a>
                                         </div>
                                     </div>
                                 </div>

@@ -19,14 +19,14 @@
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                         <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
+                        <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
                         <li>6</li>
                     </ul><br/>
-                    
+
                 </div>
             </div>
 
@@ -67,10 +67,6 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-solo">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -115,9 +111,9 @@
                         <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
                     </ul>
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+                <!-- container -->
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->

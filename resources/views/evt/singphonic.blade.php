@@ -78,7 +78,11 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-                                            <a href="{{route('tt.registersingle','singphonic-classical')}}" alt="">submit</a>
+                                        </div>
+                                        <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
+                                            <h5 style="text-align: justify;">Registration Here:</h5>
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','singphonic-classical')}}" alt="">Classical/Semi-Classical</a>
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','singphonic-modern')}}" alt="">Modern</a>
                                         </div>
                                     </div>
                                 </div>
