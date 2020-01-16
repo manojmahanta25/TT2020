@@ -1055,6 +1055,7 @@ section:after {
    	-webkit-box-shadow:2px 2px 4px 8px rgba(0, 0, 0, 0.72);
     box-shadow: 2px 2px 4px 8px rgba(0, 0, 0, 0.72);
 }
+
 .competitions>.new h3 {
 	font-size: 25px;
 	font-weight: 400;
@@ -1064,6 +1065,7 @@ section:after {
 	bottom: 0px;
     text-align: center;
 }
+
 .competitions>.new:nth-child(1) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
@@ -1072,6 +1074,7 @@ section:after {
 	background: url(../images/events/game.svg) top center no-repeat , rgba(48,185,229,0.8);
 	background-size: 70%; 
 }
+
 .competitions>.new:nth-child(2) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
@@ -1182,48 +1185,158 @@ section:after {
 .pone {
 	background: #3399CC;
 }
+/* Grid */
+
+.project-work .project.one {
+	background: #3399CC;
+}
+
+.project-grid>li:nth-child(1) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/game.svg) center center no-repeat , rgba(48,185,229,0.8);
+	background-size: 50%; 
+}
 
 .project-work .project.two{
  background-color: rgba(194,73,82);
+}
+.project-grid>li:nth-child(2) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/music.svg) center center no-repeat , rgba(194,73,82,0.8);
+	background-size: 50%; 
 }
 
 .project-work .project.three {
 	background: rgba(156,205,95);
 }
 
-.project-work .project.four{
-	background: rgba(48,185,229);
+.project-grid>li:nth-child(3) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/libary.svg) center center no-repeat , rgba(156,205,95,0.8);
+	background-size: 50%; 
 }
 
 .project-work .project.four{
 	background: rgba(48,185,229);
+}
+.project-grid>li:nth-child(4) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/photographic.svg) center center no-repeat , rgba(48,185,229,0.8);
+	background-size: 50%; 
 }
 
 .project-work .project.five {
 	background: rgba(240,187,96);
 }
+
+.project-grid>li:nth-child(5) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/bussiness.svg) center center no-repeat , rgba(240,187,96,0.8);
+	background-size: 50%; 
+}
+
 .project-work .project.six{
 	background: rgba(236,106,61);	
 }
+
+.project-grid>li:nth-child(6) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/dance.svg) center center no-repeat , rgba(236,106,61,0.8);
+	background-size: 70%; 
+}
+
 .project-work .project.seven {
 	background: rgba(192,53,65);
 }
+
+.project-grid>li:nth-child(7) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/fasion.svg) center center no-repeat , rgba(192,53,65,0.8);
+	background-size: 45%; 
+}
+
 .project-work .project.eight{
 	background: rgba(244,209,47);
 }
+.project-grid>li:nth-child(8) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/science.svg) center center no-repeat , rgba(244,209,47,0.8);
+	background-size: 50%; 
+}
+
 .project-work .project.nine {
 	background: rgba(80,191,135);
 }
+
+.project-grid>li:nth-child(9) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/sports.svg) center center no-repeat , rgba(80,191,135,0.8);
+	background-size: 50%; 
+}
+
 .project-work .project.ten
 {
 	background: rgba(240,187,96);
 }
+.project-grid>li:nth-child(10) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/drama.svg) center center no-repeat , rgba(240,187,96,0.8);
+	background-size: 80%; 
+}
+
 .project-work .project.eleven{
 	background: rgba(244,209,47);
 }
+.project-grid>li:nth-child(11) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/informal.svg) center center no-repeat , rgba(244,209,47,0.8);
+	background-size: 50%; 
+}
+
 .project-work .project.twelve
 {
 	background: rgba(156,205,95);
+}
+.project-grid>li:nth-child(12) {
+	border-image: url(../images/events/stamp-border.png) 8 round;
+	border-width: 8px;
+	border-style: solid;
+	border-image-outset: 1;
+	background: url(../images/events/workshop.svg) center center no-repeat , rgba(156,205,95,0.8);
+	background-size: 50%; 
 }
 
 @media screen and (max-width: 63.125em) {
@@ -1251,6 +1364,7 @@ section:after {
 	border-width: 8px;
 	border-style: solid; 
 	border-image-outset: 1;
+	text-align: center;
 }
 
 /*========================================================================*/

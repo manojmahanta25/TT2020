@@ -102,13 +102,12 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li><strong>Event Coordinator:</strong></li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Akash Pratim Boruah: +918486347218</li>
-                                                {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>--}}
                                             </ul>
                                         </div>
-                                        <div class="speaker-statement">
+                                        <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 1500/Team</strong></p><br/>
-                                            <a href="{{route('tt.registersingle','falsetto-group')}}" alt="">submit</a>
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','falsetto-group')}}" alt="">REGISTER</a>
                                         </div>
                                     </div>
                                 </div>

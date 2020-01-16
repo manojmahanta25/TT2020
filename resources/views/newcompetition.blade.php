@@ -53,13 +53,13 @@
 
 <!--end section PORTFOLIO-->
 @include('elements.footerwidget') @include('elements.footer')
-<div class="modal fade " id="game" role="dialog">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content pone">
+                <div class="modal fade pone" id="game" role="dialog">
+                    <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
+                        <div class="modal-content">
                             <div class="row modal-body">                            	
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <div class="col-md-4">
-                                <a href="{{route('tt.eventdet','destroix')}}" style="width:50%;"><h2 class="porttext">Destroix</h2></a>
+                                <div class="col-md-offset-4 col-md-4">
+                                <a href="{{route('tt.eventdet','destroix')}}" style="width:50%;"><h2 class="porttext" style="text-align: center;">Destroix</h2></a>
                             </div>
                             </div>
                         </div>
