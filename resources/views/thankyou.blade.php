@@ -36,7 +36,7 @@
                         <td><strong>Competition : </strong>
                             <b>{{ $event_name }}</b>
                         </td>
-                        <td><strong>Team name : </strong> {{ $team_name }} pass
+                        <td><strong>Team name : </strong> {{ $team_name }} 
                         </td>
 
                     </tr>

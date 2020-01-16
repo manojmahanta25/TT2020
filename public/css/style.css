@@ -1055,6 +1055,7 @@ section:after {
    	-webkit-box-shadow:2px 2px 4px 8px rgba(0, 0, 0, 0.72);
     box-shadow: 2px 2px 4px 8px rgba(0, 0, 0, 0.72);
 }
+
 .competitions>.new h3 {
 	font-size: 25px;
 	font-weight: 400;
@@ -1064,6 +1065,7 @@ section:after {
 	bottom: 0px;
     text-align: center;
 }
+
 .competitions>.new:nth-child(1) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
@@ -1072,6 +1074,7 @@ section:after {
 	background: url(../images/events/game.svg) top center no-repeat , rgba(48,185,229,0.8);
 	background-size: 70%; 
 }
+
 .competitions>.new:nth-child(2) {
 	border-image: url(../images/events/stamp-border.png) 8 round;
 	border-width: 8px;
@@ -1251,6 +1254,7 @@ section:after {
 	border-width: 8px;
 	border-style: solid; 
 	border-image-outset: 1;
+	text-align: center;
 }
 
 /*========================================================================*/
