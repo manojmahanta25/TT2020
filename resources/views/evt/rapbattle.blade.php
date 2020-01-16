@@ -16,9 +16,9 @@
                 <div class="speaker-address">
                     <ul style="text-align: justify; list-style:none;">
                         <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
                     </ul>
                 </div>
             </div>

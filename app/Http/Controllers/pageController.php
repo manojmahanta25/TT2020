@@ -27,6 +27,15 @@ class pageController extends Controller
         return view('competitions', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
     }
 
+    public function compet()
+    {
+        $page = 'newcompetition';
+        $page_title = 'All Competitions of Talent Tantra 2020';
+        $mtitle = 'All Competitions of Talent Tantra 2020';
+        $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('newcompetition', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
+    }
 
     public function eventFetch($id)
     {

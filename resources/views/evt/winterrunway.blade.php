@@ -35,9 +35,9 @@
                                             <li>Time : 10 A.M. Onwards</li>
                                             <li>Venue : SET Seminar Hall</li>
                                             <li>Grooming Date : 28 th  Jan -30 th  Jan &amp; 31 st Jan</li>
-                                            <li>Grooming Fees : <strong>Rs. 1200/- only</strong></li>
+                                            <li>Grooming Fees : <strong>Rs. 1500/- only</strong></li>
                                             <li>Accommodation Fees: <strong>Rs. 100/- only per day</strong></li>
-                                            <li>Finale Date : <strong>1 st Feb, 2019</strong></li>
+                                            <li>Finale Date : <strong>1 st Feb, 2020</strong></li>
                                         </ul>
                     
                                         <br/><h5 style="text-align: justify;">Dress Code:</h5>

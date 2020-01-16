@@ -24,7 +24,8 @@
     <meta property="og:title" content="{{$mtitle}}"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">    
+    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" />
     <!--place your favicon path 18pxX18px here-->
 
@@ -39,7 +40,7 @@
     <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
     <script src="{{ URL::asset('js/bootstrap.js') }}"></script>
-
+    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 @if(isset($datables) && $datables == 1)
     <link href="{{ URL::asset('css/datatables/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css">

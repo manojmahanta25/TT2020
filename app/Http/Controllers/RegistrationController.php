@@ -49,14 +49,9 @@ class registrationController extends Controller
             abort(403);
         }
         $value = Event::select('members','parent_event','cost')->where('event_code', $request->event_name)->firstOrFail();
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         $pevent=$value->parent_event;
-=======
-        $pevent = $value->parent_event;
->>>>>>> origin/master
-=======
->>>>>>> origin/master
+
         $total = $value->cost;
         if($request->accommodations == 1)
         {

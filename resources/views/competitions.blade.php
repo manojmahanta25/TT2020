@@ -45,9 +45,9 @@
                                         <!--project details after clicking on project-->
                                         <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','falsetto')}}';" href="" alt="Falsetto"><h2 class="porttext">Falsetto</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Singphonic"><h2 class="porttext">Singphonic</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','singphonic')}}';" href="" alt="Singphonic"><h2 class="porttext">Singphonic</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Moksh Mantra"><h2 class="porttext">Moksh Mantra</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','mokshmantra')}}';" href="" alt="Moksh Mantra"><h2 class="porttext">Moksh Mantra</h2></a>
                                         </div>
                                         <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','rapbattle')}}';" href="" alt="Rap Battle"><h2 class="porttext">Rap Battle</h2></a>
                                         </div><!--competitions/beatboxing-->
@@ -76,7 +76,7 @@
                                         </div>
                                         <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','collagemaking')}}';" href="" alt="Collage Making"><h2 class="porttext">Collage Making</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Live Sketch"><h2 class="porttext">Live Sketch</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','livesketch')}}';" href="" alt="Live Sketch"><h2 class="porttext">Live Sketch</h2></a>
                                         </div>
                                         <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Quiz"><h2 class="porttext">Quiz</h2></a>
                                         </div>
@@ -100,9 +100,9 @@
                                 <div class="container">
                                     <div class="col-sm-12 projopen" style="text-align: center;padding-top:15%;">
                                         <div class="col-sm-12 col-md-offset-1"><h2>Focusia</h2></div>
-                                        <div class="col-sm-5"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Online Photo Competition"><h2 class="porttext">Online Photo Competition</h2></a>
+                                        <div class="col-sm-5"><a onclick="location.href='{{route('tt.eventdet','onlinephotocompetition')}}';" href="" alt="Online Photo Competition"><h2 class="porttext">Online Photo Competition</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="On Spot Campus"><h2 class="porttext">On Spot Campus</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','onspotcampus')}}';" href="" alt="On Spot Campus"><h2 class="porttext">On Spot Campus</h2></a>
                                         </div>
                                         <div class="col-sm-4"><a onclick="location.href='{{route('tt.eventdet','selfiecompetition')}}';" href="" alt="Selfie Competition"><h2 class="porttext">Selfie Competition</h2></a>
                                         </div>
@@ -125,11 +125,11 @@
                             <div class="project five">
                                 <div class="container">
                                      <div class="col-sm-12 projopen" style="text-align: center;padding-top:15%;">
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Street Tales"><h2 class="porttext">Street Tales</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','streettales')}}';" href="" alt="Street Tales"><h2 class="porttext">Street Tales</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Kick Start"><h2 class="porttext">Kick Start</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','kickstart')}}';" href="" alt="Kick Start"><h2 class="porttext">Kick Start</h2></a>
                                         </div>
-                                        <div class="col-sm-5"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Price is Right- Bidding War"><h2 class="porttext">Price is Right- Bidding War</h2></a>
+                                        <div class="col-sm-5"><a onclick="location.href='{{route('tt.eventdet','priceisright')}}';" href="" alt="Price is Right- Bidding War"><h2 class="porttext">Price is Right- Bidding War</h2></a>
                                         </div>
                                     </div>
                                 </div>
@@ -223,15 +223,15 @@
                                     <div class="col-sm-12 projopen" style="text-align: center;padding-top:15%;">
                                         <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="CrossFit"><h2 class="porttext">CrossFit</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Lawn Tennis"><h2 class="porttext">Lawn Tennis</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','lawntennis')}}';" href="" alt="Lawn Tennis"><h2 class="porttext">Lawn Tennis</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Cricket"><h2 class="porttext">Cricket</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','cricket')}}';" href="" alt="Cricket"><h2 class="porttext">Cricket</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Basketball"><h2 class="porttext">Basketball</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.eventdet','basketball')}}';" href="" alt="Basketball"><h2 class="porttext">Basketball</h2></a>
                                         </div>
-                                        <div class="col-sm-offset-3 col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Badminton"><h2 class="porttext">Badminton</h2></a>
+                                        <div class="col-sm-offset-3 col-sm-3"><a onclick="location.href='{{route('tt.eventdet','badminton')}}';" href="" alt="Badminton"><h2 class="porttext">Badminton</h2></a>
                                         </div>
-                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon')}}';" href="" alt="Football"><h2 class="porttext">Football</h2></a>
+                                        <div class="col-sm-3"><a onclick="location.href='{{route('tt.comingsoon','football')}}';" href="" alt="Football"><h2 class="porttext">Football</h2></a>
                                         </div>
                                     </div>
                                 </div>

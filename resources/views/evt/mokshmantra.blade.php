@@ -2,20 +2,24 @@
     <div class="container">
 
         <div class="heading" style="padding-top:50px;">
-            <h2>MOKASH MANTRA</h2>
+            <h2>Moksh Mantra</h2>
         </div>
         <!--end heading-->
 
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
-                    <span><h3>Battle of Bands</h3></span>
-                    <p>"A rock band is a mysterious thing. Somehow, every once in a while, a few individuals bump into one another, and they look exactly right together and share a focus and an aspiration and the right balance of musical similarities and differences." - Alan Light</p>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: NO AGE LIMIT</li> 
-                    </ul><br/>
-                    
+                    <span><h3>Moksh Mantra</h3></span>
+                    <p>Battle of Bands</p>
+                </div>
+                <br/><br/><br/><br/><br/>
+                <div class="speaker-address">
+                    <ul style="text-align: justify; list-style:none;">
+                        <li><strong>Event Coordinator:</strong></li>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
+                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
+                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                    </ul>
                 </div>
             </div>
 
@@ -29,26 +33,49 @@
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">Solo</a></li>
-                            <li role="presentation"><a href="#event-two" aria-controls="event-two" role="tab" data-toggle="tab">Group</a></li>
-                        </ul>
                         <!-- Tab panes -->
-                        
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="event-one">
+                                <div class="schedule-table table-responsive">
+                                    <div class="speaker-statement" aria-hidden="true">
+                                        <h5 style="text-align: justify;">Rules And Regulations:</h5>
+                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
+                                            <li>Bands of all genres are allowed.</li>
+                                            <li>Each band will be allotted a total of 25 mins of time including sound check.</li>
+                                            <li>Performing one OC (Original Composition) and one Cover Song is mandatory.</li>
+                                            <li>However participants can perform more than 2 songs if possible in the given time.</li>
+                                            <li>Bands are required to bring their own gear and instruments.</li>
+                                            <li>A standard 5pc drum will be provided by the organizers. Bands can bring their own cymbals and pedals as preferred.</li>
+                                            <li>Use of narcotics in the premises of the university and misbehaviour on or off the stage will lead to disqualification of the band.</li>
+                                        </ol><br/>
+                                        <div class="speaker-statement">
+                                            <h5 style="text-align: justify;">Event Schedule:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: </li>
+                                                <li>Starting Time: </li>
+                                                <li>Date: </li>
+                                            </ul>
+                                        </div><br/>
+                                        <div class="speaker-statement">
+                                            <h5 style="text-align: justify;">Registration Fee:</h5>
+                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            {{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
+                                            {{--                                                <input type="hidden" name="event" value="fal-solo">--}}
+                                            {{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
+                                            {{--                                            </form>--}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- schedule-table -->
+                            </div>
+                        </div>
                     </div>
-                    <ul class="speaker-address">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
-                    </ul>
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+        <!-- container -->
     </div>
-        <!--end project-grid-->
+    <!--end project-grid-->
     <!--end portfoliomain-->
     <!--end container-->
 </section>

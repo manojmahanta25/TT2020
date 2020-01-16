@@ -48,16 +48,16 @@ Route::post('/logout', [
 //    'as' => 'password.reset',
 //    'uses' => 'Auth\ResetPasswordController@showResetForm'
 //]);
-//
-//// Registration Routes...
-//Route::get('/register', [
+
+// Registration Routes...
+// Route::get('/register', [
 //    'as' => 'register',
 //    'uses' => 'Auth\RegisterController@showRegistrationForm'
-//]);
-//Route::post('/register', [
+// ]);
+// Route::post('/register', [
 //    'as' => 'registerDb',
 //    'uses' => 'Auth\RegisterController@register'
-//]);
+// ]);
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
@@ -85,8 +85,7 @@ Route::get('/pronites', ['as'=>'tt.pronites','uses'=>'pageController@pronites'])
 Route::get('/pass', ['as'=>'tt.pass','uses'=>'pageController@pass']);
 Route::get('/rulesandregulations', ['as'=>'tt.rnr','uses'=>'pageController@rnr']);
 Route::get('/termsofuse', ['as'=>'tt.termsofuse','uses'=>'pageController@tou']);
-
-//Route::get('/thankyou', ['as'=>'tt.thankyou','uses'=>'pageController@thankYou']);
+Route::get('/newcompetition', ['as'=>'tt.compet','uses'=>'pageController@compet']);
 
 Route::get('/privacypolicy', ['as'=>'tt.privacypolicy','uses'=>'pageController@privacypolicy']);
 Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
@@ -110,6 +109,7 @@ Route::group(['middleware'=>'web'], function(){
 
     Route::get('/getevtprc/{id}', ['as'=>'tt.registerfetch','uses'=>'registrationController@showPrice']);
 });
+
 Route::group(['middleware'=>'web'], function() {
     Route::get('/viewregistration', ['as' => 'tt.registrationview', 'uses' => 'detailsController@index']);
 //    Route::post('/viewregistrationd', ['as' => 'tt.registrationviewd', 'uses' => 'detailsController@showAll']);
