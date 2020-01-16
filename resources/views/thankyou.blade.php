@@ -84,7 +84,7 @@
                     <tr>
                         <td colspan="3"><br/><br/>
                             <strong>Note : </strong>
-                            1) Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 refundable per member.<br/>
+                            1) Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 is security per member which is refundable.<br/>
                             2) Reporting time 9:00 AM.<br/><br/>
                         </td>
                     </tr>

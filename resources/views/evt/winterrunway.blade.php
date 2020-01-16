@@ -109,11 +109,8 @@
                                     <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Partha Pratim Nath : +91 9101713959</li>
                                     <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Rainy Mahanta : +91 8761941230</li>
                                 </ul>
-                                <div class="speaker-statement">
-                                            <!-- <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="winter-runway">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form> -->
+                                <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','winterrunway')}}" alt="">REGISTER</a>
                                         </div>                             
                             </div>
                         </div>

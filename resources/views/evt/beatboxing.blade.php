@@ -61,10 +61,7 @@
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <br/>
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p>
-{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
-{{--                                                <input type="hidden" name="event" value="pubg">--}}
-{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
-{{--                                            </form>--}}
+                                            <a href="{{route('tt.registersingle','beatboxing')}}" alt="">submit</a>
                                         </div>
                                     </div>
                                 </div>

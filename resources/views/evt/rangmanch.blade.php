@@ -9,25 +9,9 @@
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
-                    <span><h3>xxxxxxxx</h3></span>
-                    <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                    <p><strong>Format:</strong></p>
-                    <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li>1</li>
-                        <li>2</li>
-                    </ul><br/>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul><br/>
-                    
+                    <span><h3>Street Play Competition</h3></span>
                 </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -40,28 +24,37 @@
             <section class="schedules">
                 <div class="container">
                     <div class="schedule-tabs">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">1</a></li>
-                            <li role="presentation"><a href="#event-two" aria-controls="event-two" role="tab" data-toggle="tab">2</a></li>
-                        </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
-                                        <h4 style="text-align: justify;color: lightcoral">1</h4>
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
+                                            <li dir="ltr">Number of members in a team must not be less than 6 and should be a maximum of 10</li>
+                                            <li dir="ltr">Time limit for the performance is 15 minutes.</li>
+                                            <li dir="ltr">Usage of fire/water/smoke in any form is not allowed.</li>
+                                            <li dir="ltr">Musical instruments are not allowed.</li>
+                                            <li dir="ltr">The performance can be&nbsp; in Hindi, English and Assamese</li>
+                                            <li dir="ltr">The minimum age limit for this competition is 14 years.</li>
+                                            <li dir="ltr">All the special requests must be made a week before prior the performance.</li>
+                                            <li dir="ltr">Issues like crossing the time limits, using abusive language,or vulgarity will lead to negative marking.</li>
+                                            <li dir="ltr">The judge&rsquo;s decision is final and abiding</li>
                                         </ol><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Venue: </li>
+                                                <li>Starting Time: </li>
+                                                <li>Date: </li>
+                                            </ul>
+                                        </div><br/>
+                                        <div class="speaker-address">
+                                            <ul style="text-align: left;">
+                                                <li><strong>Event Coordinator:</strong></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -76,48 +69,12 @@
                                 </div>
                                 <!-- schedule-table -->
                             </div>
-
-                            <div role="tabpanel" class="tab-pane" id="event-two">
-                                <div class="schedule-table table-responsive">
-                                    <div class="speaker-statement" aria-hidden="true">
-                                        <h4 style="text-align: justify;color: lightcoral">2</h4>
-                                        <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxx</li>
-                                                <li>Date : xxxxxxxxxxxxxxxx</li>
-                                            </ul>
-                                        </div><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 1500/Team</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-group">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- schedule-table -->
-                            </div>
                         </div>
                     </div>
-                    <ul class="speaker-address" style="text-align: center;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
-                    </ul>
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+                <!-- container -->
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->

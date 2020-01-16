@@ -335,11 +335,11 @@ class pageController extends Controller
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
             
-            case 'rangmach':
-                $page = 'rangmach';
-                $value = 'rangmach';
-                $page_title = 'Rangmach';
-                $mtitle = 'Rangmach';
+            case 'rangmanch':
+                $page = 'rangmanch';
+                $value = 'rangmanch';
+                $page_title = 'Rangmanch';
+                $mtitle = 'Rangmanch';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));

@@ -13,14 +13,14 @@
                     <p>The event is a solo rap showcase competition, wherein contestants can perform an original rap composition and take away exciting prizes.</p>
                 </div>
                 <br/><br/><br/><br/><br/>
-                <div class="speaker-address">
+               <!--  <div class="speaker-address">
                     <ul style="text-align: justify; list-style:none;">
                         <li><strong>Event Coordinator:</strong></li>
                         <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                         <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                         <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -54,21 +54,18 @@
 {{--                                            <li>Obscene and explicit language is strictly prohibited, any rapper found in disregard for the rules will be disqualified.</li>--}}
 {{--                                            <li>The rapper can choose from Hindi, English or Assamese as the language medium to perform.</li>--}}
                                         </ol><br/>
-                                        <div class="speaker-statement">
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                                             </ul>
-                                        </div><br/>
+                                        </div><br/> -->
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
-{{--                                                <input type="hidden" name="event" value="fal-solo">--}}
-{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
-{{--                                            </form>--}}
+                                            <a href="{{route('tt.registersingle','rapbattle')}}" alt="">submit</a>
                                         </div>
                                     </div>
                                 </div>

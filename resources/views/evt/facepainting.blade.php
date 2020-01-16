@@ -10,7 +10,7 @@
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
                     <span><h3>Informals - Face Painting</h3></span>
-                    <p>Show your spirit of painting on a living canvas.</p>
+                    <p>Show your spirit of painting on a live canvas.</p>
                 </div>
                 <br/><br/><br/><br/><br/><br/>
                 <div class="speaker-address">
@@ -54,10 +54,7 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
-{{--                                                <input type="hidden" name="event" value="fal-solo">--}}
-{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
-{{--                                            </form>--}}
+                                           <a href="{{route('tt.registersingle','facepainting')}}" alt="">submit</a>
                                         </div>
                                     </div>
                                 </div>

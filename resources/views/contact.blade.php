@@ -26,7 +26,7 @@
 					<li>
 					<div class="content">
 					<p><span class="fa fa-phone-square" aria-hidden="true">&nbsp;</span>+91 8486034362</p>
-					<p><span class="fa fa-phone-square" aria-hidden="true">&nbsp;</span>+91 6000903183</p><br/>
+					<p><span class="fa fa-phone-square" aria-hidden="true">&nbsp;</span>+91 7002152778</p><br/>
 					</div>
 					</li>
 					<li>

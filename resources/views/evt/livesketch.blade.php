@@ -45,21 +45,18 @@
                                             <li>Art paper will be provided.</li>
                                             <li>The participants must bring their own requirements.</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: KU Campus</li>
                                                 <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                                             </ul>
-                                        </div><br/>
+                                        </div><br/> -->
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-{{--                                            <form action="registration.php" method="GET" style="float:left;">--}}
-{{--                                                <input type="hidden" name="event" value="fal-solo">--}}
-{{--                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">--}}
-{{--                                            </form>--}}
+                                            <a href="{{route('tt.registersingle','livesketch')}}" alt="">submit</a>
                                         </div>
                                     </div>
                                 </div>
