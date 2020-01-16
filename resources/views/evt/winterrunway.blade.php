@@ -39,7 +39,7 @@
                                             <li>Accommodation Fees: <strong>Rs. 100/- only per day</strong></li>
                                             <li>Finale Date : <strong>1 st Feb, 2020</strong></li>
                                         </ul>
-                    
+
                                         <br/><h5 style="text-align: justify;">Dress Code:</h5>
                                         <p>For Girls:</p>
                                         <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
@@ -101,7 +101,7 @@
                                                 illness and having good moral character can participate made herein.</li>
                                             <li>For Mr. and Miss Popular sub contest - Using auto liker or cheat bots will disqualify the participation.</li>
                                         </ul>
-                                                                     
+
                                 </div>
 
                                 <ul class="speaker-address" style="margin-top: 20px; text-align: justify;">
@@ -110,8 +110,8 @@
                                     <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Rainy Mahanta : +91 8761941230</li>
                                 </ul>
                                 <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
-                                            <a class="ristrabtn" href="{{route('tt.registersingle','winterrunway')}}" alt="">REGISTER</a>
-                                        </div>                             
+                                    <a class="ristrabtn" href="{{route('tt.registersingle','winterrunway')}}" alt="">REGISTER</a>
+                                </div>
                             </div>
                         </div>
                             <!-- schedule-table -->
@@ -120,7 +120,7 @@
                 </div>
                 <!-- container -->
             </section>
-                <!-- container -->            
+                <!-- container -->
         </div>
     </div>
         <!--end project-grid-->
