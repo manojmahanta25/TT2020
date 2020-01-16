@@ -18,7 +18,8 @@ class CreateEventsTable extends Migration
             $table->string('event_code');
             $table->string('event_name');
             $table->string('parent_event');
-            $table->integer('members');
+            $table->integer('min_members');
+            $table->integer('max_members');
             $table->integer('cost');
         });
     }
