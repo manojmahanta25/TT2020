@@ -108,6 +108,7 @@ Route::group(['middleware'=>'web'], function(){
 	Route::get('/thankyou', ['as'=>'tt.registermail','uses'=>'registrationController@html_email']);
 
     Route::get('/getevtprc/{id}', ['as'=>'tt.registerfetch','uses'=>'registrationController@showPrice']);
+    Route::get('/getevtprcl/{id}/{member}', ['as'=>'tt.registerprice','uses'=>'registrationController@getPrice']);
 });
 
 Route::group(['middleware'=>'web'], function() {

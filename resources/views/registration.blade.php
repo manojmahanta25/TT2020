@@ -26,7 +26,7 @@ $sel = null;
         <!--end heading-->
         <div class="portfoliomain">
             <div class="col-sm-offset-2 col-sm-8" style="background: rgba(255,253,253,0.8);padding: 15px;">
-            {!! Form::open(['route' => 'tt.registerdb']) !!}
+            {!! Form::open(['route' => 'tt.registerdb', 'id' =>'myForm']) !!}
             <div class="form-group row">
                 {{Form::label('event_name','Competition',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-6">
@@ -38,7 +38,9 @@ $sel = null;
             <div class="form-group row">
                 {{Form::label('total_member','Total Members',['class'=>'col-sm-2 control-label'])}}
                 <div class="col-sm-2">
-                    {{Form::text('total_member','', ['class'=>'form-control ', 'readonly'])}}
+                    <select id="total_member" name="total_member" class="form-control">
+                        <option value="">Select Members</option>
+                    </select>
                 </div>
                 {{Form::label('price','Price',['class'=>'col-sm-1 control-label'])}}
                 <div class="col-sm-2">
@@ -95,9 +97,15 @@ $sel = null;
             </div>
             <div class="form-group row">
                 {{Form::label('accommodations','Required Accomodations',['class'=>'col-sm-2 control-label'])}}
-                <div class="col-sm-6">
-                    {{Form::radio('accommodations','1')}} {{Form::label('acco','yes')}}
-                    {{Form::radio('accommodations','0',true)}} {{Form::label('acco','no')}}
+                <div class="col-sm-3">
+                    <label><input type="radio" id="radio1" value="1" name="accommodations" >Yes</label>
+                    <label><input type="radio" id="radio2" value="0" name="accommodations" checked>No</label>
+                </div>
+                <div id="hidden">
+                {{Form::label('aprice','Accommodations Price',['class'=>'col-sm-2 control-label'])}}
+                <div class="col-sm-2">
+                    {{Form::text('aprice','', ['class'=>'form-control ', 'readonly'])}}
+                </div>
                 </div>
             </div>
                 @csrf
@@ -114,23 +122,60 @@ $sel = null;
 @include('elements.footerwidget')
 <script type="text/javascript">
     $(document).ready(function() {
+        $("#hidden").hide();
         $("#event_name").change(function () {
-            // alert(this.value);
             var urla = '{{ url('/getevtprc/') }}/';
             var furl =urla.concat(this.value);
-            console.log(furl);
             $.ajax({
                 url: furl,
                 method: 'GET',
                 dataType: 'json',
                 success:function (data) {
-                    console.log(data);
-                    $('#price').val(data.data.cost);
-                    $('#total_member').val(data.data.members);
+                    $('#total_member').html(data.data);
+                     updatePrice();
+                     updateAcco();
                 }
 
             });
         });
+        $("#total_member").change(function () {
+            // alert(this.value);
+            updatePrice();
+            updateAcco();
+
+        });
+        $('input[name="accommodations"]').click(function () {
+             updateAcco();
+        });
+        function updateAcco(){
+            var radio = $('input[name="accommodations"]:checked').val();
+            if(radio == 1){
+                var str1 = $("#total_member").val();
+                var integer = parseInt(str1, 10);
+                var acco = integer*200;
+                $('#aprice').val(acco);
+                $("#hidden").show();
+            }
+            else {
+                $("#hidden").hide();
+            }
+        }
+        function updatePrice() {
+            var str1 = $("#total_member").val();
+            var str2 = $("#event_name").val();
+            var urla= '{{ url('/getevtprcl/') }}/';
+            var furl = urla.concat(str2, '/',str1);
+            $.ajax({
+                url: furl,
+                method: 'GET',
+                dataType: 'json',
+                success:function (data) {
+                    $('#price').val(data.data);
+                }
+
+            });
+
+        }
         @if(isset($compvalue))
         function updateinfo() {
             $.ajax({
@@ -138,8 +183,9 @@ $sel = null;
                 method: 'GET',
                 dataType: 'json',
                 success:function (data) {
-                    $('#price').val(data.data.cost);
-                    $('#total_member').val(data.data.members);
+                    $('#total_member').html(data.data);
+                    updatePrice();
+                    updateAcco();
                 }
 
             });

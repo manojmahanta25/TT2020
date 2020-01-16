@@ -48,14 +48,19 @@ class registrationController extends Controller
         if(!isset($request->sbtn)){
             abort(403);
         }
-        $value = Event::select('members','parent_event','cost')->where('event_code', $request->event_name)->firstOrFail();
+        $value = Event::select('parent_event','cost')->where('event_code', $request->event_name)->firstOrFail();
 
-        $pevent=$value->parent_event;
-
-        $total = $value->cost;
+        $cost=1500;
+        if($value->cost == 1500)
+        {
+            $cost=1500;
+        }else {
+            $cost = $this->e($request->total_member)*$value->cost;
+        }
+        $total = $cost;
         if($request->accommodations == 1)
         {
-            $total = $total + 200*$value->members;
+            $total = $total + 200*$this->e($request->total_member);
         }
         else{
             $total = $total;
@@ -67,7 +72,7 @@ class registrationController extends Controller
             'team_leader' => $this->e($request->team_leader),
             'event_name' => $this->e($request->event_name),
             'parent_name' =>$this->e($value->parent_event),
-            'total_member' => $this->e($value->members),
+            'total_member' => $this->e($request->total_member),
             'email' => $this->e($request->email),
             'phone' => $this->e($request->phone),
             'address' => $this->e($request->address),
@@ -108,12 +113,42 @@ class registrationController extends Controller
     public function showPrice($id='ml',Request $request)
     {
         $id = trim(htmlspecialchars(strip_tags($id)));
-        $value = Event::select('members','cost')->where('event_code', $id)->firstOrFail();
+        $value = Event::select('min_members','max_members')->where('event_code', $id)->firstOrFail();
         if($request -> ajax()) {
-            return response()->json(['data' => $value, 'status' => 'success']);
+            $option='';
+            $count = 1;
+            for ($i=$value->min_members; $i<=$value->max_members; $i++)
+            {   if($count == 1) {
+                $option .= '<option value="' . $i . '" selected>' . $i . '</option>';
+                }else {
+                    $option .= '<option value="' . $i . '" >' . $i . '</option>';
+                }
+                $count++;
+            }
+            return response()->json(['data' => $option, 'status' => 'success']);
+//            return response()->json(['data' => $value, 'status' => 'success']);
+        }
+
+        return abort(404);
+    }
+    public function getPrice($id='ml', $member=1, Request $request)
+    {
+        $id = trim(htmlspecialchars(strip_tags($id)));
+        $member = trim(htmlspecialchars(strip_tags($member)));
+        if($request->ajax()){
+            $value = Event::select('cost')->where('event_code', $id)->firstOrFail();
+            $cost=1500;
+            if($value->cost == 1500)
+            {
+                $cost=1500;
+            }else {
+                    $cost = $member*$value->cost;
+             }
+            return response()->json(['data' => $cost, 'status' => 'success']);
         }
         return abort(404);
     }
+
 
     /**
      * Show the form for editing the specified resource.
