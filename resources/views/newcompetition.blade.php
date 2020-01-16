@@ -54,7 +54,7 @@
 <!--end section PORTFOLIO-->
 @include('elements.footerwidget') @include('elements.footer')
                 <div class="modal fade pone" id="game" role="dialog">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                            	
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
