@@ -26,11 +26,8 @@
                 <td><strong>Competition : </strong>
                     <b>{{ $event_name }}</b>
                 </td>
-<<<<<<< HEAD
                 <td><strong>Team name : </strong> {{ $team_name }} 
-=======
-                <td><strong>Team name : </strong> {{ $team_name }}
->>>>>>> origin/master
+
                 </td>
 
             </tr>
