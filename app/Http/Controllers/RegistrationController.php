@@ -226,6 +226,7 @@ class registrationController extends Controller
             $team_name = $key->team_name;
             $team_leader = $key->team_leader;
             $event_name = $key->event_name;
+            $parent_event =$key->parent_name;
             $total_member = $key->total_member;
             $email = $key->email;
             $phone = $key->phone;
@@ -235,20 +236,19 @@ class registrationController extends Controller
             $institute_name = $key->institute_name;
             $accommodations = $key->accommodations;
             $event_price = $key->event_price;
-            $total_amount = $key->total_amount;
             $payment_status = $key->payment_status;
             $total_amount = $key->total_amount;
         }
          $evnp= DB::table('events')->where('event_code', $event_name)->get();
          foreach ($evnp as $evn) {
             $evname = $evn->event_name;
-         }
+            }
 
         $Mdata = [
             'rid'=>$rid,
             'team_name'=>$team_name,
             'team_leader'=>$team_leader,
-            'event_name'=>$evname,
+            'event_name'=>$evname.'-'.$parent_event,
             'total_member'=>$total_member,
             'email'=>$email,
             'phone'=>$phone,

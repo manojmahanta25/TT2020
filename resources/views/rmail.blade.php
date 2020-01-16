@@ -26,7 +26,7 @@
                 <td><strong>Competition : </strong>
                     <b>{{ $event_name }}</b>
                 </td>
-                <td><strong>Team name : </strong> {{ $team_name }} pass
+                <td><strong>Team name : </strong> {{ $team_name }}
                 </td>
 
             </tr>
@@ -49,7 +49,7 @@
             <tr>
                 <td><strong>Institute Name : </strong> {{ $institute_name }}
                 </td>
-                <td><strong>Accommodations : </strong> <?php 
+                <td><strong>Accommodations : </strong> <?php
                             if($accommodations=="1") {
                                 echo "Yes";
                             }

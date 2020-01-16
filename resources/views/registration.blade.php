@@ -107,8 +107,11 @@ $sel = null;
                     {{Form::text('aprice','', ['class'=>'form-control ', 'readonly'])}}
                 </div>
                 </div>
+
             </div>
-                @csrf
+                <span class="help-block"><small>Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 is security per member which is refundable.</small></span>
+
+            @csrf
         {{Form::submit('Submit', ['name'=>'sbtn','class'=>'btn btn-primary'])}}
         {!! Form::close() !!}
 
