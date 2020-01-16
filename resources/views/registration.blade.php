@@ -109,8 +109,11 @@ $sel = null;
                 </div>
 
             </div>
-                <span class="help-block"><small>Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 is security per member which is refundable.</small></span>
-
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <span class="help-block"><small>Total Payable amount is equal to Event registration fee plus accomodation fee <mark style="color: blue">Rs. 200/member </mark>&nbsp; in which <mark style="color: red">Rs 100</mark>&nbsp; is security per member which is refundable.</small></span>
+                    </div>
+                </div>
             @csrf
         {{Form::submit('Submit', ['name'=>'sbtn','class'=>'btn btn-primary'])}}
         {!! Form::close() !!}
