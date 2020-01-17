@@ -9,24 +9,9 @@
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
-                    <span><h3>xxxxxxxx</h3></span>
-                    <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                    <p><strong>Format:</strong></p>
-                    <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li>1</li>
-                        <li>2</li>
-                    </ul><br/>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul><br/>
-                    
+                    <span><h3>A Science and Technology Event</h3></span>
+                    <p>Aeromodeling is going to be high energy event in which the students will be tested based on their creativity and understanding to apply the fundamentals of physics and aerodynamics along with manufacturing bent of mind</p>
+                                       <br/><br/><br/><br/><br/><br/><br/>
                 </div>
             </div>
 
@@ -41,79 +26,54 @@
                 <div class="container">
                     <div class="schedule-tabs">
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#event-one" aria-controls="event-one" role="tab" data-toggle="tab">1</a></li>
-                            <li role="presentation"><a href="#event-two" aria-controls="event-two" role="tab" data-toggle="tab">2</a></li>
-                        </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
-                                        <h4 style="text-align: justify;color: lightcoral">1</h4>
+                                        <h4 style="text-align: justify;color: lightcoral">Aero - Modeling</h4>
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
-                                        <div class="speaker-statement">
+                                        <ul style="text-align: justify; list-style-type: disc; margin-left: 30px; margin-top: 10px;">
+                                            <li>Students must bring their own flying objects</li>
+                                            <li>The flying object should not be more than 60×60cm (±10cm)</li>
+                                            <li>Three Shots will be given to each participant  best of three will count .</li>
+                                            <li>The bottom of the flying object should be of hard material to hook it with string</li>
+                                            <li>Each team can have upto two participants</li>
+                                            <li>Entry Fees will be 500 per participant, for a team of two the entry fees will be 1000</li>
+
+                                        </ul><br/>
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                                             </ul>
-                                        </div><br/>
+                                        </div><br/> -->
+                                        <div class="speaker-statement">
+                                            <ul class="speaker-address" style="text-align: justify;">
+                                                <h5>Event Coordinator:</h5>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Ujjwal Jha: 7002238952 / 8011590609</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Harpreet Singh: 6002782430</li>
+                                            </ul>    
+                                        </div>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-solo">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
                                         </div>
+                                        <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','aeromodeling')}}" alt="">REGISTER</a>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <!-- schedule-table -->
                             </div>
 
-                            <div role="tabpanel" class="tab-pane" id="event-two">
-                                <div class="schedule-table table-responsive">
-                                    <div class="speaker-statement" aria-hidden="true">
-                                        <h4 style="text-align: justify;color: lightcoral">2</h4>
-                                        <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxx</li>
-                                                <li>Date : xxxxxxxxxxxxxxxx</li>
-                                            </ul>
-                                        </div><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 1500/Team</strong></p><br/>
-                                            <form action="registration.php" method="GET" style="float:left;">
-                                                <input type="hidden" name="event" value="fal-group">
-                                                <input type="submit" name="eventregistrationbt" value="register now" style="text-transform: uppercase;font-size: 14px; padding: 18px 24px;">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- schedule-table -->
-                            </div>
+                            
                         </div>
                     </div>
-                    <ul class="speaker-address" style="text-align: center;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
-                    </ul>
+                    
                 </div>
             </section>        
         </div>
