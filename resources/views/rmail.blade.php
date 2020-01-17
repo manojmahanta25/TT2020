@@ -1,5 +1,5 @@
 <h2>Acknowledgement</h2>
-<br/> Dear {{ $team_leader }},
+<br/> Dear {{ $Mdata['team_leader'] }},
 <br/>
 <br/> Thank you for showing interest in Talent Tantra 2020.
 <br/>
@@ -21,37 +21,37 @@
         <tbody>
             <tr>
                 <td><strong>Registration ID : </strong>
-                    <b>{{ $rid }}</b>
+                    <b>{{ $Mdata['rid'] }}</b>
                 </td>
                 <td><strong>Competition : </strong>
-                    <b>{{ $event_name }}</b>
+                    <b>{{ $Mdata['event_name'] }}</b>
                 </td>
-                <td><strong>Team name : </strong> {{ $team_name }} 
+                <td><strong>Team name : </strong> {{ $Mdata['team_name'] }}
 
                 </td>
 
             </tr>
             <tr>
-                <td><strong>Total Members : </strong> {{ $total_member }}
+                <td><strong>Total Members : </strong> {{ $Mdata['total_member'] }}
                 </td>
-                <td><strong>Email : </strong> {{ $email }}
+                <td><strong>Email : </strong> {{ $Mdata['email'] }}
                 </td>
-                <td><strong>Mobile : </strong> {{ $phone }}
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Address : </strong> {{ $address }}
-                </td>
-                <td><strong>pincode : </strong> {{ $pincode }}
-                </td>
-                <td><strong>District : </strong> {{ $district }}
+                <td><strong>Mobile : </strong> {{ $Mdata['phone'] }}
                 </td>
             </tr>
             <tr>
-                <td><strong>Institute Name : </strong> {{ $institute_name }}
+                <td><strong>Address : </strong> {{ $Mdata['address'] }}
+                </td>
+                <td><strong>pincode : </strong> {{ $Mdata['pincode'] }}
+                </td>
+                <td><strong>District : </strong> {{ $Mdata['district'] }}
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Institute Name : </strong> {{ $Mdata['institute_name'] }}
                 </td>
                 <td><strong>Accommodations : </strong> <?php
-                            if($accommodations=="1") {
+                            if($Mdata['accommodations']=="1") {
                                 echo "Yes";
                             }
                             else {
@@ -59,12 +59,12 @@
                             }
                         ?>
                 </td>
-                <td><strong>Event Price : </strong> {{ $event_price }}
+                <td><strong>Event Price : </strong> {{ $Mdata['event_price'] }}
                 </td>
             </tr>
 
             <tr>
-                <td><strong>Total Payable : </strong> {{ $total_amount }}
+                <td><strong>Total Payable : </strong> {{ $Mdata['total_amount'] }}
                 </td>
                 <td><strong>Payment Status : </strong> Pay at registration desk
                 </td>
