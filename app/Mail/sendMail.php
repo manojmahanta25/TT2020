@@ -35,6 +35,7 @@ class sendMail extends Mailable
         {
             case 'pass':
                 return $this->from('noreply@talenttantra.com','Talenttantra Online Registration')
+                    ->subject('Talent Tantra Online Ticket receipt')
                     ->cc('talenttantrapayment@gmail.com', 'Talenttantra Registration')
                     ->view('mail');
                 break;

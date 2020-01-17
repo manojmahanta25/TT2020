@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Jobs\sendMailJob;
 use Illuminate\Http\Request;
 use App\Ticket;
 use DB;
@@ -493,6 +494,8 @@ class ticketController extends Controller
                 ('Talenttantra Online Ticket receipt');
             $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
       });
+            $job =(new sendMailJob($email,$name,$Mdata,'pass'));
+            dispatch($job);
         return view('success')->with($Mdata);
 
        }

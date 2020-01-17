@@ -65,7 +65,7 @@ class detailsController extends Controller
             $row[]=$element->payment_status;
             $row[]=($element->instatus !=0)? 'Yes': 'Not Yet';
             $row[]=($element->indates !=0)? $element->indates: 'Not Yet';
-            $row[]=($element->instatus !=0)? '<button onclick="location.href=\''.route('tt.ticketcheckin',$element->custid).'\' " class="btn btn-primary">Check IN</button>': 'Already Check In';
+            $row[]=($element->instatus ==0)? '<button onclick="location.href=\''.route('tt.ticketcheckin',$element->custid).'\' " class="btn btn-primary">Check IN</button>': 'Already Check In';
             $table[]=$row;
         }
         if($request -> ajax()) {
