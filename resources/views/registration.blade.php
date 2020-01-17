@@ -111,7 +111,7 @@ $sel = null;
             </div>
                 <div class="form-group row">
                     <div class="col-sm-12">
-                        <span class="help-block"><small>Total Payable amount is equal to Event registration fee plus accomodation fee <mark style="color: blue">Rs. 200/member </mark>&nbsp; in which <mark style="color: red">Rs 100</mark>&nbsp; is security per member which is refundable.</small></span>
+                        <span class="help-block"><small>Total Payable amount is equal to Event registration fee plus accommodation fee <mark style="color: blue">Rs. 200/member </mark>&nbsp; in which <mark style="color: red">Rs 100</mark>&nbsp; is security per member which is refundable.</small></span>
                     </div>
                 </div>
             @csrf
