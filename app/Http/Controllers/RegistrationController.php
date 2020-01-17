@@ -51,6 +51,7 @@ class registrationController extends Controller
         if($rid==null || $rid ==''){
             return abort(403);
         }else{
+            Registration::where('rid', $rid)->firstOrFail();
             $input = $request->all();
             Accommodation::create(["rid" => $rid,"members" => json_encode($input)]);
             return redirect(route('tt.registermail'))->with(['rid' => $rid]);

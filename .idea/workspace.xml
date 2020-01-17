@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Accommodation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_17_182258_create_accommodations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/acco.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ticketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ticketController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/sendMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/sendMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +177,7 @@
       <workItem from="1578938502097" duration="15686000" />
       <workItem from="1579164229238" duration="12859000" />
       <workItem from="1579195697060" duration="1318000" />
-      <workItem from="1579254662048" duration="14251000" />
+      <workItem from="1579254662048" duration="14514000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -341,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579260641055</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="updated mail job">
+      <created>1579269283905</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1579269283905</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
