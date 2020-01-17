@@ -58,7 +58,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                            	
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="col-md-offset-4 col-md-4" style="margin-bottom: 20px;">
@@ -73,7 +73,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                    <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                    <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','falsetto')}}" alt="Falsetto"><h2 class="porttext">Falsetto</h2></a>
@@ -94,7 +94,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body"> 
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','postermaking')}}" alt="Poster Making"><h2 class="porttext">Poster Making</h2></a>
@@ -114,7 +114,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-sm-12" style="text-align: center;color: white;margin-bottom: 20px;"><h2>Focusia</h2></div>
@@ -132,7 +132,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','streettales')}}" alt="Street Tales"><h2 class="porttext">Street Tales</h2></a>
@@ -149,7 +149,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Burn it On"><h2 class="porttext">Burn it On</h2></a>
@@ -164,7 +164,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','winterrunway')}}" alt="Winter Runway"><h2 class="porttext">Winter Runway</h2></a>
@@ -179,7 +179,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                   <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Waste to Wealth"><h2 class="porttext">Waste to Wealth</h2></a>
@@ -196,7 +196,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="CrossFit"><h2 class="porttext">CrossFit</h2></a>
@@ -219,7 +219,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                      <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','rangmanch')}}" alt="Rangmanch(Street Play)"><h2 class="porttext">Rangmach <span style="font-size: 16px;line-height: 0em;display: block;">(Street Play)</span></h2></a>
@@ -233,7 +233,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','openmic')}}" alt="Open Mic"><h2 class="porttext">Open Mic</h2></a>
@@ -260,7 +260,7 @@
                     <div class="modal-dialog modal-lg" style="width:90%;margin-top: 20px;">
                         <div class="modal-content">
                             <div class="row modal-body">                                
-                                <div class="col-md-12" style="margin-bottom: 20px;">                               
+                                <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Bit-by-Bit"><h2 class="porttext">Bit-by-Bit</h2></a>
