@@ -3457,3 +3457,49 @@ hr {
     -ms-user-select: none;
     user-select: none;
 }
+@media only screen and (min-height: 720px) {
+  .bodycontainer section
+  {
+  	height: 110vh !important;
+  }
+  .in_acco
+  {
+  	bottom:10%;
+  }
+  .in_pronite{
+  	bottom: 10%;
+  }
+  .in_contact{
+  	bottom: 10%;
+  }
+  .counter {
+    width: 15%;
+    font-size: 15px;
+	}
+	.countdiv {
+	    width: 12%;
+	    position: relative;
+	    display: inline-block;
+	    font-size: 12px;
+	    min-height: 1px;
+	    margin: 12px;
+	    display: inline-block;
+	    text-align: center;
+	    font-family: 'Archivo Black', sans-serif;
+	    font-weight: 700;
+	}
+	.abtsince {
+    	right: 10px;
+    	top: -25px;
+	}
+	.about-ss{
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (min-width: 425px and min-height: 720px ) {
+  .bodycontainer section
+  {
+  	height: 103vh !important;
+  }
+}
