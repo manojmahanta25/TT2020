@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\Http\Requests\RegistrationValidate;
+use App\Jobs\sendMailJob;
 use App\Registration;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use DB;
 use Mail;
@@ -262,11 +264,16 @@ class registrationController extends Controller
             'payment_status'=>$payment_status
        ];
 
-        Mail::send('rmail', $Mdata, function($message) use ($email,$team_leader){
-            $message->to($email, $team_leader)->subject
-                ('Talenttantra Online Registration receipt');
-            $message->from('noreply@talenttantra.com','Talenttantra Online Registration')->cc('talenttantrapayment@gmail.com', 'Talenttantra Registration');
-      });
+//        Mail::send('rmail', $Mdata, function($message) use ($email,$team_leader){
+//            $message->to($email, $team_leader)->subject
+//                ('Talenttantra Online Registration receipt');
+//            $message->from('noreply@talenttantra.com','Talenttantra Online Registration')->cc('talenttantrapayment@gmail.com', 'Talenttantra Registration');
+//      });
+            $job =(new sendMailJob($email,$team_leader,$Mdata,'registration'))
+                ->delay(Carbon::now()->addSecond(2));
+            dispatch($job);
+
+
         return view('thankyou')->with($Mdata);
        }
         else{
