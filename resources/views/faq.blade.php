@@ -86,7 +86,7 @@
 
                         <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample" style="padding:15px;">
                             <div class="card-body">
-                                Yes, <a href="{{route('tt.accommodation')}}" alt="">Accommodation</a> is available for all 3 days of the fest at Rs. 100/ day, which includes breakfast. 
+                                Yes, <a href="{{route('tt.accommodation')}}" alt="">Accommodation</a> is available for all 3 days of the fest at Rs. 100/ day with Rs. 100 security which is refundable. Breakfast is excluded. 
                             </div>
                         </div>
                     </div>
