@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Accommodation;
 use App\Event;
 use App\Http\Requests\RegistrationValidate;
 use App\Jobs\sendMailJob;
 use App\Registration;
-use Carbon\Carbon;
+use Session;
 use Illuminate\Http\Request;
 use DB;
 use Mail;
@@ -28,7 +29,34 @@ class registrationController extends Controller
         $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
         return view('registration', compact('page', 'page_title', 'mtitle', 'description', 'keywords','subevent'));
     }
-
+    public function accoM() {
+        $rid = session()->get('rid');
+        if($rid==null || $rid ==''){
+            return abort(403);
+        }
+        $total_member = session()->get('tm');
+        session()->forget('tm');
+        $page = 'registration';
+        $page_title = 'All Events of Talent Tantra 2020';
+        $mtitle = 'All Events of Talent Tantra 2020';
+        $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('acco', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'total_member','rid'));
+    }
+    public function accoMstore(Request $request) {
+        if(!isset($request->sbtn)){
+            return abort(403);
+        }
+        $rid = $request->rid;
+        if($rid==null || $rid ==''){
+            return abort(403);
+        }else{
+            $input = $request->all();
+            Accommodation::create(["rid" => $rid,"members" => json_encode($input)]);
+            return redirect(route('tt.registermail'))->with(['rid' => $rid]);
+        }
+        return abort(403);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -48,7 +76,7 @@ class registrationController extends Controller
     public function store(RegistrationValidate $request)
     {
         if(!isset($request->sbtn)){
-            abort(403);
+            return abort(403);
         }
         $value = Event::select('parent_event','cost')->where('event_code', $request->event_name)->firstOrFail();
 
@@ -60,8 +88,10 @@ class registrationController extends Controller
             $cost = $this->e($request->total_member)*$value->cost;
         }
         $total = $cost;
+        $acco =0;
         if($request->accommodations == 1)
         {
+            $acco =1;
             $total = $total + 200*$this->e($request->total_member);
         }
         else{
@@ -88,8 +118,12 @@ class registrationController extends Controller
         Registration::create($body);
         $request->session()->regenerateToken();
         $request->flush();
-
-        return redirect(route('tt.registermail'))->with(['rid' => $rid]);
+        if($acco==1){
+            return redirect(route('tt.acco'))->with(['rid' => $rid,'tm' => $body['total_member']]);
+        } else {
+            return redirect(route('tt.registermail'))->with(['rid' => $rid]);
+        }
+        return abort(403);
     }
 
     /**
@@ -264,13 +298,8 @@ class registrationController extends Controller
             'payment_status'=>$payment_status
        ];
 
-//        Mail::send('rmail', $Mdata, function($message) use ($email,$team_leader){
-//            $message->to($email, $team_leader)->subject
-//                ('Talenttantra Online Registration receipt');
-//            $message->from('noreply@talenttantra.com','Talenttantra Online Registration')->cc('talenttantrapayment@gmail.com', 'Talenttantra Registration');
-//      });
-            $job =(new sendMailJob($email,$team_leader,$Mdata,'registration'))
-                ->delay(Carbon::now()->addSecond(2));
+
+            $job =(new sendMailJob($email,$team_leader,$Mdata,'registration'));
             dispatch($job);
 
 
