@@ -529,6 +529,16 @@ class pageController extends Controller
         return view('pronites', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
     }
 
+        public function team()
+    {
+        $page = 'team';
+        $page_title = 'Meet your team';
+        $mtitle = 'Meet your team';
+        $description = 'Talent Tantra team, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'Talent Tantra team, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('team', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
+    }
+
     public function faq()
     {
         $page = 'faq';
