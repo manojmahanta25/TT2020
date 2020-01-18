@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="" />
+    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="updated mail job">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/rmail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rmail.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +181,7 @@
       <workItem from="1579195697060" duration="1318000" />
       <workItem from="1579254662048" duration="14565000" />
       <workItem from="1579276132101" duration="11000" />
-      <workItem from="1579337591000" duration="5465000" />
+      <workItem from="1579337591000" duration="7770000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -354,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579343515457</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="updated mail job">
+      <created>1579343750811</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579343750811</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

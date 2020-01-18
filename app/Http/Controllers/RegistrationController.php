@@ -276,10 +276,8 @@ class registrationController extends Controller
             $payment_status = $key->payment_status;
             $total_amount = $key->total_amount;
         }
-         $evnp= DB::table('events')->where('event_code', $event_name)->get();
-         foreach ($evnp as $evn) {
+         $evn= Event::where('event_code', $event_name)->first();
             $evname = $evn->event_name;
-            }
 
         $Mdata = [
             'rid'=>$rid,
@@ -296,7 +294,9 @@ class registrationController extends Controller
             'accommodations'=>$accommodations,
             'event_price'=>$event_price,
             'total_amount'=>$total_amount,
-            'payment_status'=>$payment_status
+            'payment_status'=>$payment_status,
+            'cname'=> $evn->name,
+            'cnumber'=> $evn->number
        ];
 
 
