@@ -13,14 +13,7 @@
                     <p>The event is a solo rap showcase competition, wherein contestants can perform an original rap composition and take away exciting prizes.</p>
                 </div>
                 <br/><br/><br/><br/><br/>
-               <!--  <div class="speaker-address">
-                    <ul style="text-align: justify; list-style:none;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
-                    </ul>
-                </div> -->
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -62,6 +55,13 @@
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                                             </ul>
                                         </div><br/> -->
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himangshu Bordoloi	8011628033</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Aditiya Buragohain	6001187192</li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>

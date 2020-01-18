@@ -13,14 +13,7 @@
                     <p>Bidding war!!</p>
                 </div>
                 <br/><br/><br/><br/><br/>
-                <!-- <div class="speaker-address">
-                    <ul style="text-align: left;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
-                    </ul>
-                </div> -->
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -51,6 +44,13 @@
                                                 <li>Date: </li>
                                             </ul>
                                         </div><br/> -->
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align: left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Raghav Poddar: 9818251207</span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Sonali:	9613325158</span></li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>

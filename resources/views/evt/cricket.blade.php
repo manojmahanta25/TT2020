@@ -12,14 +12,7 @@
                     <span><h3>SPORTS</h3></span>
                 </div>
                 <br/><br/><br/><br/><br/><br/>
-                <div class="speaker-address">
-                    <ul style="text-align: left;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
-                    </ul>
-                </div>
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -53,13 +46,20 @@
                                                 <li>Date: </li>
                                             </ul>
                                         </div><br/>
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Tridipjit Rajkonwar	9101391969</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Abhinav sharma	7002734214</li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
                                     </div>
                                     <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','cricket')}}" alt="">REGISTER</a>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <!-- schedule-table -->
                             </div>

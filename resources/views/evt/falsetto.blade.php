@@ -18,7 +18,7 @@
                     </ul><br/>
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: 16 - 26 years</li>
+                        <li><strong>Age Limit </strong>: 14 - 26 years</li>
                         <li>Participants should show their Institute ID proofs in original during registration</li>
                         <li>Synthesizer(s)/Keyboard(s), if used, shall be used only in piano tone and no layering or splitting will be allowed.</li>
                         <li>Playing of any pre-recorded track in the background will lead to direct disqualification.</li>
@@ -65,12 +65,13 @@
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Akash Pratim Boruah: +918486347218</li>
-                                                {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>--}}
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Akash Pratim Boruah	8638150673/8486347218
+                                                    </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Aditya Buragohain	6001187192</li>
                                             </ul>
-                                        </div>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500/MEMBERS</strong></p><br/>
@@ -101,12 +102,13 @@
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Akash Pratim Boruah: +918486347218</li>
-                                                {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>kuburniton2018@gmail.com</li>--}}
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Akash Pratim Boruah	8638150673/8486347218
+                                                </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Aditya Buragohain	6001187192</li>
                                             </ul>
-                                        </div>
+                                        </div><br/>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500/member</strong></p><br/>

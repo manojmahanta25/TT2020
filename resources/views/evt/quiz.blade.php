@@ -63,13 +63,13 @@
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: left;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Spandan:	9127754459</span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Vikranjit:	8486153426</li>
                                             </ul>
-                                        </div>
+                                        </div><br/>
+
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>

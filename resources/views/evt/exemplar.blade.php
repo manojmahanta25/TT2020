@@ -42,14 +42,13 @@
                                                 <li>Date: </li>
                                             </ul>
                                         </div><br/>
-                                        <div class="speaker-address">
-                                            <ul style="text-align: left;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                        <div class="speaker-statement">
+                                            <ul class="speaker-address" style="text-align: justify;">
+                                                <h5>Event Coordinator:</h5>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Paribrita Bordoloi:	6900980152</li>
+
                                             </ul>
-                                        </div>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>

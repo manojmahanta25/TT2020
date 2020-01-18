@@ -12,14 +12,7 @@
                     <span><h3>SPORTS</h3></span>
                 </div>
                 <br/><br/><br/><br/><br/><br/>
-                <div class="speaker-address">
-                    <ul style="text-align: left;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
-                    </ul>
-                </div>
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -62,6 +55,14 @@
                                                 <li>Venue: </li>
                                                 <li>Starting Time: </li>
                                                 <li>Date: </li>
+                                            </ul>
+                                        </div><br/>
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Deepak Gogoi	7002859079
+                                                                                                    </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Roshan Chetia	8011922790</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

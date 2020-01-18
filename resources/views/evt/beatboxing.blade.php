@@ -57,6 +57,13 @@
                                                 <li>1<sup>st</sup> February 2020</li>
                                             </ul>
                                         </div>
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himangshu Bordoloi	8011628033</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Aditiya Buragohain	6001187192</li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <br/>

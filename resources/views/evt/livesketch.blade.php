@@ -13,14 +13,9 @@
                     <br/><p>&quot;The ability to draw depends on ones’ ability to see the way as an artist sees&quot;.</p>
                 </div>
                 <br/><br/><br/><br/>
-                <div class="speaker-statement">
-                    <ul style="text-align: justify; list-style:none;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Debarshi Raj Basumatary +91 80118 96493</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himanta Gogoi +91 80118 60068</li>
-{{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}}
-                    </ul>
-                </div>
+
+
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -53,6 +48,13 @@
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
                                             </ul>
                                         </div><br/> -->
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align: left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Debarshi Raj Basumathari: 8011896493 </span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himanta Gogoi: 80118 60068</li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
