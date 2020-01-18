@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Accommodation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Accommodation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_17_182258_create_accommodations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_17_182258_create_accommodations_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/acco.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acco.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +183,7 @@
       <workItem from="1579254662048" duration="14565000" />
       <workItem from="1579276132101" duration="11000" />
       <workItem from="1579337591000" duration="8850000" />
-      <workItem from="1579380358166" duration="2133000" />
+      <workItem from="1579380358166" duration="2530000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -390,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579348238162</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="updated with accomodation change">
+      <created>1579382517004</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1579382517004</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +428,8 @@
     <MESSAGE value="updated registration" />
     <MESSAGE value="updated registration template" />
     <MESSAGE value="updated mail job" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated mail job" />
+    <MESSAGE value="updated with accomodation change" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated with accomodation change" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">

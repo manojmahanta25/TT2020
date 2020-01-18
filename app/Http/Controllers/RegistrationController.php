@@ -53,7 +53,7 @@ class registrationController extends Controller
         }else{
             $reg=Registration::where('rid', $rid)->firstOrFail();
             $input = [];
-            $tm=$request->totalmember;
+            $tm=$reg->total_member;
             for($i=1;$i<=$tm;$i++)
             {
                 $input[$i]['name']=$request['member-'.$i];

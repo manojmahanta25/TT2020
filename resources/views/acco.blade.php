@@ -45,7 +45,6 @@ session(['rid' => $rid]);
                 </div>
             @csrf
             {{Form::hidden('rid',$rid)}}
-            {{Form::hidden('totalmember',$total_member)}}
             {{Form::submit('Submit', ['name'=>'sbtn','class'=>'btn btn-primary'])}}
             {!! Form::close() !!}
 
