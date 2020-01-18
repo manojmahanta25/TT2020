@@ -184,7 +184,7 @@
                                 </div>
                                   <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Waste to Wealth"><h2 class="porttext">Waste to Wealth</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Aero - modeling"><h2 class="porttext">Aero - modeling</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','aeromodeling')}}" alt="Aero-Modeling"><h2 class="porttext">Aero - modeling</h2></a>
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Exemplar(Science Model Display)"><h2 class="porttext" style="padding-bottom: 25px;">Exemplar <span style="font-size: 16px;line-height: 0em;display: block;">(Science Model Display)</span></h2></a>
                                         </div>  

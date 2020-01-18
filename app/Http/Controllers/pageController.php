@@ -255,9 +255,9 @@ class pageController extends Controller
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
 
-            case 'aero':
-                $page = 'aero';
-                $value = 'aero';
+            case 'aeromodeling':
+                $page = 'aeromodeling';
+                $value = 'aeromodeling';
                 $page_title = 'Aero - modeling';
                 $mtitle = 'Aero - modeling';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
