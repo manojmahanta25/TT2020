@@ -4,8 +4,10 @@
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/acco.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/acco.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/419.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/419.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/rmail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rmail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/thankyou.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/thankyou.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +185,8 @@
       <workItem from="1579254662048" duration="14565000" />
       <workItem from="1579276132101" duration="11000" />
       <workItem from="1579337591000" duration="8850000" />
-      <workItem from="1579380358166" duration="2530000" />
+      <workItem from="1579380358166" duration="2869000" />
+      <workItem from="1579383384192" duration="1558000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -395,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579382517004</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="updated with accomodation change">
+      <created>1579383067792</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1579383067792</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

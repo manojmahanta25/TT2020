@@ -129,7 +129,11 @@ $sel = null;
 <script type="text/javascript">
     $(document).ready(function() {
         $("#hidden").hide();
-        $("#event_name").change(function () {
+        $("#event_name").val('');
+        $("#total_member").val('');
+        $('#aprice').val('');
+        $('#price').val('');
+        $("#event_name").click(function () {
             var urla = '{{ url('/getevtprc/') }}/';
             var furl =urla.concat(this.value);
             $.ajax({

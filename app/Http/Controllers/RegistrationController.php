@@ -44,6 +44,7 @@ class registrationController extends Controller
         return view('acco', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'total_member','rid'));
     }
     public function accoMstore(Request $request) {
+        $request->session()->regenerateToken();
         if(!isset($request->sbtn)){
             return abort(403);
         }
@@ -64,6 +65,7 @@ class registrationController extends Controller
             {
                 $reg->accomo()->create(["name" => $inputs['name'],"gender" => $inputs['gender'],"phone" => $inputs['phone']]);
             }
+
            return redirect(route('tt.registermail'))->with(['rid' => $rid]);
         }
         return abort(403);
@@ -293,7 +295,7 @@ class registrationController extends Controller
             'rid'=>$rid,
             'team_name'=>$team_name,
             'team_leader'=>$team_leader,
-            'event_name'=>$evname.'-'.$parent_event,
+            'event_name'=>$parent_event.'-'.$evname,
             'total_member'=>$total_member,
             'email'=>$email,
             'phone'=>$phone,
