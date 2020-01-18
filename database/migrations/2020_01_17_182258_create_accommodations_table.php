@@ -16,7 +16,10 @@ class CreateAccommodationsTable extends Migration
         Schema::create('accommodations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('rid', 200);
-            $table->json('members');
+            $table->foreign('rid')->references('rid')->on('registrations')->onDelete('cascade');
+            $table->string('name');
+            $table->enum('gender',['M','F']);
+            $table->bigInteger('phone');
             $table->timestamps();
         });
     }
