@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/aeromodeling.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/aeromodeling.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/badminton.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/badminton.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/basketball.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/basketball.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/beatboxing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/beatboxing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/burniton.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/burniton.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/cosplay.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/cosplay.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/crewvscrew.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/crewvscrew.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/cricket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/cricket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/crimesceneinvestigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/crimesceneinvestigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/crossfit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/crossfit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/destroix.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/destroix.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/exemplar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/exemplar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/facepainting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/facepainting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/falsetto.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/falsetto.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/firelesscooking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/firelesscooking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/football.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/football.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/jenga.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/jenga.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/justaminute.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/justaminute.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/kickstart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/kickstart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/lawntennis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/lawntennis.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/livesketch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/livesketch.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/loveletterwriting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/loveletterwriting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/mokshmantra.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/mokshmantra.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/onlinephotocompetition.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/onlinephotocompetition.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/onspotcampus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/onspotcampus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/openmic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/openmic.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/postermaking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/postermaking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/priceisright.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/priceisright.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/quiz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/rangmanch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/rangmanch.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/rapbattle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/rapbattle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/selfiecompetition.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/selfiecompetition.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/singphonic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/singphonic.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/streettales.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/streettales.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/treasurehunt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/treasurehunt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/uno.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/uno.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/wastetowealth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/wastetowealth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/winterrunway.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/winterrunway.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +177,7 @@
       <workItem from="1579195697060" duration="1318000" />
       <workItem from="1579254662048" duration="14565000" />
       <workItem from="1579276132101" duration="11000" />
-      <workItem from="1579337591000" duration="5141000" />
+      <workItem from="1579337591000" duration="5465000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -387,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579269399935</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="updated mail job">
+      <created>1579343515457</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1579343515457</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
