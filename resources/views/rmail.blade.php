@@ -2,7 +2,7 @@
 <br/> Dear {{ $Mdata['team_leader'] }},
 <br/>
 <br/> Thank you for registering for {{ $Mdata['event_name'] }} in Talent Tantra 2020
-<br/> Please contact <strong>{{$Mdata['cname']}}</strong> at <strong>{{$Mdata['cnumber']}}</strong> Phone number for more details
+<br/> Please contact <strong>{{$Mdata['cname']}}</strong> at <strong>{{$Mdata['cnumber']}}</strong> for more details
 <html>
 
 <body>
