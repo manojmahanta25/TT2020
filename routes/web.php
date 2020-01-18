@@ -90,6 +90,7 @@ Route::get('/newcompetition', ['as'=>'tt.compet','uses'=>'pageController@compet'
 Route::get('/privacypolicy', ['as'=>'tt.privacypolicy','uses'=>'pageController@privacypolicy']);
 Route::get('/buytickets',['as' => 'tt.ticket', 'uses' => 'ticketController@index']);
 Route::get('/buytickets/{ptype}',['as' => 'tt.ticketId', 'uses' => 'ticketController@show']);
+Route::get('/team',['as' => 'tt.team', 'uses' => 'pageController@team']);
 
 //Route::get('/success/{rid}', ['as' => 'tt.ticketsucc', 'uses' => 'ticketController@mailSuccess']);
 

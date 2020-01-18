@@ -18,7 +18,7 @@
                     </ul><br/>
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: 16 - 26 years</li>
+                        <li><strong>Age Limit </strong>: 14 - 26 years</li>
                         <li>Participants should show their Institute ID proofs in original during registration</li>
                         <li>Synthesizer(s)/Keyboard(s), if used, shall be used only in piano tone and no layering or splitting will be allowed.</li>
                         <li>Playing of any pre-recorded track in the background will lead to direct disqualification.</li>
