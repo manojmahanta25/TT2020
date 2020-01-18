@@ -55,8 +55,8 @@
                                                 <h5>Event Coordinator:</h5>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Ujjwal Jha: 7002238952 / 8011590609</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Harpreet Singh: 6002782430</li>
-                                            </ul>    
-                                        </div>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
@@ -64,20 +64,20 @@
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','aeromodeling')}}" alt="">REGISTER</a>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <!-- schedule-table -->
                             </div>
 
-                            
+
                         </div>
                     </div>
-                    
+
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+                <!-- container -->
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->

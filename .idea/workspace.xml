@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-    </list>
+    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +175,9 @@
       <workItem from="1578938502097" duration="15686000" />
       <workItem from="1579164229238" duration="12859000" />
       <workItem from="1579195697060" duration="1318000" />
-      <workItem from="1579254662048" duration="14514000" />
+      <workItem from="1579254662048" duration="14565000" />
+      <workItem from="1579276132101" duration="11000" />
+      <workItem from="1579337591000" duration="5465000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -340,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579269283905</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="updated mail job">
+      <created>1579269399935</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1579269399935</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated mail job">
+      <created>1579343515457</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1579343515457</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

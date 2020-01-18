@@ -90,7 +90,8 @@
                                             <ul style="text-align:left;">
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Gyanangkush Borgohain +91 84860 09439</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Rohan Saikia +91 70024 40213</li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Nilav	8011496342
+                                                </li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -139,7 +140,8 @@
                                             <ul style="text-align:left;">
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Gyanangkush Borgohain +91 84860 09439</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Rohan Saikia +91 70024 40213</li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Nilav	8011496342
+                                                </li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -182,7 +184,8 @@
                                             <ul style="text-align:left;">
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Gyanangkush Borgohain +91 84860 09439</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Rohan Saikia +91 70024 40213</li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Nilav	8011496342
+                                                </li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -242,7 +245,8 @@
                                             <ul style="text-align:left;">
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Gyanangkush Borgohain +91 84860 09439</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Rohan Saikia +91 70024 40213</li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Nilav	8011496342
+                                                </li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -285,7 +289,7 @@
                                             <ul style="text-align:left;">
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Gyanangkush Borgohain +91 84860 09439</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Rohan Saikia +91 70024 40213</li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Nilav	8011496342</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

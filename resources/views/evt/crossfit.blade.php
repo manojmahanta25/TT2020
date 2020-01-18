@@ -19,14 +19,14 @@
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                         <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
+                        <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
                         <li>6</li>
                     </ul><br/>
-                    
+
                 </div>
             </div>
 
@@ -62,6 +62,13 @@
                                                 <li>Venue: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                            </ul>
+                                        </div><br/>
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Jyotibon Hazarika	9635076487</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Suraj Gupta	8753989940</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -115,9 +122,9 @@
                         <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>
                     </ul>
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+                <!-- container -->
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->

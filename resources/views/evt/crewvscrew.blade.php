@@ -51,11 +51,11 @@
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
-                                            <ul style="text-align: left;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Dhruva	7005043776
+                                                    </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himangshu Bhattacharyya	7005627591</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -90,11 +90,11 @@
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
-                                            <ul style="text-align: left;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Dhruva	7005043776
+                                                </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himangshu Bhattacharyya	7005627591</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
@@ -129,11 +129,11 @@
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
-                                            <ul style="text-align: left;">
-                                                <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align:left;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Dhruva	7005043776
+                                                </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himangshu Bhattacharyya	7005627591</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
