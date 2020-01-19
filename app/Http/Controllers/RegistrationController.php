@@ -44,6 +44,7 @@ class registrationController extends Controller
         return view('acco', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'total_member','rid'));
     }
     public function accoMstore(Request $request) {
+        $request->session()->regenerateToken();
         if(!isset($request->sbtn)){
             return abort(403);
         }
@@ -51,10 +52,21 @@ class registrationController extends Controller
         if($rid==null || $rid ==''){
             return abort(403);
         }else{
-            Registration::where('rid', $rid)->firstOrFail();
-            $input = $request->all();
-            Accommodation::create(["rid" => $rid,"members" => json_encode($input)]);
-            return redirect(route('tt.registermail'))->with(['rid' => $rid]);
+            $reg=Registration::where('rid', $rid)->firstOrFail();
+            $input = [];
+            $tm=$reg->total_member;
+            for($i=1;$i<=$tm;$i++)
+            {
+                $input[$i]['name']=$request['member-'.$i];
+                $input[$i]['gender']=$request['gender-'.$i];
+                $input[$i]['phone']=$request['phone-'.$i];
+            }
+            foreach ($input as $inputs)
+            {
+                $reg->accomo()->create(["name" => $inputs['name'],"gender" => $inputs['gender'],"phone" => $inputs['phone']]);
+            }
+
+           return redirect(route('tt.registermail'))->with(['rid' => $rid]);
         }
         return abort(403);
     }
@@ -283,7 +295,7 @@ class registrationController extends Controller
             'rid'=>$rid,
             'team_name'=>$team_name,
             'team_leader'=>$team_leader,
-            'event_name'=>$evname.'-'.$parent_event,
+            'event_name'=>$parent_event.'-'.$evname,
             'total_member'=>$total_member,
             'email'=>$email,
             'phone'=>$phone,
@@ -298,12 +310,8 @@ class registrationController extends Controller
             'cname'=> $evn->name,
             'cnumber'=> $evn->number
        ];
-
-
             $job =(new sendMailJob($email,$team_leader,$Mdata,'registration'));
             dispatch($job);
-
-
         return view('thankyou')->with($Mdata);
        }
         else{

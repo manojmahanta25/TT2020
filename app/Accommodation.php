@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Accommodation extends Model
 {
     protected $fillable =[
-        'rid','members'
+        'rid','name','gender','phone'
     ];
 }

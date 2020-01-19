@@ -13,6 +13,7 @@
     </div>
     <div style="width: 100%;background-color:#ffff9c;text-align: center;">
         <h2>419 Page Expire...</h2>
+        <h4>Click <a href="{{route('tt.home')}}">here</a> to return home</h4>
     </div>
 </section>
 <!--end section home-->

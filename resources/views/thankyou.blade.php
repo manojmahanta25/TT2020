@@ -36,7 +36,7 @@
                         <td><strong>Competition : </strong>
                             <b>{{ $event_name }}</b>
                         </td>
-                        <td><strong>Team name : </strong> {{ $team_name }} 
+                        <td><strong>Team name : </strong> {{ $team_name }}
                         </td>
 
                     </tr>
@@ -59,8 +59,8 @@
                     <tr>
                         <td><strong>Institute Name : </strong> {{ $institute_name }}
                         </td>
-                        <td><strong>Accommodations : </strong> 
-                        <?php 
+                        <td><strong>Accommodations : </strong>
+                        <?php
 	                        if($accommodations=="1") {
 	                        	echo "Yes";
 	                        }
@@ -83,9 +83,15 @@
                     </tr>
                     <tr>
                         <td colspan="3"><br/><br/>
-                            <strong>Note : </strong>
-                            1) Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 is security per member which is refundable.<br/>
-                            2) Reporting time 9:00 AM.<br/><br/>
+                            @if($accommodations=="1")
+                                <strong>Note : </strong>
+                                1) Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 refundable per member.<br/>
+                                2) Reporting time 9:00 AM.<br/><br/>
+                            @else
+                                <strong>Note : </strong>
+                                1) Total Payable amount is equal to Event registration fee <br/>
+                                2) Reporting time 9:00 AM.<br/><br/>
+                            @endif
                         </td>
                     </tr>
                     <tr>

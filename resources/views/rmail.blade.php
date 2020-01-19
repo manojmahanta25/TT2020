@@ -1,7 +1,7 @@
 <h2>Acknowledgement</h2>
 <br/> Dear {{ $Mdata['team_leader'] }},
 <br/>
-<br/> Thank you for registering for {{ $Mdata['event_name'] }} in Talent Tantra 2020
+<br/> Thank you for registering for <strong>{{ $Mdata['event_name'] }}</strong> in Talent Tantra 2020
 <br/> Please contact <strong>{{ $Mdata['cname'] }}</strong> at <strong>{{ $Mdata['cnumber'] }}</strong> for more details
 <html>
 
@@ -74,9 +74,15 @@
             <tr>
                 <td colspan="3">
                     <br/><br/>
+                    @if($Mdata['accommodations']=="1")
                             <strong>Note : </strong>
                             1) Total Payable amount is equal to Event registration fee plus accomodation fee Rs. 200/member in which Rs 100 refundable per member.<br/>
                             2) Reporting time 9:00 AM.<br/><br/>
+                        @else
+                        <strong>Note : </strong>
+                        1) Total Payable amount is equal to Event registration fee <br/>
+                        2) Reporting time 9:00 AM.<br/><br/>
+                    @endif
                 </td>
             </tr>
             <tr>
