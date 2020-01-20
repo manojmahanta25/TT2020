@@ -24,7 +24,7 @@
     <meta property="og:title" content="{{$mtitle}}"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">    
+    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" />
     <!--place your favicon path 18pxX18px here-->
