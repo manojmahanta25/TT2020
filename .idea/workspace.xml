@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/detailsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,7 +186,7 @@
       <workItem from="1579389924413" duration="282000" />
       <workItem from="1579511755247" duration="1080000" />
       <workItem from="1579513919274" duration="7000000" />
-      <workItem from="1579521663337" duration="239000" />
+      <workItem from="1579521663337" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -434,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579517142949</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="with ticket">
+      <created>1579521918652</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1579521918652</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +477,8 @@
     <MESSAGE value="updated with some bugs fixed!!" />
     <MESSAGE value="Mail some bugs fixed!!" />
     <MESSAGE value="auth some bugs fixed!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth some bugs fixed!!" />
+    <MESSAGE value="with ticket" />
+    <option name="LAST_COMMIT_MESSAGE" value="with ticket" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">

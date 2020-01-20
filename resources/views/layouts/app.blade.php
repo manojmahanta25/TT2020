@@ -23,7 +23,11 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('dataTables/datatables.min.css') }}"/>
+    @if(isset($datables) && $datables == 1)
+        <link href="{{ URL::asset('css/datatables/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ URL::asset('css/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css">
+    @endif
 </head>
 <body>
     <div id="app">
@@ -90,6 +94,25 @@
         </main>
     </div>
     @yield('content-java')
-    <script type="text/javascript" src="{{URL::asset('dataTables/datatables.min.js')}}"></script>
+    @if(isset($datables) && $datables == 1)
+        <script src="{{ URL::asset('css/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.js') }}"></script>
+        <!-- Buttons examples -->
+        <script src="{{ URL::asset('css/datatables/dataTables.buttons.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/buttons.bootstrap4.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/jszip.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/pdfmake.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/vfs_fonts.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/buttons.html5.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/buttons.print.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.fixedHeader.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.keyTable.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.scroller.min.js') }}"></script>
+        <!-- Responsive examples -->
+        <script src="{{ URL::asset('css/datatables/dataTables.responsive.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/responsive.bootstrap4.min.js') }}"></script>
+        <!-- Datatable init js -->
+        <script src="{{ URL::asset('css/pages/datatables.init.js') }}"></script>
+    @endif
 </body>
 </html>
