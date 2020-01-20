@@ -1,73 +1,70 @@
-@include('elements.header')
-<section id="portfolio" class="portfolio">
+@extends('layouts.app')
+
+@section('content')
     <div class="container">
 
-        <div class="heading" style="padding-top:50px;">
-            <span>All</span>
-            <h2>Ticket</h2>
-        </div>
-        <!--end heading-->
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">Ticket</div>
 
-<button id="test">asdasd</button>
-            <div class="table-responsive">
-            <table id="regi-buttons" class="table table-striped table-hover dt-responsive display nowrap" cellspacing="0" width="100%">
-                    <thead>
-                    <tr>
-                        <th>Ticket ID</th>
-                        <th>Name</th>
-                        <th>Mobile</th>
-                        <th>Email</th>
-                        <th>Pass Type</th>
-                        <th>Number of Pass</th>
-                        <th>Day</th>
-                        <th>Total Payable</th>
-                        <th>Pay ID</th>
-                        <th>Order ID</th>
-                        <th>Signature</th>
-                        <th>Payment Status</th>
-                        <th>In Status</th>
-                        <th>In Date</th>
-                        <th>Option</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="regi-buttons" class="display" cellspacing="0" width="100%">
+                            <thead>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Name</th>
+                                <th>Mobile</th>
+                                <th>Email</th>
+                                <th>Pass Type</th>
+                                <th>Number of Pass</th>
+                                <th>Day</th>
+                                <th>Total Payable</th>
+                                <th>Pay ID</th>
+                                <th>Order ID</th>
+                                <th>Signature</th>
+                                <th>Payment Status</th>
+                                <th>In Status</th>
+                                <th>In Date</th>
+                                <th>Option</th>
+                            </tr>
+                            </thead>
+                            <tbody>
 
-                    </tbody>
-                </table>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-
-
-            <!--end project-grid-->
-
-        <!--end portfoliomain-->
+        </div>
     </div>
-    <!--end container-->
-</section>
-<!--end section PORTFOLIO-->
-@include('elements.footerwidget')
 
-@include('elements.footer')
-<script>
 
-    $(document).ready(function(){
+    <!--end section PORTFOLIO-->
+@endsection
+@section('content-java')
+    <script>
 
-        var table = $('#regi-buttons').DataTable({
-            dom: 'B<"clear">lfrtip',
-            responsive: true,
-            buttons: {
-                name: 'primary',
-                buttons: [ 'copy', 'csv', 'print' ]
-            },
+        $(document).ready(function(){
 
-            ajax:{
-                url:"{{ url('/viewticketd') }}",
-                dataSrc: 'ticket'
-            }
+            var table = $('#regi-buttons').DataTable({
+                dom: 'B<"clear">lfrtip',
+                responsive: true,
+                buttons: {
+                    name: 'primary',
+                    buttons: [ 'copy', 'csv', 'print' ]
+                },
+
+                ajax:{
+                    url:"{{ url('/viewticketd') }}",
+                    dataSrc: 'ticket'
+                }
+            });
+
+            $("#1").click(function() {
+                alert(this.id); // or alert($(this).attr('id'));
+            });
         });
 
-        $("#1").click(function() {
-            alert(this.id); // or alert($(this).attr('id'));
-        });
-    });
-
-</script>
+    </script>
+@endsection
