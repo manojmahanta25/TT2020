@@ -1928,7 +1928,7 @@ hr {
 }
 
 .inhome {
-	background: url(../images/png/bghome.png) center center no-repeat, url(../images/png/bg_gra.png) center center no-repeat;
+	background: url(../images/webp/bghome.webp) center center no-repeat, url(../images/webp/bg_gra.webp) center center no-repeat;
 	background-size: 50%, 110%;
 }
 
@@ -2613,13 +2613,15 @@ hr {
 		left: 55%;
 	}
 	.in_ticket {
-		top: 20px;
+		top: 50px;
 		width: 24%;
+		left:20px;
 	}
 	.in_register {
 		top: 40%;
 		width: 15%;
 		z-index: 9;
+		left:20px;
 	}
 	.in_acco {
 		bottom: 5%;
