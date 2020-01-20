@@ -1,6 +1,6 @@
 
 <h2>Acknowledgement</h2><br/>
-					Dear {{ $name }},<br/><br/>
+					Dear {{ $Mdata['name'] }},<br/><br/>
 					Thank you for showing interest in Talent Tantra 2020.<br/>
 					<html><body><table style="width:100%;margin:25px;">
                             <tbody>
@@ -8,7 +8,7 @@
                             	<td style="font-size: 25px;font-weight: bold;">
                         		<h3>Talent Tantra 2020 | Safarnama | Kaziranga University</h3></td>
                             	<td colspan="2">
-                            		<img src="http://talenttantra.com/images/tt_250.png" alt="logo" 
+                            		<img src="http://talenttantra.com/images/tt_250.png" alt="logo"
                             		style="float: left; margin-right: 25px;width:70%;"/>
                             	</td>
 							</tr>
@@ -18,48 +18,48 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Payment ID : </strong>
-                                      <b>{{ $razor_payid }}</b>
+                                      <b>{{ $Mdata['razor_payid'] }}</b>
                                     </td>
                                     <td><strong>Pass ID : </strong>
-                                      <b>{{ $custid }}</b>
+                                      <b>{{ $Mdata['custid'] }}</b>
                                     </td>
                                     <td><strong>Pass Type : </strong>
-                                      {{ $pass_type }} pass
+                                      {{ $Mdata['pass_type'] }} pass
                                     </td>
-                                    
+
                                 </tr>
                                 <tr>
                                 	<td><strong>Quantity : </strong>
-                                      {{ $numbers_pass }}
+                                      {{ $Mdata['numbers_pass'] }}
                                     </td>
 									<td><strong>Booked Date for : </strong>
-                                       {{ $select_day }}
+                                       {{ $Mdata['select_day'] }}
                                     </td>
                                     <td><strong>Name : </strong>
-                                       {{ $name }}
-                                    </td>                                    
+                                       {{ $Mdata['name'] }}
+                                    </td>
                                 </tr>
                                 <tr>
                                 	<td><strong>Email : </strong>
-                                        {{ $email }}
+                                        {{ $Mdata['email'] }}
                                     </td>
                                     <td><strong>Mobile : </strong>
-                                       {{ $mobile }}
+                                       {{ $Mdata['mobile'] }}
                                     </td>
                                     <td><strong>Paid : </strong>
-                                        {{ $payable_total }}
+                                        {{ $Mdata['payable_total'] }}
                                     </td>
                                 </tr>
-                                
+
 								<tr>
 								<td colspan="3"></td>
 								</tr>
-								<tr>								
+								<tr>
 								<td colspan="3">
 								<strong>Terms & Conditions:</strong>
 								<br>
-								 <ul> 
-									<li>This pass is valid for <strong>{{ $select_day }}</strong>.</li>
+								 <ul>
+									<li>This pass is valid for <strong>{{ $Mdata['select_day'] }}</strong>.</li>
 					                <li>Entry into the campus is from <strong>9 a.m.</strong> onwards.</li>
 					                <li>Entry without passes will not be permitted. Please carry your pass to the venue. The same should be produced upon request at the gate.</li>
 					                <li>Organizers reserve the right to perform <strong>security checks</strong> in the members/invitees at the entry point.</li>
