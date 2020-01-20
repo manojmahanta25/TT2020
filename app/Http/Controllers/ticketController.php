@@ -490,11 +490,6 @@ class ticketController extends Controller
        ];
 
 
-//        Mail::send('mail', $Mdata, function($message) use ($email,$name){
-//            $message->to($email, $name)->subject
-//                ('Talenttantra Online Ticket receipt');
-//            $message->from('noreply@talenttantra.com','Talenttantra Online Ticket')->cc('talenttantrapayment@gmail.com', 'Talenttantra Ticket');
-//      });
             $job =(new sendMailJob($email,$name,$Mdata,'pass'));
             dispatch($job);
         return view('success')->with($Mdata);

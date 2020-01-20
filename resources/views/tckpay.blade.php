@@ -7,23 +7,14 @@
     <style>
       .razorpay-payment-button {
         color: #ffffff !important;
-        background-color: #7266ba;
-        border-color: #7266ba;
+        background-color: transparent;
+        border-color: transparent;
         font-size: 14px;
         padding: 10px;
       }
     </style>
   </head>
   <body>
-    <style>
-      .razorpay-payment-button {
-        color: #ffffff !important;
-        background-color: #7266ba;
-        border-color: #7266ba;
-        font-size: 14px;
-        padding: 10px;
-      }
-    </style>
     
   <form action="{{Route('tt.ticketpaid')}}" id="form" method="POST">
   <!-- Note that the amount is in paise = 50 INR -->  
