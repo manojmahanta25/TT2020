@@ -51,22 +51,72 @@ class detailsController extends Controller
         $table =[];
         foreach ($ticketget as $element){
             $row = [];
-            $row[]=$element->custid;
-            $row[]=$element->name;
-            $row[]=$element->mobile;
-            $row[]=$element->email;
-            $row[]=$element->pass_type;
-            $row[]=$element->numbers_pass;
-            $row[]=$element->select_day;
-            $row[]=$element->payable_total;
-            $row[]=$element->razor_payid;
-            $row[]=$element->razor_orderid;
-            $row[]=$element->razorpay_signature;
-            $row[]=$element->payment_status;
-            $row[]=($element->instatus !=0)? 'Yes': 'Not Yet';
-            $row[]=($element->indates !=0)? $element->indates: 'Not Yet';
-            $row[]=($element->instatus ==0)? '<button onclick="location.href=\''.route('tt.ticketcheckin',$element->custid).'\' " class="btn btn-primary">Check IN</button>': 'Already Check In';
-            $table[]=$row;
+            if($element->pass_type=='single') {
+                $row[] = $element->custid;
+                $row[] = $element->name;
+                $row[] = $element->mobile;
+                $row[] = $element->email;
+                $row[] = $element->pass_type;
+                $row[] = $element->numbers_pass;
+                $row[] = $element->select_day;
+                $row[] = $element->payable_total;
+                $row[] = $element->razor_payid;
+                $row[] = $element->razor_orderid;
+                $row[] = $element->razorpay_signature;
+                $row[] = $element->payment_status;
+                $row[] = ($element->instatus != 0) ? 'Yes' : 'Not Yet';
+                $row[] = ($element->indates != 0) ? $element->indates : 'Not Yet';
+                $row[] = ($element->instatus == 0) ? '<button onclick="location.href=\'' . route('tt.ticketcheckin', $element->custid) . '\' " class="btn btn-primary">Check IN</button>' : 'Already Check In';
+                $table[]=$row;
+            }elseif ($element->pass_type=='combo'){
+                $row[] = $element->custid;
+                $row[] = $element->name;
+                $row[] = $element->mobile;
+                $row[] = $element->email;
+                $row[] = $element->pass_type;
+                $row[] = $element->numbers_pass;
+                $row[] = $element->select_day;
+                $row[] = $element->payable_total;
+                $row[] = $element->razor_payid;
+                $row[] = $element->razor_orderid;
+                $row[] = $element->razorpay_signature;
+                $row[] = $element->payment_status;
+                if($element->instatus ==0)
+                {
+                    $row[] ='Not Yet';
+                }elseif ($element->instatus ==1)
+                {
+                    $row[] ='1st time';
+                } elseif($element->instatus ==2)
+                {
+                    $row[] ='2nd time';
+                } elseif ($element->instatus ==3)
+                {
+                    $row[] ='yes';
+                } else{
+                    $row[] ='deny';
+                }
+                $row[] = ($element->indates != 0) ? $element->indates : 'Not Yet';
+                $today = Carbon::today();
+
+                if(($today==Carbon::create(2020,1,31,0,0,0)) && ($element->instatus == 0))
+                {
+                    $row[] = '<button onclick="location.href=\'' . route('tt.ticketcheckin', $element->custid) . '\' " class="btn btn-primary">Check IN</button>';
+
+                }elseif ($today==Carbon::create(2020,2,1,0,0,0) && $element->instatus <=1)
+                {
+                    $row[] = '<button onclick="location.href=\'' . route('tt.ticketcheckin', $element->custid) . '\' " class="btn btn-primary">Check IN</button>';
+
+                }elseif ($today==Carbon::create(2020,2,2,0,0,0)&& $element->instatus <=2)
+                {
+                    $row[] = '<button onclick="location.href=\'' . route('tt.ticketcheckin', $element->custid) . '\' " class="btn btn-primary">Check IN</button>';
+
+                }else{
+                    $row[] = 'Already In';
+                }
+                $table[]=$row;
+            }
+
         }
         if($request -> ajax()) {
             return response()->json(['ticket' => $table, 'status' => 'success']);
@@ -105,8 +155,31 @@ class detailsController extends Controller
     }
 
     public function passCheckIn($id) {
-        Ticket::where('custid',$id)->where('instatus','0')->firstOrFail();
-        Ticket::where('custid',$id)->update(['instatus'=>'1','indates'=>Carbon::now()->toDateTimeString()]);
+        $element=Ticket::where('custid',$id)->firstOrFail();
+        if($element->pass_type=='single') {
+            Ticket::where('custid', $id)->update(['instatus' => '1', 'indates' => Carbon::now()->toDateTimeString()]);
+        }elseif($element->pass_type=='combo')
+        {
+            $today = Carbon::today();
+            if($today==Carbon::create(2020,1,31,0,0,0))
+            {
+                $instatus=1;
+                $indates = Carbon::now()->toDateTimeString();
+            }elseif ($today==Carbon::create(2020,2,1,0,0,0))
+            {
+                $instatus=2;
+                $indates=($element->indates ==0 )? Carbon::now()->toDateTimeString(): $element->indates.' / '.Carbon::now()->toDateTimeString();
+
+            }elseif ($today==Carbon::create(2020,2,2,0,0,0))
+            {
+                $instatus=3;
+                $indates=($element->indates ==0 )? Carbon::now()->toDateTimeString(): $element->indates.' / '.Carbon::now()->toDateTimeString();
+
+            }else{
+                return abort(424);
+            }
+            Ticket::where('custid', $id)->update(['instatus' => $instatus, 'indates' => $indates]);
+        }
         return redirect(route('tt.ticketview'));
     }
 
