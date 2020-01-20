@@ -9,6 +9,7 @@
 
     <title>Login Page</title>
     <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" />
+    <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      <!-- Scripts -->
 {{--    <script src="{{ asset('js/app.js') }}" defer></script>--}}
@@ -21,8 +22,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('dataTables/datatables.min.css') }}"/>
+
+    @if(isset($datables) && $datables == 1)
+        <link href="{{ URL::asset('css/datatables/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ URL::asset('css/datatables/datatables.min.css') }}" rel="stylesheet" type="text/css">
+    @endif
 </head>
 <body>
     <div id="app">
@@ -54,6 +59,13 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -82,6 +94,25 @@
         </main>
     </div>
     @yield('content-java')
-    <script type="text/javascript" src="{{URL::asset('dataTables/datatables.min.js')}}"></script>
+    @if(isset($datables) && $datables == 1)
+        <script src="{{ URL::asset('css/datatables/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.bootstrap4.min.js') }}"></script>
+        <!-- Buttons examples -->
+        <script src="{{ URL::asset('css/datatables/dataTables.buttons.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/buttons.bootstrap4.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/jszip.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/pdfmake.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/vfs_fonts.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/buttons.html5.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/buttons.print.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.fixedHeader.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.keyTable.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/dataTables.scroller.min.js') }}"></script>
+        <!-- Responsive examples -->
+        <script src="{{ URL::asset('css/datatables/dataTables.responsive.min.js') }}"></script>
+        <script src="{{ URL::asset('css/datatables/responsive.bootstrap4.min.js') }}"></script>
+        <!-- Datatable init js -->
+        <script src="{{ URL::asset('css/pages/datatables.init.js') }}"></script>
+    @endif
 </body>
 </html>
