@@ -228,24 +228,18 @@ class ticketController extends Controller
                     </div>
                 </div>
                 ";
-
-
         return view('tck', compact('page', 'page_title', 'mtitle', 'description', 'keywords','body'));
-
     }
 
     public function payForm(Request $request){
         try
             {
-
-
         $api = new Api(env('RAZORPAY_KEY'), env('RAZORPAY_SECRET'));
 
         $rid = $this->getID();
         //echo 'test';
 
         //echo ' Razorpay '.env('RAZORPAY_KEY');
-
 
         $pass_type = $request->input('pass_type');
         $numbers_pass = $request->input('numbers_pass');
