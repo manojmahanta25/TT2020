@@ -2555,6 +2555,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+	.heading h2{
+		font-size: 80px;
+	}
 	.ch-grid {
 		text-align: center;
 	}
@@ -2906,6 +2909,17 @@ hr {
 	}
 }
 @media (max-width: 393px) {
+	.abttext{
+		font-size: 13px;
+	}
+	.about-ss{
+		font-size: 12px;
+		margin-top: 0px;
+	}
+	.counter{
+		font-size: 15px;
+	}
+
 	.in_acco {
 		bottom: 10%;
 		width: 25%;
