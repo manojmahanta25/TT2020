@@ -56,7 +56,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/1.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/1.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -71,7 +71,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/2.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/2.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -86,7 +86,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/3.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/3.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -101,7 +101,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/4.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/4.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -116,7 +116,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/5.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/5.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -131,7 +131,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/6.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/6.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -146,7 +146,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/7.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/7.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -161,7 +161,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/8.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/8.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>
@@ -176,7 +176,7 @@
         	<div class="flip-card">
 			  <div class="flip-card-inner">
 			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/9.webp') }}" style="width: 100%;border: 3px solid white; border-radius: 24px 200px 105px 200px; -moz-border-radius: 24px 200px 105px 200px; -webkit-border-radius: 24px 200px 105px 200px;">
+			      <img src="{{ URL::asset('images/team/9.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
 			      <h1>NAME</h1>

@@ -1468,6 +1468,13 @@ section:after {
 	border-color: #FFF;
 }
 
+.nteam_mem{
+	width: 100%;
+	border: 3px solid white; 
+	border-radius: 24px 200px 105px 200px; 
+	-moz-border-radius: 24px 200px 105px 200px; 
+	-webkit-border-radius: 24px 200px 105px 200px;
+}
 
 /* ------------------------------------------------------------------------ */
 /*   TEAM ICON EFFECT
@@ -2912,12 +2919,22 @@ hr {
 	.abttext{
 		font-size: 13px;
 	}
+	.ftmrt{
+		margin-top: 0px;
+	}
 	.about-ss{
 		font-size: 12px;
 		margin-top: 0px;
 	}
+
+	.countdiv{
+		font-size: 10px;
+    	padding: 0px;
+	}
+
 	.counter{
 		font-size: 15px;
+		width:120px;
 	}
 
 	.in_acco {
@@ -2937,7 +2954,7 @@ hr {
 	}
 	.abtsince {
 		left: -10px;
-		top: 6px;
+		top: -18px;
 		width: 115px!important;
 		font-size: 9px;
 		padding-top: 5px;
