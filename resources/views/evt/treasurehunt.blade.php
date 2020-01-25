@@ -12,7 +12,7 @@
                     <span><h3>What&#39;s your best price? It&#39;s the Treasure Hunt that makes it fun.</h3></span>
                     <p>A treasure hunt is one of many different types of games for players who try to find hidden objects or places by following a series of clues. There will be 2 members in each team. They will get some clues that will lead to the next clue and after getting all the clues the team will be able to find the treasure. The winner will get a prize money.</p>
                 </div>
-                <br/><br/><br/>
+                <br/><br/><br/><br/>
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">

@@ -13,16 +13,8 @@
                     <p>A crime has been committed by someone. The participants are hired by the KUPD as private investigators to investigate the case with the limited information available.
                         The participants must follow any and all leads to find the culprit so that he or she can be brought to justice. The first team to find culprit will be declared the winner.</p><br/>
                 </div>
-                <br/>
-                <div class="speaker-address">
-                    <ul style="text-align: justify; list-style:none;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Debarshi Raj Basumatary +91 80118 96493</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himanta Gogoi +91 80118 60068</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
-                        {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}}
-                    </ul>
-                </div>
+                <br/><br/><br/><br/><br/>
+                
             </div>
             <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="speaker-image" style="border-image: url(../images/events/stamp-border.png) 8 round;border-width: 8px;border-style: solid;border-image-outset: 1;background: url(../images/events/informal.svg) center center no-repeat , rgba(48,185,229,0.8);background-size: 50%;height:20em;">
@@ -47,12 +39,19 @@
                                             <li>If any of the teams are found consulting persons other than their team members for hints, they will be disqualified on spot.</li>
                                             <li>Any other details related to the event will be mentioned at the actual event.</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: Whole campus</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Starting Time:</li>
+                                                <li>Date:</li>
+                                            </ul>
+                                        </div><br/> -->
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Nikita Dey +91 97067 55993</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

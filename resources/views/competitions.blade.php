@@ -103,7 +103,7 @@
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','livesketch')}}" alt="Live Sketch"><h2 class="porttext">Live Sketch</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Quiz"><h2 class="porttext">Quiz</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','quiz')}}" alt="Quiz"><h2 class="porttext">Quiz</h2></a>
                                         </div>
 
                             </div>
@@ -152,9 +152,9 @@
                                 <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
-                                    <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Burn it On"><h2 class="porttext">Burn it On</h2></a>
+                                    <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','burniton')}}" alt="Burn it On"><h2 class="porttext">Burn it On</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Crew Vs. Crew"><h2 class="porttext">Crew Vs. Crew</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','crewvscrew')}}" alt="Crew Vs. Crew"><h2 class="porttext">Crew Vs. Crew</h2></a>
                                         </div>
                             </div>
                         </div>
@@ -182,11 +182,11 @@
                                 <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
-                                  <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Waste to Wealth"><h2 class="porttext">Waste to Wealth</h2></a>
+                                  <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','wastetowealth')}}" alt="Waste to Wealth"><h2 class="porttext">Waste to Wealth</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','aeromodeling')}}" alt="Aero-Modeling"><h2 class="porttext">Aero - modeling</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','aeromodelling')}}" alt="Aero-Modeling"><h2 class="porttext">Aero - modeling</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Exemplar(Science Model Display)"><h2 class="porttext" style="padding-bottom: 25px;">Exemplar <span style="font-size: 16px;line-height: 0em;display: block;">(Science Model Display)</span></h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','exemplar')}}" alt="Exemplar(Science Model Display)"><h2 class="porttext" style="padding-bottom: 25px;">Exemplar <span style="font-size: 16px;line-height: 0em;display: block;">(Science Model Display)</span></h2></a>
                                         </div>  
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                                 <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
-                                    <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="CrossFit"><h2 class="porttext">CrossFit</h2></a>
+                                    <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','crossfit')}}" alt="CrossFit"><h2 class="porttext">CrossFit</h2></a>
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','lawntennis')}}" alt="Lawn Tennis"><h2 class="porttext">Lawn Tennis</h2></a>
                                         </div>
@@ -222,7 +222,7 @@
                                 <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
-                                     <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','rangmanch')}}" alt="Rangmanch(Street Play)"><h2 class="porttext">Rangmach <span style="font-size: 16px;line-height: 0em;display: block;">(Street Play)</span></h2></a>
+                                     <div class="col-md-offset-2 col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','rangmanch')}}" alt="Rangmanch(Street Play)"><h2 class="porttext">Rangmanch <span style="font-size: 16px;line-height: 0em;display: block;">(Street Play)</span></h2></a>
                                         </div>
                             </div>
                         </div>
@@ -240,17 +240,17 @@
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','justaminute')}}" alt="Just A Minute"><h2 class="porttext">Just A Minute</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','crimesceneinvestigation')}}" alt="Crime Scene investigation"><h2 class="porttext">Crime Scene investigation</h2></a>
-                                        </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','facepainting')}}" alt="Face Painting"><h2 class="porttext">Face Painting</h2></a>
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','uno')}}" alt="UNO"><h2 class="porttext">UNO</h2></a>
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','treasurehunt')}}" alt="Treasure Hunt"><h2 class="porttext">Treasure Hunt</h2></a>
                                         </div>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','jenga')}}" alt="Jenga"><h2 class="porttext">Jenga</h2></a>
+                                        </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','loveletterwriting')}}" alt="Love Letter Writting"><h2 class="porttext">Love Letter Writting</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','jenga')}}" alt="Jenga"><h2 class="porttext">Jenga</h2></a>
+                                        <div class="col-md-5" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','crimesceneinvestigation')}}" alt="Crime Scene investigation"><h2 class="porttext">Crime Scene investigation</h2></a>
                                         </div>
                             </div>
                         </div>
@@ -263,19 +263,25 @@
                                 <div class="col-md-12" style="margin-bottom: 20px;height:20px;">                               
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
-                                    <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Bit-by-Bit"><h2 class="porttext">Bit-by-Bit</h2></a>
+                                    <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','bitbybit')}}" alt="Bit-by-Bit"><h2 class="porttext">Bit-by-Bit</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="TechTalks"><h2 class="porttext">TechTalks</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','techtalk')}}" alt="TechTalks"><h2 class="porttext">TechTalks</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Zumba Workshop"><h2 class="porttext">Zumba Workshop</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','danceworkshop')}}" alt="Dance Workshop"><h2 class="porttext">Dance Workshop</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Fashion Workshop"><h2 class="porttext">Fashion Workshop</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','theatreworkshop')}}" alt="Theatre Workshop"><h2 class="porttext">Theatre Workshop</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Cooking Workshop"><h2 class="porttext">Cooking Workshop</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','actingworkshop')}}" alt="Acting Workshop"><h2 class="porttext">Acting Workshop</h2></a>
                                         </div>
-                                        <div class="col-md-5" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Photography Workshop"><h2 class="porttext">Photography Workshop</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','flimmakingworkshop')}}" alt="Flim Making Workshop"><h2 class="porttext">Flim Making Workshop</h2></a>
                                         </div>
-                                        <div class="col-md-6" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon')}}" alt="Theatre & Flim Making Workshop"><h2 class="porttext">Theatre & Flim Making Workshop</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','cookingworkshop')}}" alt="Cooking Workshop"><h2 class="porttext">Cooking Workshop</h2></a>
+                                        </div>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a href="{{route('tt.eventdet','singingworkshop')}}" alt="Singing Workshop"><h2 class="porttext">Singing Workshop</h2></a>
+                                        </div>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a href="{{route('tt.eventdet','modelingworkshop')}}" alt="Modeling Workshop"><h2 class="porttext">Modeling Workshop</h2></a>
+                                        </div>
+                                        <div class="col-md-6 col-md-offset-3" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','fashionphotographyworkshop')}}" alt="Fashion Photography Workshop"><h2 class="porttext">Fashion Photography Workshop</h2></a>
                                         </div>
                             </div>
                         </div>

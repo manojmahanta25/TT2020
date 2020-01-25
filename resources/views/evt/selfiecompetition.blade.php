@@ -11,14 +11,7 @@
                 <div class="speaker-content">
                     <span><h3>SELFIE MANIAX- Mirror, Mirror <small>"ONLINE SELFIE COMPETITION"</small></h3></span>
                     <p>Talent Tantra presents a one-of-a-kind online selfie competition for all you selfie addicts! Click your selfie and send it to the WhatsApp number mentioned below. Take a mesmerizing selfie and bring home exciting prizes!</p>
-                    <br/><br/><br/><br/><div class="speaker-address">
-                        <ul style="text-align: justify; list-style:none;">
-                            <li><strong>Event Coordinator:</strong></li>
-                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> +91 96781 96898</li>
-                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> +91 88764 33179</li>
-                            <!-- {{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}} -->
-                        </ul>
-                    </div>
+                    <br/><br/><br/><br/>
                 </div>
             </div>
 
@@ -59,6 +52,13 @@
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Free </strong></p><br/>
                                         </div>
+                                        <div class="speaker-address">
+                                        <ul style="text-align: left;">
+                                            <li><strong>Event Coordinator:</strong></li>                                            
+                                            <li><span><i class="fa fa-phone" aria-hidden="true"></i>Chandan Boruah: +91 9678196898</span></li></li>
+                                            <li><span><i class="fa fa-phone" aria-hidden="true"></i>Himangshu Boruah : +91 8404073290</span></li>
+                                        </ul>
+                                    </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','selfie')}}" alt="">REGISTER</a>
                                         </div>

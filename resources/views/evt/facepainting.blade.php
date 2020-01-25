@@ -12,15 +12,8 @@
                     <span><h3>Informals - Face Painting</h3></span>
                     <p>Show your spirit of painting on a live canvas.</p>
                 </div>
-                <br/><br/><br/><br/><br/><br/>
-                <div class="speaker-address">
-                    <ul style="text-align: justify; list-style:none;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Bedanta Saikia </li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Bivash Ghosh</li>
-{{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}}
-                    </ul>
-                </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -43,12 +36,19 @@
                                             <li>Participants need to bring their own model (Person) and materials (Color, brush).</li>
                                             <li>Theme will be given on-spot.</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: Will be given at the time of the event</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Starting Time:</li>
+                                                <li>Date:</li>
+                                            </ul>
+                                        </div><br/> -->
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Nikita Dey +91 97067 55993</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

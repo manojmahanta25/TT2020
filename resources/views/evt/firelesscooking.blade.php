@@ -48,9 +48,8 @@
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: left;">
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Bidisha +91 7578926851 </span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i>Priyamvada +91 8638743846</span></li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

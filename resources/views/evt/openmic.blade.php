@@ -37,18 +37,17 @@
                                         </ol><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
+                                            <!-- <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                                            </ul>
+                                            </ul> -->
                                         </div><br/>
                                         <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li><strong>Event Coordinator:</strong></li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Nikita Dey +91 97067 55993</li>
-{{--                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}}
                                             </ul>
                                         </div>
                                         <div class="speaker-statement">

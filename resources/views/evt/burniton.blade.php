@@ -11,7 +11,7 @@
                 <div class="speaker-content">
                     <span><h3>Dance Competition</h3></span>
                 </div>
-                <br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">

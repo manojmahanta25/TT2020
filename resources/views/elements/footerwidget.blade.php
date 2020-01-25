@@ -38,7 +38,7 @@
                 <a href="{{route('tt.faq')}}" class="ftheading">FAQ</a>
             </div>
             <div class="pd40">
-                <a href="{{route('tt.comingsoon')}}" class="ftheading">SPONSORS</a>
+                <a href="{{route('tt.sponsor')}}" class="ftheading">SPONSORS</a>
             </div>
             <div class="pd40">
                 <a href="{{route('tt.comingsoon')}}" class="ftheading">CSR</a>

@@ -37,7 +37,7 @@
                                             <li>Performing one OC (Original Composition) and one Cover Song is mandatory.</li>
                                             <li>However participants can perform more than 2 songs if possible in the given time.</li>
                                             <li>Bands are required to bring their own gear and instruments.</li>
-                                            <li>A standard 5pc drum will be provided by the organizers. Bands can bring their own cymbals and pedals as preferred.</li>
+                                            <li>A standard 5pc drum will be provided by the organizers. Bands have to bring their own cymbals and pedals as preferred.</li>
                                             <li>Use of narcotics in the premises of the university and misbehaviour on or off the stage will lead to disqualification of the band.</li>
                                         </ol><br/>
                                         <div class="speaker-statement">
@@ -51,15 +51,15 @@
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Tapubrat Bharali	9101025058
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Tapubrat Bharali    9101025058
                                                 </li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Shahbaz Azad	7002158907</li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Jyoti Prased Baruah	8486621330</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Shahbaz Azad    7002158907</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Jyoti Prased Baruah 8486621330</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> Rs. 1500 /TEAM</strong></p><br/>
                                         </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','mokshmantra')}}" alt="">REGISTER</a>

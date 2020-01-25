@@ -34,14 +34,30 @@
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
-                                        <div class="speaker-statement">
+                                        <h5 style="text-align: justify;">Rules And Regulations:</h5>
+                                        <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                            <li >1. Each team must contain minimum 2 and maximum 5 participants.&nbsp;</li>
+                                            <li>2. No students must be involved in more than 1 project.&nbsp;</li>
+                                            <li>3. Students must setup their project, remain with it throughout their judging period and remove it at the end of the competition.&nbsp;</li>
+                                            <li>4. KU management and coordinators will not be responsible for security and safety of their respective models.&nbsp;</li>
+                                            <li>5.A label must be attached to the project with participants name, phone number, and institution.&nbsp;</li>
+                                            <li>6.. In case of ties a battle of q/a round will be held.&nbsp;</li>
+                                            </ul><br/>
+                                        <h5 style="text-align: justify;">Judgement Criteria:</h5>
+                                        <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
+                                            <li>Students own creativity. </li>
+                                            <li>Innovativeness in design of the project. </li>
+                                            <li>Scientific thought/principle.</li>
+                                            <li>Presentation- explanation and demonstration</li>
+                                        </ul><br/>
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: </li>
                                                 <li>Starting Time: </li>
                                                 <li>Date: </li>
                                             </ul>
-                                        </div><br/>
+                                        </div><br/> -->
                                         <div class="speaker-statement">
                                             <ul class="speaker-address" style="text-align: justify;">
                                                 <h5>Event Coordinator:</h5>

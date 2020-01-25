@@ -60,7 +60,7 @@
 
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> Rs. 1500 /TEAM</strong></p><br/>
                                         </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','rangmanch')}}" alt="">REGISTER</a>

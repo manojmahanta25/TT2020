@@ -10,7 +10,8 @@
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
                 <div class="speaker-content">
                     <span><h3>Waste to Wealth</h3></span>
-                </div><br/><br/><br/><br/><br/><br/>
+                </div>
+                <p style="text-align: justify;">Waste is the unwanted and unusable materials found around us. A waste product may become a by-product, joint product or an invention that raises its value above zero. Talent Tantra is hosting this event for the first time to give the participants a platform to highlight their creativity by empowering the waste materials into valuable products/Models in a competitive manner.</p>
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">

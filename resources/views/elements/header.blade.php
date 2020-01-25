@@ -4,7 +4,10 @@
 <head>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
     <meta name="description" content="TalentTantra 2020">
     <meta name="author" content="Neel Kamal">
     @if(isset($page_title))
@@ -13,7 +16,7 @@
         <title>Talent Tantra</title>
     @endif
 
-    <base href="/TT20/">
+    <base href="/">
 
     <!--<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">-->
     <meta name="description" content="{{$description}} "/>
@@ -24,7 +27,7 @@
     <meta property="og:title" content="{{$mtitle}}"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">    
     <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" />
     <!--place your favicon path 18pxX18px here-->
@@ -55,63 +58,63 @@
     -->
 
     <link rel="stylesheet" href="{{ URL::asset('css/snap-scroll.css') }}" type="text/css">
-    <script type="text/javascript">
+ <script type="text/javascript">
 
- $(document).ready(function() {
-  var counter = 0;
+//  $(document).ready(function() {
+//   var counter = 0;
 
-  // Start the changing images
-  setInterval(function() {
-    if(counter == 4) {
-      counter = 0;
-    }
+//   // Start the changing images
+//   setInterval(function() {
+//     if(counter == 4) {
+//       counter = 0;
+//     }
 
-    changeImage(counter);
-    counter++;
-  }, 3000);
+//     changeImage(counter);
+//     counter++;
+//   }, 3000);
 
-  // Set the percentage off
-  loading();
-});
+//   // Set the percentage off
+//   loading();
+// });
 
-function changeImage(counter) {
-  var images = [
-    '<img src="{{ URL::asset("/images/loader/1.webp")}}" style="width: 100%;">',
-    '<img src="{{ URL::asset("/images/loader/2.webp")}}" style="width: 100%;">',
-    '<img src="{{ URL::asset("/images/loader/3.webp")}}" style="width: 100%;">',
-    '<img src="{{ URL::asset("/images/loader/4.webp")}}" style="width: 100%;">',
-    '<img src="{{ URL::asset("/images/loader/5.webp")}}" style="width: 100%;">'
-  ];
+// function changeImage(counter) {
+//   var images = [
+//     '<img src="{{ URL::asset("/images/loader/1.webp")}}" style="width: 100%;">',
+//     '<img src="{{ URL::asset("/images/loader/2.webp")}}" style="width: 100%;">',
+//     '<img src="{{ URL::asset("/images/loader/3.webp")}}" style="width: 100%;">',
+//     '<img src="{{ URL::asset("/images/loader/4.webp")}}" style="width: 100%;">',
+//     '<img src="{{ URL::asset("/images/loader/5.webp")}}" style="width: 100%;">'
+//   ];
 
-  $(".loader .image").html(""+ images[counter] +"");
-}
+//   $(".loader .image").html(""+ images[counter] +"");
+// }
 
-function loading(){
-  var num = 0;
+// function loading(){
+//   var num = 0;
 
-  for(i=0; i<=100; i++) {
-    setTimeout(function() {
-      $('.loader span').html(num+'%');
+//   for(i=0; i<=100; i++) {
+//     setTimeout(function() {
+//       $('.loader span').html(num+'%');
 
-      if(num == 100) {
-        loading();
-      }
-      num++;
-    },i*120);
-  };
+//       if(num == 100) {
+//         loading();
+//       }
+//       num++;
+//     },i*120);
+//   };
 
-}
-    </script>
+// }
+ </script>
 </head>
 
 <body>
-<div class="loader">
-  <div class="image">
-    <img src="{{ URL::asset('images/loader/5.webp') }}" style="width: 100%;">
-  </div>
-  <span></span>
-</div>
-<div id="global" class="global hide" >
+<!--<div class="loader">-->
+<!--  <div class="image">-->
+<!--    <img src="{{ URL::asset('images/loader/5.webp') }}" style="width: 100%;">-->
+<!--  </div>-->
+<!--  <span></span>-->
+<!--</div>-->
+<div id="global" class="global" >
     @include('elements.menu')
     @if($page == 'home')
         <div class="wrapping">

@@ -42,7 +42,7 @@
                                             <li>Paper, Magazines, Glue, Sketch pens, Pen colours etc. is expected to be brought by the participants.</li>
                                             <li>Use of Scissor is not allowed.</li>
                                             <li>Theme for the collage &ndash; Shall be given on-spot</li>
-                                            <li>The team should consist of minimum 2 and maximum 3 members.</li>
+                                            <li>The team should consist of minimum 1 and maximum 2 members.</li>
                                             <li>Extra points shall be avoided for neatness, punctuality, and an apt display of the theme</li>
                                             <li>Participants are expected to submit a 1-page write up about their artwork, what it stands for and the elements used in the design.</li>
                                             <li>Disqualification- On exceeding time, deviating from the theme or unsatisfactory explanation to judges</li>

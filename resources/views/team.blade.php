@@ -33,6 +33,7 @@
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   color: black;
+  background-color: white;
 }
 
 /* Style the back side */
@@ -52,66 +53,6 @@
         </div>  
 
 
-        <div class="col-md-3" style="margin-bottom:15px;">
-        	<div class="flip-card">
-			  <div class="flip-card-inner">
-			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/1.webp') }}" class="nteam_mem">
-			    </div>
-			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
-			    </div>
-			  </div>
-			</div>            
-            <h4>CORE TEAM MEMBER</h4>
-        </div>
-         <div class="col-md-3" style="margin-bottom:15px;">
-        	<div class="flip-card">
-			  <div class="flip-card-inner">
-			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/2.webp') }}" class="nteam_mem">
-			    </div>
-			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
-			    </div>
-			  </div>
-			</div>            
-            <h4>CORE TEAM MEMBER</h4>
-        </div>
-         <div class="col-md-3" style="margin-bottom:15px;">
-        	<div class="flip-card">
-			  <div class="flip-card-inner">
-			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/3.webp') }}" class="nteam_mem">
-			    </div>
-			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
-			    </div>
-			  </div>
-			</div>            
-            <h4>CORE TEAM MEMBER</h4>
-        </div>
-         <div class="col-md-3" style="margin-bottom:15px;">
-        	<div class="flip-card">
-			  <div class="flip-card-inner">
-			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/4.webp') }}" class="nteam_mem">
-			    </div>
-			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
-			    </div>
-			  </div>
-			</div>            
-            <h4>CORE TEAM MEMBER</h4>
-        </div>
          <div class="col-md-3" style="margin-bottom:15px;">
         	<div class="flip-card">
 			  <div class="flip-card-inner">
@@ -119,13 +60,12 @@
 			      <img src="{{ URL::asset('images/team/5.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
+			      <h1>BHASKAR BURAGOHAIN</h1>
+			      <p>MOBILE: +91 7662976178</p>
 			    </div>
 			  </div>
 			</div>            
-            <h4>CORE TEAM MEMBER</h4>
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
         </div>
          <div class="col-md-3" style="margin-bottom:15px;">
         	<div class="flip-card">
@@ -134,13 +74,68 @@
 			      <img src="{{ URL::asset('images/team/6.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
+			      <h1>DHRUBA BARUAH</h1>
+			      <p>MOBILE: +91 7005043776</p>
 			    </div>
 			  </div>
 			</div>            
-            <h4>CORE TEAM MEMBER</h4>
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+        <div class="col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/1.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>SHAHBAZ AZAD</h1>
+			      <p>MOBILE: +91 7002158907</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+         <div class="col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/2.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>GOVIND BANURA</h1>
+			      <p>MOBILE: +91 7086581398</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+         <div class="col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/3.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>BIDISHA BARMAN</h1>
+			      <p>MOBILE: +91 9365943991</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+         <div class="col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/4.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>PRABAL DUTTA</h1>
+			      <p>MOBILE: +91 8399894547</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
         </div>
          <div class="col-md-3" style="margin-bottom:15px;">
         	<div class="flip-card">
@@ -149,13 +144,55 @@
 			      <img src="{{ URL::asset('images/team/7.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
+			      <h1>JYOTIBON HAZARIKA</h1>
+			      <p>MOBILE: +91 9365076487</p>
 			    </div>
 			  </div>
 			</div>            
-            <h4>CORE TEAM MEMBER</h4>
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+
+        <div class="col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/11.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>AMAN UPADHYAY</h1>
+			      <p>MOBILE: +91 8876785532</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+        <div class="col-md-offset-2 col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/10.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>BIBEK RAI</h1>
+			      <p>MOBILE: +91 9101367969</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
+        </div>
+        <div class="col-md-3" style="margin-bottom:15px;">
+        	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			      <img src="{{ URL::asset('images/team/9.webp') }}" class="nteam_mem">
+			    </div>
+			    <div class="flip-card-back">
+			      <h1>SURAJ GUPTA</h1>
+			      <p>MOBILE: +91 8753989940</p>
+			    </div>
+			  </div>
+			</div>            
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
         </div>
          <div class="col-md-3" style="margin-bottom:15px;">
         	<div class="flip-card">
@@ -164,28 +201,12 @@
 			      <img src="{{ URL::asset('images/team/8.webp') }}" class="nteam_mem">
 			    </div>
 			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
+			      <h1>JYOTI PRASAD BORAH</h1>
+			      <p>MOBILE: +91 8486621330</p>
 			    </div>
 			  </div>
 			</div>            
-            <h4>CORE TEAM MEMBER</h4>
-        </div>
-        <div class="col-md-offset-4 col-md-3" style="margin-bottom:15px;">
-        	<div class="flip-card">
-			  <div class="flip-card-inner">
-			    <div class="flip-card-front">
-			      <img src="{{ URL::asset('images/team/9.webp') }}" class="nteam_mem">
-			    </div>
-			    <div class="flip-card-back">
-			      <h1>NAME</h1>
-			      <p>BTECH 8<sup>th</sup> SEM</p>
-			      <p>BT16CS1000</p>
-			    </div>
-			  </div>
-			</div>            
-            <h4>CORE TEAM MEMBER</h4>
+            <h4 style="background:white;color:black;text-align:center;">CORE TEAM MEMBER</h4>
         </div>
         <hr style="height: 5px;background-color: black;">
     </div>

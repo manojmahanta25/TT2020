@@ -9,7 +9,7 @@
         <li><a href="{{route('tt.register')}}">Register</a></li>
         <li><a href="{{route('tt.pass')}}">Pass</a></li>
         <li><a href="{{route('tt.faq')}}">FAQ</a></li>
-        <li><a href="{{route('tt.comingsoon')}}">Team</a></li>
+        <li><a href="{{route('tt.team')}}">Team</a></li>
         <li><a href="{{route('tt.rnr')}}">Rules and Regulations</a></li>
         <li><a href="{{route('tt.contact')}}">Contact</a></li>
         @if(isset($userlogin) && $userlogin==1 )

@@ -209,6 +209,7 @@ class pageController extends Controller
             case 'burniton':
                 $page = 'burniton';
                 $page_title = 'Burn It On';
+                $value ='burniton';
                 $mtitle = 'Burn It On';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
@@ -435,9 +436,9 @@ class pageController extends Controller
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
 
-            case 'techtalks':
-                $page = 'techtalks';
-                $value = 'techtalks';
+            case 'techtalk':
+                $page = 'techtalk';
+                $value = 'techtalk';
                 $page_title = 'Tech Talks';
                 $mtitle = 'Tech Talks';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
@@ -445,21 +446,21 @@ class pageController extends Controller
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
 
-            case 'zumbaworkshop':
-                $page = 'zumbaworkshop';
-                $value = 'zumbaworkshop';
-                $page_title = 'Zumba Workshop';
-                $mtitle = 'Zumba Workshop';
+            case 'danceworkshop':
+                $page = 'danceworkshop';
+                $value = 'danceworkshop';
+                $page_title = 'Dance Workshop';
+                $mtitle = 'Dance Workshop';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
 
-            case 'fashionworkshop':
-                $page = 'fashionworkshop';
-                $value = 'fashionworkshop';
-                $page_title = 'Fashion Workshop';
-                $mtitle = 'Fashion Workshop';
+            case 'fashionphotographyworkshop':
+                $page = 'fashionphotographyworkshop';
+                $value = 'fashionphotographyworkshop';
+                $page_title = 'Fashion Photography Workshop';
+                $mtitle = 'Fashion Photography Workshop';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
@@ -485,26 +486,55 @@ class pageController extends Controller
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
 
-            case 'photographyworkshop':
-                $page = 'photographyworkshop';
-                $value = 'photographyworkshop';
-                $page_title = 'Photography Workshop';
-                $mtitle = 'Photography Workshop';
+            case 'flimmakingworkshop':
+                $page = 'flimmakingworkshop';
+                $value = 'flimmakingworkshop';
+                $page_title = 'Flim Making Workshop';
+                $mtitle = 'Flim Making Workshop';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
             
-            case 'theatrenflimmakingworkshop':
-                $page = 'theatrenflimmakingworkshop';
-                $value = 'theatrenflimmakingworkshop';
-                $page_title = 'Theatren Flim Making Workshop';
-                $mtitle = 'Theatren Flim Making Workshop';
+            case 'theatreworkshop':
+                $page = 'theatreworkshop';
+                $value = 'theatreworkshop';
+                $page_title = 'Theatre Workshop';
+                $mtitle = 'Theatre Workshop';
+                $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+                $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+                return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
+                break;
+
+            case 'actingworkshop':
+                $page = 'actingworkshop';
+                $value = 'actingworkshop';
+                $page_title = 'Acting Workshop';
+                $mtitle = 'Acting Workshop';
                 $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
                 
+            case 'singingworkshop':
+                $page = 'singingworkshop';
+                $value = 'singingworkshop';
+                $page_title = 'Singing Workshop';
+                $mtitle = 'Singing Workshop';
+                $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+                $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+                return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
+                break;
+
+            case 'modelingworkshop':
+                $page = 'modelingworkshop';
+                $value = 'modelingworkshop';
+                $page_title = 'Modeling Workshop';
+                $mtitle = 'Modeling Workshop';
+                $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+                $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+                return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
+                break;
             default:
                 abort(404);
         }

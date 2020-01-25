@@ -16,15 +16,8 @@
                         <li><strong>Standard UNO rules will be followed for playing, dispute resolution and deciding the winners. </strong></li>
                     </ul>
                 </div>
-                <br/><br/>
-                <div class="speaker-address">
-                    <ul style="text-align: justify; list-style:none;">
-                        <li><strong>Event Coordinator:</strong></li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Debarshi Raj Basumatary +91 80118 96493</li>
-                        <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Umor Jyoti Chetia +91 81360 13922</li>
-{{--                        <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>xxxxxxxxxxxxxxxxxxxxxxx</li>--}}
-                    </ul>
-                </div>
+                <br/><br/><br/><br/><br/><br/>
+                
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -42,12 +35,19 @@
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
-                                        <div class="speaker-statement">
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
                                                 <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                            </ul>
+                                        </div><br/> -->
+                                        <div class="speaker-address">
+                                            <h5 style="text-align: justify;">Event Coordinator:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Nikita Dey +91 97067 55993</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
