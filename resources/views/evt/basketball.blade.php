@@ -42,9 +42,11 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
+                                                <li>Venue: Basketball Ground</li>
+                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
+                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
+                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
@@ -57,7 +59,7 @@
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> Rs. 1500 / Per Team</strong></p><br/>
                                         </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','basketball')}}" alt="">Register</a>

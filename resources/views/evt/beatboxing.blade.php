@@ -53,10 +53,11 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>31<sup>st</sup> January 2020</li>
-                                                <li>1<sup>st</sup> February 2020</li>
+                                                <li>Venue: Falsetto - Stage</li>
+                                                <li>Starting Time: 11:00 AM - 02:00 PM</li>
+                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
-                                        </div>
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">

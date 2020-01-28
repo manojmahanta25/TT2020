@@ -19,14 +19,14 @@
                     <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
                     <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
                         <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
+                        <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
                         <li>6</li>
                     </ul><br/>
-                    
+
                 </div> -->
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
@@ -42,7 +42,7 @@
                 <div class="container">
                     <div class="schedule-tabs">
                         <!-- Nav tabs -->
-                        
+
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="event-one">
@@ -52,15 +52,15 @@
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
                                             <li>xxxxxxxxxxxxxxxxxxx</li>
                                             <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
+                                        </ol><br/>-->
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Venue: SOB Open Area</li>
+                                                <li>Starting Time: 01:00 PM - 04:00 PM</li>
+                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">
@@ -71,7 +71,7 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
                                             <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
-                                        </div>                                        
+                                        </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','cookingworkshop')}}" alt="">REGISTER</a>
                                         </div>
@@ -82,9 +82,9 @@
                         </div>
                     </div>
                 </div>
-            </section>        
+            </section>
         </div>
-                <!-- container -->            
+                <!-- container -->
     </div>
         <!--end project-grid-->
     <!--end portfoliomain-->

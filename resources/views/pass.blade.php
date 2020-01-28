@@ -40,13 +40,15 @@
             <p>Terms and Conditions</p>
             <ul style="list-style: square; margin-left: 50px;">
                 <li>Entry into the campus is from <strong>9 a.m.</strong> onwards.</li>
+                <li>Gates will be closed at <strong>7:30 PM</strong> on all 3 Days.</li>
+                <li>Pro Nites Start From <strong>5:30 PM</strong> onwards</li>
                 <li>Entry without passes will not be permitted. Please carry your pass to the venue. The same should be produced upon request at the gate.</li>
                 <li>Organizers reserve the right to perform <strong>security checks</strong> in the members/invitees at the entry point.</li>
                 <li>Parking area is available outside the University premises, and is at the risk of the vehicle owner. Organizers will not hold responsibility for any damage or theft of the vehicles.</li>
                 <li>Consumption or sale of <strong>alcohol</strong>,<strong> tobacco</strong> or <strong>being intoxicated/under the influence of narcotics</strong> is strictly prohibited on campus. This is a<strong> smoke-free zone</strong> and the organisers reserve the right to <strong>expel violators</strong> from the campus.</li>
                 <li>A pass shall not be valid if the <strong>barcode/serial number</strong> has been tampered with. <strong>Unlawful resale of ticket</strong> would lead to seizure or cancellation of that pass without refund or compensation.</li>
                 <li><strong>Duplicate tickets</strong> will not be issued for lost or stolen tickets. No refund for a purchased ticket is possible.</li>
-                <li>In case of cancellation of the shows due to any unforseen circumstances beyond the control of the organizers, the extent of the refurnd will be based on the situation at hand and the management's decision will be final and binding will be final and binding on all.</li>
+                <li>In case of cancellation of the shows due to any unforseen circumstances beyond the control of the organizers, the extent of the refund will be based on the situation at hand and the management's decision will be final and binding will be final and binding on all.</li>
             </ul>
     </div>
 
