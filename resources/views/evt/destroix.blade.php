@@ -83,11 +83,7 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: SOB Room 208, 212, 213</li>
                                                 <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                                <li>Date: 31<sup>st</sup> Jan., 1<sup>st</sup>, and 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
@@ -138,11 +134,7 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: SOB Room 208, 212, 213</li>
                                                 <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                                <li>Date: 31<sup>st</sup> Jan., 1<sup>st</sup>, and 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
@@ -187,11 +179,7 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: SOB Room 208, 212, 213</li>
                                                 <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                                <li>Date: 31<sup>st</sup> Jan., 1<sup>st</sup>, and 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
@@ -253,11 +241,7 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: SOB Room 208, 212, 213</li>
                                                 <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                                <li>Date: 31<sup>st</sup> Jan., 1<sup>st</sup>, and 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
@@ -302,11 +286,7 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: SOB Room 208, 212, 213</li>
                                                 <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
-                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
-                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                                <li>Date: 31<sup>st</sup> Jan., 1<sup>st</sup>, and 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">

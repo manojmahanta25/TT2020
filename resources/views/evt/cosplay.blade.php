@@ -37,11 +37,12 @@
                                             <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px;">
                                             <li>Role-play (3min)</li>
                                             <li>Costume details.</li>
-                                            <li>Dedication to the original characters.</li>
-                                            </ol>
+                                            <li>Dedication to the original characters.
+                                            <ol>
                                             <li>Cosplayers requested not to bring any sharp props.</li>
                                             <li>For role-play, cosplayers competing can assist each other but will be judge individually.</li>
                                             </ol>
+                                            </li>
                                             <li>For role-play, CosPlayers need to dress up their favourite Anime character and entertain the crowd for a time duration.</li>
                                             <li>CosPlayers are requested to not bring any sharp objects with them.</li>
                                             <li>CosPlayers will be given a ramp to walk for the final round.</li>

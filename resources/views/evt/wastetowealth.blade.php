@@ -43,9 +43,9 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
+                                                <li>Venue: In front of SKF (Open Area)</li>
+                                                <li>Starting Time: 10:00 AM - 4:00 PM </li>
+                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
