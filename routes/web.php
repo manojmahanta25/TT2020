@@ -76,6 +76,7 @@ Route::get('/registration', ['as'=>'tt.register','uses'=>'registrationController
 Route::get('/registration/{id}', ['as'=>'tt.registersingle','uses'=>'registrationController@show']);
 
 Route::get('/sponsor', ['as'=>'tt.sponsor','uses'=>'pageController@sponsor']);
+Route::get('/csr', ['as'=>'tt.csr','uses'=>'pageController@csr']);
 
 Route::get('/contact', ['as'=>'tt.contact','uses'=>'pageController@contact']);
 Route::get('/comingsoon', ['as'=>'tt.comingsoon','uses'=>'pageController@comingsoon']);

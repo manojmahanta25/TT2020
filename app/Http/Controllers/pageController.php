@@ -36,6 +36,16 @@ class pageController extends Controller
         return view('newcompetition', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
     }
 
+     public function csr()
+    {
+        $page = 'csr';
+        $page_title = 'Corporate social responsibility of Talent Tantra 2020';
+        $mtitle = 'Corporate social responsibility of Talent Tantra 2020';
+        $description = 'Corporate social responsibility of Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+        $keywords = 'CSR, Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+        return view('csr', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
+    }
+
     public function eventFetch($id)
     {
         $id = trim(htmlspecialchars(strip_tags($id)));

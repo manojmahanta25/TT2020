@@ -41,7 +41,7 @@
                 <a href="{{route('tt.sponsor')}}" class="ftheading">SPONSORS</a>
             </div>
             <div class="pd40">
-                <a href="{{route('tt.comingsoon')}}" class="ftheading">CSR</a>
+                <a href="{{route('tt.csr')}}" class="ftheading">CSR</a>
             </div>
         </div>
     </div>
