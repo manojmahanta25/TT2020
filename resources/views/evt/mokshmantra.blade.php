@@ -45,7 +45,7 @@
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: Main Stage</li>
                                                 <li>Starting Time: 10:00 AM - 03:00 PM</li>
-                                                <li>Date: 31<sup>st</sup>, 2020</li>
+                                                <li>Date: 31<sup>st</sup> Jan, 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">

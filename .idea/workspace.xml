@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/exemplar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/exemplar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/facepainting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/facepainting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/falsetto.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/falsetto.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/fashionphotographyworkshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/fashionphotographyworkshop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/firelesscooking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/firelesscooking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/flimmakingworkshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/flimmakingworkshop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/football.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/football.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/jenga.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/jenga.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/justaminute.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/justaminute.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/kickstart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/kickstart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/lawntennis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/lawntennis.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/livesketch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/livesketch.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/loveletterwriting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/loveletterwriting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evt/modelingworkshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/modelingworkshop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/evt/mokshmantra.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/mokshmantra.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +204,7 @@
       <workItem from="1580239696938" duration="213000" />
       <workItem from="1580283238384" duration="572000" />
       <workItem from="1580283828313" duration="8000" />
-      <workItem from="1580283938782" duration="3049000" />
+      <workItem from="1580283938782" duration="3146000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -493,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580239732121</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="exemplar to mokshmantra details updated">
+      <created>1580287062655</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1580287062655</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,14 +525,15 @@
     <MESSAGE value="auth some bugs fixed!!" />
     <MESSAGE value="with ticket" />
     <MESSAGE value="with ticket new Datatable" />
-    <option name="LAST_COMMIT_MESSAGE" value="with ticket new Datatable" />
+    <MESSAGE value="exemplar to mokshmantra details updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="exemplar to mokshmantra details updated" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1580287024790">
+    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1580287061965">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1580287024790" />
+    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1580287061965" />
     <state x="393" y="60" key="CommitChangelistDialog2/0.0.1536.930@0.0.1536.930" timestamp="1578321495757" />
     <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580232181197">
       <screen x="0" y="0" width="1536" height="834" />
