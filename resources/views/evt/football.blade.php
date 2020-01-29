@@ -49,25 +49,24 @@
                                             <li>Dangerous play is not allowed.</li>
                                             <li>When the goal keeper restarts the game with a throw in the ball must go outside the &ldquo;D&rdquo; before any other player touches it.</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
-                                            </ul>
-                                        </div><br/>
+                                        <!--<div class="speaker-statement">-->
+                                        <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
+                                        <!--    <ul style="text-align: justify; list-style:none;">-->
+                                        <!--        <li>Venue: </li>-->
+                                        <!--        <li>Starting Time: </li>-->
+                                        <!--        <li>Date: </li>-->
+                                        <!--    </ul>-->
+                                        <!--</div><br/>-->
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Deepak Gogoi	7002859079
-                                                                                                    </li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Roshan Chetia	8011922790</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Deepak Gogoi : +91 7002 859079 </li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Roshan Chetia : +91 8011 922790</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> Rs. 1500 /TEAM</strong></p><br/>
                                         </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','football')}}" alt="">REGISTER</a>

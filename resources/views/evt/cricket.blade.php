@@ -38,14 +38,14 @@
                                             <li>Only tennis ball will be used for the matches.</li>
                                             <li>All ICC rules will be followed except LBW.</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
-                                            </ul>
-                                        </div><br/>
+                                        <!--<div class="speaker-statement">-->
+                                        <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
+                                        <!--    <ul style="text-align: justify; list-style:none;">-->
+                                        <!--        <li>Venue: </li>-->
+                                        <!--        <li>Starting Time: </li>-->
+                                        <!--        <li>Date: </li>-->
+                                        <!--    </ul>-->
+                                        <!--</div><br/>-->
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">
@@ -55,7 +55,7 @@
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> Rs. 1500 /TEAM</strong></p><br/>
                                     </div>
                                     <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','cricket')}}" alt="">REGISTER</a>

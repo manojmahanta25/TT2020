@@ -38,6 +38,7 @@
                                             <li>A team shall consist of not more than 4 members.</li>
                                             <li>Stationery materials will be provided by the organizing committee.</li>
                                             <li>Model presentation will be for 1 hour.</li>
+                                            <li>Participants should bring Geometry box( including compass , divider, scale, eraser, etc. ) for the compass.</li>
                                         </ol><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>

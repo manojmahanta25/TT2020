@@ -38,6 +38,17 @@
       <div class="col-md-3 animate upslide load spon">
          <img src="{{ URL::asset('images/sponsors/ktm.webp') }}" alt="" style="height:100%;width:100%;">
       </div>
+      <div class="col-md-3 animate upslide load spon">
+         <img src="{{ URL::asset('images/sponsors/main/early.webp') }}" alt="" style="height:100%;width:100%;">
+      </div>
+      <div class="col-md-3 animate upslide load spon">
+         <img src="{{ URL::asset('images/sponsors/main/t-series.webp') }}" alt="" style="height:100%;width:100%;">
+      </div>
+      <div class="col-md-3 animate upslide load spon">
+         <img src="{{ URL::asset('images/sponsors/main/bisleri.webp') }}" alt="" style="height:100%;width:100%;">
+         <p style="font-weight: 900;">Hydration Partner</p>
+      </div>
+      
       </div>
       <div class="heading" style="padding-top:50px;">
          <span>Event Sponsors</span>
@@ -78,7 +89,14 @@
       <div class="col-md-3 animate upslide load spon">
          <img src="{{ URL::asset('images/sponsors/stayhigh.webp') }}" alt="" style="height:100%;width:100%;">
       </div>
+<!-- 
+      <div class="heading" style="padding-top:50px;">
+         <span>Hydration Partner</span>
+      </div>
 
+      <div class="col-md-3 animate upslide load spon">
+         <img src="{{ URL::asset('images/sponsors/stayhigh.webp') }}" alt="" style="height:100%;width:100%;">
+      </div> -->
 <!-- 
       <div class="heading" style="padding-top:50px;">
          <span>After Movie Partner</span>

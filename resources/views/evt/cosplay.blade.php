@@ -31,25 +31,32 @@
                                     <div class="speaker-statement" aria-hidden="true">
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>For role-play, CosPlayers need to dress up their favourite Anime character and entertain the crowd for a time duration.</li>
-                                            <li>CosPlayers are requested to not bring any sharp objects with them.</li>
-                                            <li>CosPlayers will be given a ramp to walk for the final round.</li>
-                                            <li>Judging Criteria- Walk, Dedication to the character, Costume details.</li>
-                                        </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
-                                            </ul>
-                                        </div><br/>
+                                            <li>The cosplayer will be judge based on the following criteria:</li>
+                                            <li>Cosplayers are required to provide their own tracks during the registration if required. Length of the track should not exceed 3 min.</li>
+                                            <li>Cosplayer must register himself/herself in order to participate in the contest; the contest will begin at 3 pm.</li>
+                                            <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px;">
+                                            <li>Role-play (3min)</li>
+                                            <li>Costume details.</li>
+                                            <li>Dedication to the original characters.</li>
+                                            </ol>
+                                            <li>Cosplayers requested not to bring any sharp props.</li>
+                                            <li>For role-play, cosplayers competing can assist each other but will be judge individually.</li>
+                                            </ol>
+                                        <!--<div class="speaker-statement">-->
+                                        <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
+                                        <!--    <ul style="text-align: justify; list-style:none;">-->
+                                        <!--        <li>Venue: </li>-->
+                                        <!--        <li>Starting Time: </li>-->
+                                        <!--        <li>Date: </li>-->
+                                        <!--    </ul>-->
+                                        <!--</div><br/>-->
                                         <div class="speaker-address">
                                             <ul style="text-align: left;">
                                                 <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span></li>
-                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i> Ben : 8258996506</span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i> Ale : 8732033195</span></li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i> Tony : 8638790618</span></li>
+                                                <li><span><i class="fa fa-envelope" aria-hidden="true"></i> teamcosplay64@gmail.com</span></li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

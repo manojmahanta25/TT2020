@@ -61,7 +61,7 @@
                                         <div class="speaker-statement">
                                             <ul class="speaker-address" style="text-align: justify;">
                                                 <h5>Event Coordinator:</h5>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Paribrita Bordoloi:	6900980152</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Chandani : 6001136807</li>
 
                                             </ul>
                                         </div><br/>

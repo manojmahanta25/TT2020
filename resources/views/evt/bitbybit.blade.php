@@ -64,8 +64,8 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Amrita Kaur: +91 7896228233</li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Priyamvada Malpani: +91 8638743846</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Vivek : +91 70024 57677</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>Raju : +91 7002 580716</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

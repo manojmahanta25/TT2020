@@ -209,7 +209,7 @@
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','badminton')}}" alt="Badminton"><h2 class="porttext">Badminton</h2></a>
                                         </div>
-                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.comingsoon','football')}}" alt="Football"><h2 class="porttext">Football</h2></a>
+                                        <div class="col-md-4" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','football')}}" alt="Football"><h2 class="porttext">Football</h2></a>
                                         </div>
                             </div>
                         </div>
@@ -252,6 +252,8 @@
                                         </div>
                                         <div class="col-md-5" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','crimesceneinvestigation')}}" alt="Crime Scene investigation"><h2 class="porttext">Crime Scene investigation</h2></a>
                                         </div>
+                                        <div class="col-md-3" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','cosplay')}}" alt="cosplay"><h2 class="porttext">Cosplay</h2></a>
+                                        </div>
                             </div>
                         </div>
                     </div>
@@ -280,8 +282,10 @@
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a href="{{route('tt.eventdet','singingworkshop')}}" alt="Singing Workshop"><h2 class="porttext">Singing Workshop</h2></a>
                                         </div>
                                         <div class="col-md-4" style="margin-bottom: 20px;"><a href="{{route('tt.eventdet','modelingworkshop')}}" alt="Modeling Workshop"><h2 class="porttext">Modeling Workshop</h2></a>
+                                        </div>                                        
+                                        <div class="col-md-3" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','stem_lab')}}" alt="Stem Lab"><h2 class="porttext">Stem Lab</h2></a>
                                         </div>
-                                        <div class="col-md-6 col-md-offset-3" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','fashionphotographyworkshop')}}" alt="Fashion Photography Workshop"><h2 class="porttext">Fashion Photography Workshop</h2></a>
+                                        <div class="col-md-6" style="margin-bottom: 20px;"><a  href="{{route('tt.eventdet','fashionphotographyworkshop')}}" alt="Fashion Photography Workshop"><h2 class="porttext">Fashion Photography Workshop</h2></a>
                                         </div>
                             </div>
                         </div>

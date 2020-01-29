@@ -67,6 +67,7 @@
                                             <a class="ristrabtn" href="{{route('tt.registersingle','lawntennis-girls-single')}}" alt="">Lawn-Tennis Girls Single</a>
                                             <a class="ristrabtn" href="{{route('tt.registersingle','lawntennis-men-single')}}" alt="">Lawn-Tennis Men Single</a>
                                             <a class="ristrabtn" href="{{route('tt.registersingle','lawntennis-men-double')}}" alt="">Lawn-Tennis Men Double</a>
+                                            <a class="ristrabtn" href="{{route('tt.registersingle','lawntennis-under-18-single')}}" alt="">Under 18 Boys Single</a>
                                         </div>
                                     </div>
                                 </div>

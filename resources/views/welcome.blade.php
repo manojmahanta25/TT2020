@@ -1,7 +1,19 @@
 @include('elements.header')
 <section id="home" class="main fixed-bg inhome " style="overflow-x: hidden; overflow-y: hidden;">
-    <a href="{{route('tt.pass')}}" alt=""><img src="{{ URL::asset('images/webp/tickets.webp') }}" alt="" class="in_ticket" /></a>
-    <a href="{{route('tt.register')}}" alt=""><img src="{{ URL::asset('images/webp/register.webp') }}" alt="" class="in_register" /></a>
+    <a href="{{route('tt.pass')}}" alt="">
+        <picture>
+            <source type="image/webp" srcset="{{ URL::asset('images/webp/tickets.webp') }}">
+            <img src="{{ URL::asset('images/png/tickets.png') }}"  class="in_ticket"  alt="Ticket">
+        </picture>
+        <!-- <img src="{{ URL::asset('images/png/tickets.png') }}" alt="" class="in_ticket" /> -->
+    </a>
+    <a href="{{route('tt.register')}}" alt="">
+        <picture>
+            <source type="image/webp" srcset="{{ URL::asset('images/webp/register.webp') }}">
+            <img src="{{ URL::asset('images/png/register.png') }}"  class="in_register"  alt="Register">
+        </picture>
+        <!-- <img src="{{ URL::asset('images/webp/register.webp') }}" alt="" class="in_register" /> -->
+    </a>
     <a href="{{route('tt.accommodation')}}" alt=""><img src="{{ URL::asset('images/webp/accomodation.webp') }}" alt="" class="in_acco" /></a>
 
     <a href="{{route('tt.pronites')}}" alt=""><img src="{{ URL::asset('images/webp/pronites.webp') }}" alt="" class="in_pronite" /></a>

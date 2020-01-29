@@ -51,7 +51,7 @@
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Nikita Dey +91 97067 55993</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Jyotismita : +91 60012 04831</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

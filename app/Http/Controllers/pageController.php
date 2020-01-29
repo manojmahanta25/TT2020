@@ -13,7 +13,6 @@ class pageController extends Controller
         $mtitle = 'Talent Tantra 2020';
         $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
         $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
-
         return view('welcome', compact('page', 'page_title', 'mtitle', 'description', 'keywords'));
     }
 
@@ -405,7 +404,17 @@ class pageController extends Controller
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
-                                    
+                
+            case 'cosplay':
+                $page = 'cosplay';
+                $value = 'cosplay';
+                $page_title = 'Cosplay';
+                $mtitle = 'Cosplay';
+                $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+                $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+                return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
+                break;
+
             case 'loveletterwriting':
                 $page = 'loveletterwriting';
                 $value = 'loveletterwriting';
@@ -465,7 +474,17 @@ class pageController extends Controller
                 $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
                 return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
                 break;
-
+                
+            case 'stem_lab':
+                $page = 'stem_lab';
+                $value = 'stem_lab';
+                $page_title = 'Stem Lab';
+                $mtitle = 'Stem Lab';
+                $description = 'Talent Tantra, the annual student festival of the University, is hosted each year to provide students to with a platform to showcase their talents and promote the honing of skills required to become a versatile and socially concious global citizen.';
+                $keywords = 'Talent Tantra, annual fest, talent tantra 2020, kaziranga university, kaziranga university student festival, jorhat, assam, northeast india fest';
+                return view('eventfetch', compact('page', 'page_title', 'mtitle', 'description', 'keywords', 'value'));
+                break;
+                
             case 'cookingworkshop':
                 $page = 'cookingworkshop';
                 $value = 'cookingworkshop';

@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="heading" style="padding-top:50px;">
-            <h2>crime scene investigation</h2>
+            <h2>Crime Scene Investigation</h2>
         </div>
         <!--end heading-->
 
@@ -50,8 +50,8 @@
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka +91 88119 52536</li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Nikita Dey +91 97067 55993</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Durlav Deka : +91 88119 52536</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Deborshi : +91 8638 784985</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">

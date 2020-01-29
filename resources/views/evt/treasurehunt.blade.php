@@ -37,23 +37,22 @@
                                             <li>The treasure hunt consists of some clues, each one leading to the next clue.</li>
                                             <li>The clues are to be found in a particular order. A team cannot skip a clue. Skipping a clue leads to disqualification of the team.</li>
                                             <li>Do not search for clues in off-limit areas.</li>
-                                            <li>If you found other team&#39;s clue by any chance never tamper it. A violation of this  rule could cause disqualification of your team.</li>
+                                            <li>If you found other team&#39;s clue by any chance never tamper it. A violation of this rule could cause disqualification of your team.</li>
                                             <li>All the classes of the teams are different and located at different places but the final destination i.e. the treasure is same. The team which finds the treasure wins first</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
-                                            <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: Whole campus</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: 2<sup>nd</sup> February, 2020</li>
-                                            </ul>
+                                        <!--<div class="speaker-statement">-->
+                                        <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
+                                        <!--    <ul style="text-align: justify; list-style:none;">-->
+                                        <!--        <li>Venue: Whole campus</li>-->
+                                        <!--        <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>-->
+                                        <!--        <li>Date: 2<sup>nd</sup> February, 2020</li>-->
+                                        <!--    </ul>-->
                                         </div><br/>
                                         <div class="speaker-address">
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li><strong>Event Coordinator:</strong></li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Bedanta Saikia</li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himanta Gogoi +91 80118 60068</li>
-{{--                                                <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>Bivash Ghosh</li>--}}
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Bedanta Saikia : +91 7002 274601</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Himanta Gogoi +91 6000 061415</li>
                                             </ul>
                                         </div>
                                         <div class="speaker-statement">

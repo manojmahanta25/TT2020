@@ -50,9 +50,8 @@
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Yumit Kumar	8486227848
-                                                                                                    </li>
-                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Chumliba	8732033794</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Yumit Kumar : +91 8486 227848</li>
+                                                <li><span><i class="fa fa-phone" aria-hidden="true"></i></span> Chumliba : +91 87875 51197</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-statement">
