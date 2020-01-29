@@ -37,7 +37,7 @@
                                             <li>Grooming Date : 28 th  Jan -30 th  Jan &amp; 31 st Jan</li>
                                             <li>Grooming Fees : <strong>Rs. 1500/- only</strong></li>
                                             <li>Accommodation Fees: <strong>Rs. 100/- only per day</strong></li>
-                                            <li>Finale Date : <strong>1 st Feb, 2020 02:30 PM to 04:00 PM</strong></li>
+                                            <li>Finale Date : <strong>1<sup>st</sup> Feb, 2020 02:30 PM to 04:00 PM</strong></li>
                                         </ul>
 
                                         <br/><h5 style="text-align: justify;">Dress Code:</h5>

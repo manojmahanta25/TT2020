@@ -46,6 +46,14 @@
                                             <li>Student creativity</li>
                                             <li>Inovativeness in project</li>
                                         </ol><br/>
+                                         <div class="speaker-statement">
+                                            <h5 style="text-align: justify;">Event Schedule:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: STEM Lab</li>
+                                                <li>Starting Time: 10:00 am - 4:00 pm </li>
+                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">

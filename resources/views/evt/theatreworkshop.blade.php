@@ -8,26 +8,6 @@
 
         <div class="portfoliomain">
             <div class="col-md-7 col-sm-12 col-xs-12" style="background:rgba(255,253,253,0.8);padding: 12px;">
-                <!-- <div class="speaker-content">
-                    <span><h3>xxxxxxxx</h3></span>
-                    <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                    <p><strong>Format:</strong></p>
-                    <ul style="list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li>1</li>
-                        <li>2</li>
-                    </ul><br/>
-                    <p style="font-weight:bold; margin-bottom: 5px;">General Registration Rules </p>
-                    <ul style="text-align: justify;list-style-type: disc;margin-left: 50px;margin-top: 10px;">
-                        <li><strong>Age Limit </strong>: </li>
-                        <li>1</li>                        
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul><br/>
-                    
-                </div> -->
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
 
@@ -48,19 +28,15 @@
                             <div role="tabpanel" class="tab-pane active" id="event-one">
                                 <div class="schedule-table table-responsive">
                                     <div class="speaker-statement" aria-hidden="true">
-                                        <!-- <h5 style="text-align: justify;">Rules And Regulations:</h5>
-                                        <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                            <li>xxxxxxxxxxxxxxxxxxx</li>
-                                        </ol><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Venue: SSS Classroom</li>
+                                                <li>Starting Time: 11:00 am - 3:00 pm</li>
+                                                <li>Break: 1:00 pm - 2:00 pm</li>
+                                                <li>Date: 31<sup>st</sup> Jan. and 1<sup>st</sup> Feb. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">

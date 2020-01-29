@@ -40,13 +40,13 @@
                                             <li>If you found other team&#39;s clue by any chance never tamper it. A violation of this rule could cause disqualification of your team.</li>
                                             <li>All the classes of the teams are different and located at different places but the final destination i.e. the treasure is same. The team which finds the treasure wins first</li>
                                         </ol><br/>
-                                        <!--<div class="speaker-statement">-->
-                                        <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
-                                        <!--    <ul style="text-align: justify; list-style:none;">-->
-                                        <!--        <li>Venue: Whole campus</li>-->
-                                        <!--        <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>-->
-                                        <!--        <li>Date: 2<sup>nd</sup> February, 2020</li>-->
-                                        <!--    </ul>-->
+                                        <div class="speaker-statement">
+                                       <h5 style="text-align: justify;">Event Schedule:</h5>
+                                           <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: Whole campus</li>
+                                               <li>Starting Time: 10:30 am to 01:00 pm</li>
+                                               <li>Date: 2<sup>nd</sup> February, 2020</li>
+                                        </ul>
                                         </div><br/>
                                         <div class="speaker-address">
                                             <ul style="text-align: justify; list-style:none;">

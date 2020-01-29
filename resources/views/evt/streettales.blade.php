@@ -39,9 +39,9 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
+                                                <li>Venue: "All around Campus but can't enter any other events"</li>
+                                                <li>Starting Time: 10:30 am - 1: 00 pm </li>
+                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
