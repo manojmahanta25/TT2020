@@ -39,14 +39,14 @@
                                             <li>Seeding for the events shall done on lottery basis. If seeded, a player from AATA registration that comes and joins the event, they shall be given preference for the sides.</li>
                                             <li>Decision of the organizing committee shall be final for inclusion/deletion of the events depending upon the members of players and time.</li>
                                         </ol><br/>
-                                        <div class="speaker-statement">
+                                        <!-- <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: </li>
                                                 <li>Starting Time: </li>
                                                 <li>Date: </li>
                                             </ul>
-                                        </div><br/>
+                                        </div><br/> -->
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">
@@ -56,7 +56,7 @@
                                         </div><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Registration Fee:</h5>
-                                            <p style="text-align: justify;"><strong> Rs. 500 /MEMBERS</strong></p><br/>
+                                            <p style="text-align: justify;"><strong> Rs. 1500 /TEAMS</strong></p><br/>
                                         </div>
                                         <div class="speaker-statement" style="text-align: left;margin-left: 20px;">
                                             <a class="ristrabtn" href="{{route('tt.registersingle','basketball')}}" alt="">Register</a>
