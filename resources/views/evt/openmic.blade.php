@@ -37,11 +37,11 @@
                                         </ol><br/>
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <!-- <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-                                            </ul> -->
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: Bhukkad</li>
+                                                <li>Starting Time: 01:00 PM - 02:30 PM</li>
+                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                            </ul>
                                         </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>

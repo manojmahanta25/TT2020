@@ -47,14 +47,14 @@
 {{--                                            <li>Obscene and explicit language is strictly prohibited, any rapper found in disregard for the rules will be disqualified.</li>--}}
 {{--                                            <li>The rapper can choose from Hindi, English or Assamese as the language medium to perform.</li>--}}
                                         </ol><br/>
-                                        <!-- <div class="speaker-statement">
+                                        <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Venue: Falsetto - Stage</li>
+                                                <li>Starting Time: 11:00 AM - 02:00 PM</li>
+                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">

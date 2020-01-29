@@ -52,9 +52,10 @@
                                         </ol>
                                         <div class="speaker-statement" style="marg">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
-                                            <br/>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>2<sup>nd</sup> February 2020</li>
+                                                <li>Venue: Main Building Reception</li>
+                                                <li>Starting Time: 10:30 AM - 01:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
                                             </ul>
                                         </div>
                                         <div class="speaker-statement">

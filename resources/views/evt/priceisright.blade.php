@@ -36,14 +36,14 @@
                                             <li>This game is based purely on the participant’s intuitions. All that a participant needs to do is guess the price (MRP) of the products displayed on stage and create a compilation. The participant to guess the closest sum takes away gift hampers and prizes!</li>
                                             <li>There will be no second-guessing, the submitted sheet will be treated as the final answer.</li>
                                         </ol><br/>
-                                        <!-- <div class="speaker-statement">
+                                        <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
+                                                <li>Venue: SOB Reception</li>
+                                                <li>Starting Time: 12:00 PM - 02:00 PM</li>
+                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: left;">
