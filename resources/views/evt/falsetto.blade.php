@@ -59,9 +59,9 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: KU Garden</li>
-                                                <li>Starting Time: 02:30 PM</li>
-                                                <li>31<sup>st</sup> January 2020</li>
+                                                <li>Venue: Falsetto stage - Front Garden</li>
+                                                <li>Starting Time: 11:00 AM - 04:00 PM</li>
+                                                <li>1<sup>st</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">
@@ -96,9 +96,9 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: KU Garden</li>
-                                                <li>Starting Time: 02:30 PM</li>
-                                                <li>31<sup>st</sup> January 2020</li>
+                                                <li>Venue: Falsetto stage - Front Garden</li>
+                                                <li>Starting Time: 11:00 AM - 04:00 PM</li>
+                                                <li>1<sup>st</sup> Feb. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">

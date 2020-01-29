@@ -50,14 +50,14 @@
                                             <li>Scientific thought/principle.</li>
                                             <li>Presentation- explanation and demonstration</li>
                                         </ul><br/>
-                                        <!-- <div class="speaker-statement">
+                                        <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
+                                                <li>Venue: Front Garden Area near Admin Block</li>
+                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <ul class="speaker-address" style="text-align: justify;">
                                                 <h5>Event Coordinator:</h5>

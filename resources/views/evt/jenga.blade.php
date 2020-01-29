@@ -13,7 +13,7 @@
                     <p>Don&#39;t forget to shout Jenga when everything falls apart.</p>
                 </div>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -36,14 +36,14 @@
                                             <li>Wooden block will be provided.</li>
                                             <li>Standard rules will be followed.</li>
                                         </ol><br/>
-                                       <!--  <div class="speaker-statement">
+                                       <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: 2<sup>nd</sup> February, 2020</li>
+                                                <li>Venue: MBA Classroom</li>
+                                                <li>Starting Time: 10:30 AM - 12:30 PM</li>
+                                                <li>Date: 1<sup>st</sup> February, 2020</li>
                                             </ul>
-                                        </div> --><br/>
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li><strong>Event Coordinator:</strong></li>

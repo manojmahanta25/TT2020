@@ -46,8 +46,8 @@
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
                                                 <li>Venue: SOB Seminar hall</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Starting Time: Lawn near main gate</li>
+                                                <li>Date: 02:00 PM - 03:00 PM</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">

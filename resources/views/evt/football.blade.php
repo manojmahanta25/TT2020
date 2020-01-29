@@ -49,14 +49,14 @@
                                             <li>Dangerous play is not allowed.</li>
                                             <li>When the goal keeper restarts the game with a throw in the ball must go outside the &ldquo;D&rdquo; before any other player touches it.</li>
                                         </ol><br/>
-                                        <!--<div class="speaker-statement">-->
-                                        <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
-                                        <!--    <ul style="text-align: justify; list-style:none;">-->
-                                        <!--        <li>Venue: </li>-->
-                                        <!--        <li>Starting Time: </li>-->
-                                        <!--        <li>Date: </li>-->
-                                        <!--    </ul>-->
-                                        <!--</div><br/>-->
+                                        <div class="speaker-statement">
+                                            <h5 style="text-align: justify;">Event Schedule:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: Football Field</li>
+                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020, 1<sup>st</sup> Feb. 2020</li>
+                                            </ul>
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">

@@ -40,14 +40,14 @@
                                             <li>Art paper will be provided.</li>
                                             <li>The participants must bring their own requirements.</li>
                                         </ol><br/>
-                                        <!-- <div class="speaker-statement">
+                                        <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: KU Campus</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Venue: Front Garden - Falsetto Stage</li>
+                                                <li>Starting Time: 01:30 PM - 04:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: left;">

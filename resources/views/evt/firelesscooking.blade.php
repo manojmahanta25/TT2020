@@ -40,9 +40,9 @@
                                         <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: </li>
-                                                <li>Starting Time: </li>
-                                                <li>Date: </li>
+                                                <li>Venue: Near Food Stall Area</li>
+                                                <li>Starting Time: 10:30 AM - 12:30 PM</li>
+                                                <li>Date: 2<sup>nd</sup> Jan. 2020</li>
                                             </ul>
                                         </div><br/>
                                         <div class="speaker-address">

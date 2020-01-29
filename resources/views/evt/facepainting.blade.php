@@ -13,7 +13,7 @@
                     <p>Show your spirit of painting on a live canvas.</p>
                 </div>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                
+
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12">
@@ -36,14 +36,14 @@
                                             <li>Participants need to bring their own model (Person) and materials (Color, brush).</li>
                                             <li>Theme will be given on-spot.</li>
                                         </ol><br/>
-                                        <!-- <div class="speaker-statement">
+                                        <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: Will be given at the time of the event</li>
-                                                <li>Starting Time:</li>
-                                                <li>Date:</li>
+                                                <li>Venue: Lawn in front of SOB</li>
+                                                <li>Starting Time: 10:00 AM - 12:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align: justify; list-style:none;">
