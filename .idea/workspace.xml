@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="">
+    <list default="true" id="218334da-480d-435d-a072-1bdb0b234aac" name="Default Changelist" comment="with ticket new Datatable">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tt20.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tt20.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/registration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/actingworkshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/actingworkshop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/aeromodelling.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/aeromodelling.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/badminton.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/badminton.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/basketball.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/basketball.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/beatboxing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/beatboxing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/bitbybit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/bitbybit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/burniton.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/burniton.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/collagemaking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/collagemaking.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/cookingworkshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/cookingworkshop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/cosplay.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/cosplay.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/crewvscrew.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/crewvscrew.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/cricket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/cricket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/crimesceneinvestigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/crimesceneinvestigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/crossfit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/crossfit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/danceworkshop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/danceworkshop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evt/destroix.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evt/destroix.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pass.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pass.blade.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,6 +137,8 @@
       <path value="$PROJECT_DIR$/vendor/razorpay/razorpay" />
       <path value="$PROJECT_DIR$/vendor/rmccue/requests" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark-ext-table" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UC0FPr1heRZPUNWswBkl7xRLj8" />
@@ -139,23 +158,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -189,6 +208,8 @@
       <workItem from="1579521663337" duration="1118000" />
       <workItem from="1579539281349" duration="30000" />
       <workItem from="1579842668484" duration="597000" />
+      <workItem from="1580231836197" duration="347000" />
+      <workItem from="1580238012315" duration="1017000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1578320710861</created>
@@ -499,10 +520,19 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="60" key="CommitChangelistDialog2" timestamp="1578321495757">
-      <screen x="0" y="0" width="1536" height="930" />
+    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1580238696919">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1580238696919" />
     <state x="393" y="60" key="CommitChangelistDialog2/0.0.1536.930@0.0.1536.930" timestamp="1578321495757" />
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1580232181197">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1580232181197" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1580239709161">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1580239709161" />
     <state x="470" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1578320253324">
       <screen x="0" y="0" width="1536" height="930" />
     </state>

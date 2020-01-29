@@ -38,6 +38,7 @@
                                             <li>Only tennis ball will be used for the matches.</li>
                                             <li>All ICC rules will be followed except LBW.</li>
                                         </ol><br/>
+<<<<<<< HEAD
                                         <!--<div class="speaker-statement">-->
                                         <!--    <h5 style="text-align: justify;">Event Schedule:</h5>-->
                                         <!--    <ul style="text-align: justify; list-style:none;">-->
@@ -46,6 +47,18 @@
                                         <!--        <li>Date: </li>-->
                                         <!--    </ul>-->
                                         <!--</div><br/>-->
+=======
+                                        <div class="speaker-statement">
+                                            <h5 style="text-align: justify;">Event Schedule:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: Cricket Ground</li>
+                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
+                                                <li>Starting Time: 10:00 AM - 04:00 PM</li>
+                                                <li>Date: 1<sup>st</sup> Feb. 2020</li>
+                                            </ul>
+                                        </div><br/>
+>>>>>>> origin/master
                                         <div class="speaker-address">
                                             <h5 style="text-align: justify;">Event Coordinator:</h5>
                                             <ul style="text-align:left;">

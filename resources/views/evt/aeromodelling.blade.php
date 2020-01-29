@@ -42,14 +42,14 @@
                                             <li>Entry Fees will be 500 per participant, for a team of two the entry fees will be 1000</li>
 
                                         </ul><br/>
-                                        <!-- <div class="speaker-statement">
+                                        <div class="speaker-statement">
                                             <h5 style="text-align: justify;">Event Schedule:</h5>
                                             <ul style="text-align: justify; list-style:none;">
-                                                <li>Venue: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Starting Time: xxxxxxxxxxxxxxxxxx</li>
-                                                <li>Date: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+                                                <li>Venue: SET Lab Garden (Near Double Height)</li>
+                                                <li>Starting Time: 01:00 PM - 03:00 PM</li>
+                                                <li>Date: 31<sup>st</sup> Jan. 2020</li>
                                             </ul>
-                                        </div><br/> -->
+                                        </div><br/>
                                         <div class="speaker-statement">
                                             <ul class="speaker-address" style="text-align: justify;">
                                                 <h5>Event Coordinator:</h5>

@@ -31,6 +31,7 @@
                                     <div class="speaker-statement" aria-hidden="true">
                                         <h5 style="text-align: justify;">Rules And Regulations:</h5>
                                         <ol style="text-align: justify; list-style-type: decimal; margin-left: 50px; margin-top: 10px;">
+<<<<<<< HEAD
                                             <li>The cosplayer will be judge based on the following criteria:</li>
                                             <li>Cosplayers are required to provide their own tracks during the registration if required. Length of the track should not exceed 3 min.</li>
                                             <li>Cosplayer must register himself/herself in order to participate in the contest; the contest will begin at 3 pm.</li>
@@ -50,6 +51,21 @@
                                         <!--        <li>Date: </li>-->
                                         <!--    </ul>-->
                                         <!--</div><br/>-->
+=======
+                                            <li>For role-play, CosPlayers need to dress up their favourite Anime character and entertain the crowd for a time duration.</li>
+                                            <li>CosPlayers are requested to not bring any sharp objects with them.</li>
+                                            <li>CosPlayers will be given a ramp to walk for the final round.</li>
+                                            <li>Judging Criteria- Walk, Dedication to the character, Costume details.</li>
+                                        </ol><br/>
+                                        <div class="speaker-statement">
+                                            <h5 style="text-align: justify;">Event Schedule:</h5>
+                                            <ul style="text-align: justify; list-style:none;">
+                                                <li>Venue: Main Stage to around the campus again Main Stage</li>
+                                                <li>Starting Time: 10:00 AM - 03:00 PM</li>
+                                                <li>Date: 2<sup>nd</sup> Feb. 2020</li>
+                                            </ul>
+                                        </div><br/>
+>>>>>>> origin/master
                                         <div class="speaker-address">
                                             <ul style="text-align: left;">
                                                 <li><strong>Event Coordinator:</strong></li>
